@@ -1,0 +1,34 @@
+- name: "case_study"
+  label: "Case Study"
+  folder: "src/content/resources/case-studies"
+  create: true
+  filter: {field: "layout", value: "case-study.njk"}
+  fields:
+    - {label: "Post Date", name: "date", widget: "date", required: true, format: "YYYY-MM-DD"}
+    <!-- @include-static ../partials/base-fields.yml -->
+    <!-- @include-static ../partials/jumbotron.yml -->
+    - {label: "Layout", name: "layout", widget: "hidden", default: "case-study.njk"}
+    - {label: "Permalink", name: "permalink", widget: "string", required: false}
+    - {label: "Headline", name: "headline", widget: "string"}
+    - {label: "Short Description", name: "short_description", widget: "markdown"}
+    - {label: "Situation", name: "situation", widget: "markdown"}
+    - {label: "Situation image", name: "situation_image", widget: "image", required: false}
+    - {label: "Solution", name: "solution", widget: "markdown"}
+    - {label: "Solution image", name: "solution_image", widget: "image", required: false}
+    - {label: "Results", name: "results", widget: "markdown"}
+    - {label: "Results image", name: "results_image", widget: "image", required: false}
+    - label: Testimonial
+      name: "testimonial"
+      widget: "object"
+      required: false
+      fields:
+        - {label: "Qotation", name: "quotation", widget: "string", required: false, 'hint':"Do not surround with quotes."}
+        - {label: "Attestant", name: "attestant", 'hint': "The person who said it ",  widget: "string", required: false}
+    - name: cta
+      label: CTA
+      widget: object
+      hint: 'Optional cta'
+      fields: 
+        - {label: "Copy", name: "copy", widget: "string"}
+        - {label: "URL", name: "url", widget: "string"}
+        - {label: "Label", name: "label", widget: "string"}

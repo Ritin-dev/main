@@ -1,0 +1,37 @@
+{% extends "layout.njk" %}
+{% block body %}
+<section class="section narrow">
+    <h1 class="h3">{{ headline }}</h1><br><br>
+    <h4>Situation</h4>
+    {{ situation | md }}
+</section>
+{%- set solution_image = solution_image if solution_image else jumbotron.img -%}
+<div class="full-bg " style="background-image:url('{{solution_image}}');"></div>
+<section class="section narrow">
+    <h4>Solution</h4>
+    {{ solution | md }}
+    {%- if results_image -%}    
+        <br><img src="{{ results_image }}" alt="" class="img-responsive center" width="100%">
+        <br><br>
+    {%- endif -%}
+    <br><br>
+    <h4>Results</h4>
+    {{ results | md }}
+    {%- if testimonial -%}
+    <br><br><br>
+    <p class="pc h4">&quot;{{ testimonial.quotation }}&quot;</p>
+    <div class="muted">{{ testimonial.attestant}}</div> 
+    {%- endif-%}
+    {% if cta %}
+                <div class="blog-cta">
+                    <div class="blog-cta-copy">
+                        {{cta.copy}}
+                    </div>
+                    <a href="{{cta.url}}" class="btn">{{cta.label}}</a>
+                </div>
+            {% endif %}
+</section>
+{%- set paginationBlockLabelType = 'case' -%}
+{%- set paginationBlockCollectionKey = 'caseStudies' -%}
+{%- include 'partials/pagination-blocks.njk' -%}
+{% endblock %}

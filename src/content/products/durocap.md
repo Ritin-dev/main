@@ -1,0 +1,76 @@
+---
+title: DuroCap™
+nav_title: DuroCap
+seo:
+  description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+    free from dangerous particulates and corrosive dust contaminants.
+  page_title: DuroCap™ Vented Filtration | Particulate Filtration
+jumbotron:
+  img: /img/heros/hero-durocap.jpg
+layout: product.njk
+show_in_menu: "true"
+product_image: /img/image-1-durocap.jpg
+thumbnail: /img/thumbs/thumb-durocap.jpg
+short_description: DuroCap™ vented filtration creates a clean air chamber nearly
+  100% free from dangerous particulates and corrosive dust contaminants.
+image_1: /img/image-2-durocap.jpg
+brochure: /media/uploads/Duroair DuroCap™ System.pdf
+btn_label: "DOWNLOAD FACT SHEET"
+technical_specifications: >-
+  * Single phase 220V and three phase 208/230/460/575V available upon request.
+  
+  * Built-in air regulation control with production air interlocked/ fans for safety.
+  
+  * Exhaust system creates a negative pressure vacuum seal around the DuroRoom to ensure no contaminants or VOCs are released into the main work environment and are directed through the exhaust system’s filters to the exterior.
+  
+  * Non-sparking aluminum blades, sized 12” to 60”, with 1/2hp to 10hp motors dependent on required airflow.
+  
+  * Pairs with enclosure made of a durable fire rated PVC vinyl meeting the requirements of NFPA 701.
+  
+  * System exhausts air to the exterior and requires ducting and make-up air.
+image_2: /media/uploads/durocap-2.png
+compliance:
+  - code: NFPA 33
+    description: spray application
+  - code: ANSI Z9.7
+    description: as per the requirements of NFPA33 Chapter 7.5.2.
+  - code: NFPA 17
+    description: dry chemical extinguishing systems
+  - code: NFPA 701
+    description: fabric - flame resistance
+  - code: OSHA 29CFR - 1910.107
+    description: spray finishing
+  - code: OSHA 29CFR - 1910.94
+    description: ventilation
+  - code: OHSA O.Reg 851-63
+    description: ignition or explosive
+  - code: OHSA O.Reg 851-65
+    description: dust - ignition or explosive
+  - code: OHSA O.Reg 213.5.12
+    description: fire code - spray operation
+  - code: EPA 40CFR - Part 63.11173
+    description: spray finishing requirements - Electrical CSA Certified
+  - code: OSHA silica
+    description: standard for general industry
+key_features: >-
+  * **Easy Assembly**: Comes fully assembled with a pre-wired control panel (lockable fused disconnect and C/UL/US Listed). Combined with a DuroRoom, the system can be installed in two to three days with a small crew.
+
+  * **[Taper Draft Airflow Technology](/products/taper-draft-airflow-technology)**: Directs air down the center of the enclosure to maximize control of overspray, keep the sidewalls clean, and speed drying time.
+
+  * **Meets/Exceeds CFM Requirements**:   Engineered airflow requirements from 13,500 CFM to 120,000 CFM and beyond, to achieve airflow over 100 FPM at the intake filter face and ensure airflow remains below code requirements of 25% of the LEL (lower explosion limit).
+
+  * **Vented Solution**: Suitable for production painting and paints over 2.8 lbs VOCs per gallon.
+  
+  * **Variable Frequency Drive**: Energy-efficient VFD with adjustable air speeds, doubles as a soft starter to eliminate the need for a motor starter.
+
+  * **Fire Suppression**: Designed by Kidde Badger for protection of exhaust systems and the enclosure, while meeting NFPA 17 standards and is UL listed. Wet or dry systems are available depending upon requirements. Wet systems are for non-retracting only.
+---
+### How it Works
+
+DuroCap™ is the vented, modular, air filtration system that’s easily customizable for extracting dusts, fumes, and gasses, 
+creating a clean-air envelope around your oversized work pieces. Its 2-stage filtration removes 99.4% of all 
+air pollutants for a contaminant free portable workstation during sanding, grinding, [coating and painting](/solutions/painting-coating/).
+
+Pair it with:
+
+* [DuroRoom™](/products/duroroom) to create a clean air envelope around workpieces for a contaminant free retractable work station.

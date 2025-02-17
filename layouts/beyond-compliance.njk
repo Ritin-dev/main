@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+{% block body %}
+<section class="ruled-headers section">
+    <div class="grid-2 vc">
+        <div>
+            <img src="{{image_1}}" class="img-responsive shadow img-1 image-1" alt="" />
+        </div>
+        <div class="ruled-headers">{{ contents | safe }}</div>
+    </div>
+    <br><br><br>
+    {%- include "partials/beyond-compliance-icon-blocks.njk" -%}
+</section>
+<div class="bg-light">
+<section class="section">
+    <h3 class="text-center ruled">We’ve Got Your Compliance Covered</h3>
+    <p class="text-center narrow-text">We can design a responsive solution to meet your industry’s clean air standards, including the following environmental and safety requirements.</p>
+    {% include "partials/compliance-table.njk" %}
+</section>
+</div>
+<section class=" full" style="padding-bottom:0;">
+<div class="grid-2 ruled-headers full-col">
+    <div class="copy-col">
+        {{ outro | md }}
+        <a href="/industries" class="btn btn-outline">Industries</a>
+    </div>
+    <div style="background-image:url('{{image_2}}');" class="img-col">&nbsp;</div>
+</div>
+</section>
+{% endblock %}
+{% block testimonial %}
+{% include "partials/testimonial.njk" %}
+{% endblock %}

@@ -1,0 +1,20 @@
+{%- set jumbotronTitleElement = jumbotronTitleElement if jumbotronTitleElement else 'h1' -%}
+{%- set heroImg = jumbotron.img if jumbotron.img else '/img/heros/hero-default.jpg' -%}
+<div id="hero" style="background-image: url('{{heroImg}}');" class="{{waveType}}">
+    <div class="container">
+        <div class="jumbo-content">
+            {% if jumbotron.subhead or jumbotron_subhead %}
+            <div class="subhead">{{ jumbotron.subhead }}{{jumbotron_subhead}}</div>
+            {% endif %}
+            {%- if hideJumbotronTitle !== true -%}<{{jumbotronTitleElement}} class="jumbotron-headline">{{ jumbotron.headline if jumbotron.headline else title }}</{{jumbotronTitleElement}}>{%- endif -%}
+            <div class="jumbo-tagline">{{ jumbotron.tagline }}</div>
+            {%- if jumbotron.ctaUrl -%}
+            <a href="{{jumbotron.ctaUrl}}" class="btn {{ jumbotron.ctaCssClass if jumbotron.ctaCssClass else "btn-default" }}" data-ga-event="Button" data-ga-action="Click">{{path}}{{jumbotron.ctaText}}</a>
+            {%- endif -%}
+        </div>
+    </div>
+    <div class="hero-overlay"></div>
+    {% if layout == 'home.njk' %}
+        <video autoplay="true" loop="true" muted="true" src="https://res.cloudinary.com/industrial/video/upload/v1606759367/duroair/zhhiuozwih3qybneaxf1.mp4" class="visible"></video>
+    {% endif %}
+</div>

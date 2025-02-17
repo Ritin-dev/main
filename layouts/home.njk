@@ -1,0 +1,45 @@
+{% extends "layout.njk" %}
+{% block body %}
+<section class="section">
+    <div class="grid-2 vc">
+        <div>
+            <img src="{{image_1}}" width="683" height="468" loading="lazy" class="img-responsive grid-img shadow" alt="" />
+        </div>
+        <div class="ruled-headers">{{ contents | safe }}</div>
+    </div>
+</section>
+<div class="bg-light">
+    <section class="section">
+        <br><br><strong class="h3  block text-center ruled">Industrial Air Solutions Engineered For Your Processes</strong>
+        <div class="solutions">
+            {%- for solution in solutions -%}
+            <a data-duration class="solution-item" href="/{{solution.path}}" style="background-image:url('{{solution.thumbnail}}');"><span>{{solution.title}}</span></a>
+        {%- endfor -%}
+        </div>
+    </section>
+</div>
+<section class="section">
+    <strong class="h3 block text-center">Beyond Compliance</strong><br><br>
+    {%- include "partials/beyond-compliance-icon-blocks.njk" -%}
+    <br><br>
+    <div class="text-center"><a href="/about/beyond-compliance/" class="btn btn-outline">Learn More About Compliance</a></div>
+</section>
+<div class="bg-light">
+    <section class="section">
+        <div class="grid-2 vc">
+            <div> 
+                <img src="{{image_2}}" width="535" height="262" loading="lazy" class="img-responsive shadow grid-img" alt="Duroair" />
+            </div>
+            <div class="ruled-headers paddless-p">{{ copy_block_1 | md }}</div>
+        </div>
+    </section>
+</div>
+<section class="section">
+    <strong class="block h3 ruled text-center">Solutions Delivered</strong>
+    <br><br>
+    {% include "partials/solutions-delivered.njk" %}
+</section>
+{% endblock %}
+{% block testimonial %}
+{% include "partials/testimonial.njk" %}
+{% endblock %}

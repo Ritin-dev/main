@@ -1,0 +1,41 @@
+{% extends "layout.njk" %}
+{%- set hideFooterCta = true -%}
+{% set waveType = 'gray' %}
+{% block body %}
+    <script>
+        window.indNoPromo = true;
+    </script>
+    <div class="bg-light">
+        <section class="section" >
+            <div class="intro" style="text-align:center; margin:0 auto;">
+                <div class="animated center"></div>
+                {{ contents | safe }}
+                <br><br><br>
+            </div>
+            <div class="card card-horizontal" data-href="/how-we-work/">
+                <div class="card-img-container">
+                    <img src="/img/how-we-work-card-img.jpg" class="img-responsive card-img" alt="">
+                </div>
+                <div class="card-copy">
+                    <h4 class="h4 pc">How We Work</h4>
+                    <p>
+                Learn more about Duroair’s consultative approach to engineering clean air solutions that are responsive to manufacturers’ environmental, safety, and budgetary needs.
+            </p><br>
+                    <a href="/how-we-work/" class="link-learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="card card-horizontal" data-href="/about/beyond-compliance/">
+                <div class="card-img-container">
+                    <img src="/img/beyond-compliance-card-img.jpg" class="img-responsive card-img" alt="">
+                </div>
+                <div class="card-copy">
+                    <h4 class="h3 pc">Beyond Compliance</h4>
+                    <p>
+                Duroair engineers custom solutions that meet EHS and other clean air compliance standards, while improving operational bottom lines.
+            </p><br>
+                    <a href="/about/beyond-compliance/" class="link-learn-more">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

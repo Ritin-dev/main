@@ -1,0 +1,21 @@
+<nav id="nav">
+    <ul class="primary-nav">
+        {%- for item in navs.primary -%}
+        <li class="nav-item-main nav-{{item.name}} {{ "has-menu" if item.children.length else "" }} nav-item-{{ item.name | lower }}">
+                <a href="/{{item.file.path}}"  class="link primary-link level-0">{{ item.name | reverseSlug }}</a>
+            {%- if item.children.length -%}
+            <span class="nav-arrow"></span>
+            <ul class="submenu">
+                {%- for child in item.children -%}
+                <li class="nav-item level-1"><a href="/{{child.file.path | replace('index.html','')}}" class="link sublink ">{{ child.file | navLabel }}</a></li>
+                    {%- for secondary_child in child.children -%}
+                        <li class="nav-item level-1"><a href="/{{secondary_child.file.path | replace('index.html','')}}" class="link sublink ">{{ secondary_child.file | navLabel }}</a></li>
+                    {%- endfor -%}
+                {%- endfor -%}
+            </ul>
+            {%- endif -%}
+        </li>
+        {%- endfor -%}
+        <li class="rfq-container"><a href="/request-for-quote/" class="btn btn-rfq">Request for Quote</a></li>
+    </ul>
+</nav>

@@ -1,0 +1,18 @@
+{% extends "layout.njk" %}
+{% set hideFooterCta = true %}
+{% block body %}
+<section class="section">
+    <div class="grid-2">
+        <div>
+            {{ contents | safe }}
+        </div>
+        <div class="form-container">
+            <h4 class="h3 text-center">{{form_intro}}</h4><br><br>
+            {% include "partials/hubspot-form.njk" %}
+        </div>
+    </div>
+</section>
+    <script>
+        window.indNoPromo = true;
+    </script>
+{% endblock %}

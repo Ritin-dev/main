@@ -1,0 +1,13 @@
+- name: "home"
+  label: "Home"
+  file: "src/content/index.md"
+  fields:
+    - {label: "Layout", name: "layout", widget: "hidden", default: "home.njk"}
+    <!-- @include-static ../partials/base-fields.yml -->
+    <!-- @include-static ../partials/jumbotron.yml -->
+    - {label: Intro, name: body, widget: markdown }
+    - {label: "Image 1", name: "image_1", widget: "image"}
+    - {label: Copy Block 1, name: copy_block_1, widget: markdown }
+    - {label: "Image 2", name: "image_2", widget: "image"}
+    - {label: Copy Block 2, name: copy_block_2, widget: markdown }
+    - {label: "Image 3", name: "image_3", widget: "image"}

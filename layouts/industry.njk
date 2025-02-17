@@ -1,0 +1,43 @@
+{% extends "layout.njk" %}
+{% block body %}
+    <section class="ruled-headers section">
+        <div class="grid-2 vc">
+            <div>
+                <img src="{{image_1}}" class="img-responsive shadow img-1" alt="" />
+            </div>
+            <div class="ruled-headers">{{ contents | safe }}</div>
+        </div>
+    </section>
+    <div class="grid-2 ruled-headers bg-light full-col">
+        <div class="copy-col">
+            {{ secondary_copy | md }}
+        </div>
+        <div style="background-image:url('{{image_2}}');" class="img-col">&nbsp;</div>
+    </div>
+    <section class="section">
+        <br><br><h3 class="text-center ruled">Solutions for Your Industry</h3>
+        <div class="solutions">
+            {%- for item in solutions_for_industry -%}
+            {%- set solution  = item | findByField('title', solutions) -%}
+            <a data-duration class="solution-item" href="/{{solution.path}}" style="background-image:url('{{solution.thumbnail}}');"><span>{{solution.title}}</span></a>
+        {%- endfor -%}
+        </div>
+    </section>
+    <div class="bg-light">
+      {%- if related_products -%}
+        <section class="section">
+            <h3 class="ruled text-center">Duroair Products</h3><br><br>
+            <div class="grid-3 related-products">
+                {%- for p in related_products -%}
+                {%- set item  = p | findByField('title', products) -%}
+                {%- set cardCssClass  = 'card-product' -%}
+                {% include "partials/card.njk" %}
+                {%- endfor -%}
+            </div>
+        </section>
+        {%- endif -%}
+    </div>
+{% endblock %}
+{% block testimonial %}
+{% include "partials/testimonial.njk" %}
+{% endblock %}

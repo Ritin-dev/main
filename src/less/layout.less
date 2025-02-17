@@ -1,0 +1,52 @@
+main{
+    // padding:32px 0 ;
+    position: relative;
+}
+.container, .section {
+    max-width: 1284px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+
+    &.wide {
+        max-width: 1500px;
+    }
+}
+
+ .section{
+    padding: 56px 16px;
+    max-width: 1170px;
+    &.full{
+        padding-left:0;
+        padding-right:0;
+        max-width: none;
+    }
+    &.narrow{
+        max-width: 992px;
+        margin:auto;
+    }
+}
+.container {
+    padding: 0 16px;
+}
+
+@media screen and (min-width: @screen-sm-min) {
+    main{
+        // padding:112px 0;
+    }
+     .section {    
+        padding:72px 16px;
+    }
+    
+}
+
+@media screen and (min-width: @screen-md-min) {
+}
+@media screen and (min-width: @screen-lg-min) {
+    
+}
+
+.low-margin * {
+    margin-bottom: 0;
+}

@@ -1,0 +1,34 @@
+{% extends "layout.njk" %}
+{% set waveType = 'gray' %}
+{% block body %}
+<div class="bg-light">
+    <section class="section narrow">
+        <ul class="faq">
+                {% for q in questions %}
+                    <li class="faq-item">
+                        <h4 data-toggle="#q-{{loop.index}}" class="faq-question">Q: {{ q.question}}</h4>
+                        <div class="faq-answer" id="q-{{loop.index}}">{{ q.answer | md }}</div>
+                    </li>
+                {% endfor %}
+            </ul>
+    </section>
+</div>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {%- for q in questions -%}
+            {
+                "@type": "Question",
+                "name": "{{ q.question | escape}}",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "{{ q.answer | md | escape}}"
+                }
+            }{%- if not loop.last -%},{%- endif -%}
+            {%- endfor -%}
+        ]
+    }
+</script>
+{% endblock %}

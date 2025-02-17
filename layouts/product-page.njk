@@ -1,0 +1,405 @@
+{% extends "layout.njk" %}
+{% set waveType = 'gray' %}
+{% set hideFooterCta = true %}
+{% block additionalHead %}
+    <link rel="stylesheet" href="/css/product-page.css">
+    <link rel="preload" as="image" href="/img/product-pages/bg-air-wave.svg">
+{% endblock %}
+{% block body %}
+    <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+        <defs>
+            <symbol id="icon-replay" viewBox="0 0 512 512">
+                <path fill="#ffffff" d="M266.91 327.74v-37.32c-57.07 0-84.51 13.47-108.58 38.68-5.4 5.65-15 1.32-14.29-6.43 5.45-61.45 34.14-117.09 122.87-117.09v-37.32a8.32 8.32 0 0114-6L365.42 242a8.2 8.2 0 010 11.94L281 333.71a8.32 8.32 0 01-14.09-5.97z"/>
+                <path d="M64 256c0 106 86 192 192 192s192-86 192-192S362 64 256 64 64 150 64 256z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="32"/>
+            </symbol>
+        </defs>
+    </svg>
+    <div class="pp-container">
+        <a href="#get-started" class="sticky-btn">Contact Us</a>
+        <div id="top-bg">
+            <section class="section text-white pt-0">
+                <div class="text-center product-page-intro">
+                    <p class="leadin fade-in-left" data-on-view data-css-remove="fade-in-left">
+                        Duroair has designed and engineered the most flexible and efficient clean air systems in the market &mdash; the patented six-stage DuroPure™
+                        industrial air filtration system paired with the retractable DuroRoom™ enclosure creates a lean manufacturing layout where it is needed.
+                    </p>
+                    <p data-on-view data-css-remove="fade-in-right">
+                        Our plug-and-play modular system is designed to isolate processes in any work cell and filter hazards like hexavalent chromium, isocyanates, dust, or VOCs,
+                        ensuring worker safety, saving time, and maximizing your bottom line.
+                    </p>
+                </div>
+            </section>
+            <section class="portability">
+                <div data-on-view data-css-remove="fade-in-left">
+                    <h2 class="">Gain Flexibility</h2>
+                    <p class="copy w-sm">
+                        DuroRoom enclosures retract to provide easy access to overhead cranes. Say goodbye to costly moves and lengthy disruptions when moving oversized workpieces.
+                    </p>
+                </div>
+                <div class="portability-image lg:absolute media-container duration-5" data-css-remove="fade-in-right" data-on-view data-play="#portability-video">
+                    <img src="/img/product-pages/image-3-cleanrooms.png" width="900" alt="">
+                    <video id="portability-video" width="600" height="100%" loop muted playsinline class="">
+                        <source src="/media/uploads/top-video.mp4">
+                    </video>
+                </div>
+            </section>
+        </div>
+        <section class="time-and-money relative">
+            <img class="z-10" src="/img/product-pages/image-3-cleanrooms copy.jpg" data-on-view data-css-remove="fade-in-left" width="618" height="552" alt="">
+            <div class="flex-center lg:h-auto saves-money-block lg:absolute" data-on-view data-css-remove="fade-in-right">
+                <div>
+                    <h2>Save Money</h2>
+                    <p class="copy">
+                        No ductwork or air makeup is required with the DuroPure recirculating system. Treated air does not need to be vented, saving on heating, or cooling costs.
+                    </p>
+                </div>
+            </div>
+            <div class="lg:grid grid-cols-2 section -z-1">
+                <div class="bar-block" data-on-view data-css-add="inview">
+                    <div class="content">
+                        <h2>Save Time</h2>
+                        <p class="copy">
+                            Reduce bottlenecks. Retractable enclosures provide access to an overheard crane which means
+                            easier material handling.
+                        </p>
+                    </div>
+                </div>
+                <img data-on-view data-css-remove="fade-in-right" src="/media/uploads/save-time.jpg" width="660" height="624" alt="">
+            </div>
+        </section>
+        <section class="text-center">
+            <h2 data-on-view data-css-remove="fade-in-left">Increase Flexibility</h2>
+            <p class="copy" data-on-view data-css-remove="fade-in-right">
+                Integrate a DuroRoom around large workpieces. Retractable enclosures provide access to overhead cranes.
+            </p>
+            <div class="" data-on-view data-css-remove="fade-in">
+                <img src="/media/uploads/AZZ-enclosure-with-use-of-crane.jpg" width="1200" height="669" alt="">
+                {#                <img src="/img/product-pages/dur-201307-img.jpg" width="1485" height="677" alt=""> #}
+                {#                <video id="flexibility-video" width="100%" height="100%" muted playsinline controls class="" data-replay-btn> #}
+                {#                    <source src="/media/uploads/increase-flexibilty.mp4"> #}
+                {#                </video> #}
+                {#                <button class="replay-btn" onclick="document.getElementById('flexibility-video').play();this.classList.remove('active');"> #}
+                {#                    Replay #}
+                {#                    <svg width="20" height="20"> #}
+                {#                        <use href="#icon-replay"/> #}
+                {#                    </svg> #}
+                {#                </button> #}
+            </div>
+        </section>
+        <div class="bg-dark">
+            <section data-on-view data-css-add="inview" class="text-center">
+                <h2 data-on-view data-css-remove="fade-in-left">Maximize Space</h2>
+                <p class="copy" data-on-view data-css-remove="fade-in-right">
+                    DuroRoom enclosures retract to 20% of their extended length. Keep space productive. Retract an enclosure when not in use to use for other purposes.</p>
+                <div class="media-container" data-on-view data-css-remove="fade-in" data-play="#space-video">
+                    <img src="/img/product-pages/istockphoto-963533592-2048x2048.jpg" width="1280" height="711" alt="">
+                    <video id="space-video" width="100%" height="100%" muted controls loop playsinline class="">
+                        <source src="/media/uploads/maximize-space.mp4">
+                    </video>
+                </div>
+                <div class="section-padding-top">
+                    <h2 data-on-view data-css-remove="fade-in-left">Make the Work Day Easier</h2>
+                    <p class="copy" data-on-view data-css-remove="fade-in-right">
+                        A DuroRoom enclosure can be opened and closed with two people in minutes. Once retracted the enclosure can be stored at a fraction of its functional space.
+                    </p>
+                    <div class="media-container" data-on-view data-css-remove="fade-in" data-play="#break-down-video">
+                        <img src="/img/product-pages/Group 11.jpg" data-on-view data-css-remove="fade-in" width="1280" height="683" alt="">
+                        <video id="break-down-video" width="100%" height="100%" muted controls loop playsinline class="">
+                            <source src="https://res.cloudinary.com/industrial/video/upload/v1699310886/duroair/dmdbnuehlaiqurinbinv.mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section>
+            <div class="lg:grid grid-cols-2">
+                <div>
+                    <div class="bar-block h-auto" data-on-view data-css-add="inview">
+                        <div class="content">
+                            <h2>Stay Compliant</h2>
+                            <p class="copy">6 stages of air filtration meets and often exceeds your industry's clean air quality requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="/img/product-pages/028A1572.jpg" width="733" height="661" alt="" data-on-view data-css-remove="fade-in-right">
+            </div>
+            <div class="filter-block lg:absolute" data-on-view data-css-remove="fade-in-right">
+                <span>The Duroair system puts less expensive filters in front of more expensive ones to protect them and extend their life.</span>
+            </div>
+            <img class="filter-pic" src="/img/product-pages/028A1410.jpg" width="612" height="612" alt="" data-on-view data-css-remove="fade-in-left">
+        </section>
+
+
+        <section class="light-transfer-section">
+            <div class="light-transfer" data-on-view data-css-add="inview" class="compliant">
+                <div class="percent" data-on-view="" data-js="startPercent">
+                    <div class="number"><span data-target="95" data-speed="20" dat-increment="7">0</span>%</div>
+                </div>
+                <div class="range">
+                    {% for i in range(0,10) %}
+                        <div><span>{{ 100 - i*10 }}%</span></div>
+                    {% endfor %}
+                </div>
+                <div class="self-center text-content">
+                    <p class="copy" data-on-view data-css-remove="fade-in-right">
+                        The retractable enclosures use vinyl fabric with a 95% light transfer. Most enclosures do not require supplemental lighting.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="compliance">
+            <div class="lg:grid grid-cols-2 items-center">
+                <div class="bar-block" data-on-view data-css-add="inview">
+                    <div class="content">
+                        <h2>Compliance</h2>
+                        <strong>The six-stage DuroPure system meets compliance requirements of:</strong>
+                        Duroair also has 2, 3 and 4 stage air filtration systems for cleanrooms, corrosion control,
+                        coating, mechanical assembly, welding, dust collection and bonding processes.
+                    </div>
+                </div>
+
+                <div class="logos">
+                    <img src="/img/product-pages/US-OSHA-Logo.svg.jpg" width="296" height="86" alt="" data-on-view data-css-remove="fade-in-right">
+                    <img src="/img/product-pages/acgih_logos1-01.jpg" width="377" height="125" alt="" data-on-view data-css-remove="fade-in-right">
+                    <img src="/img/product-pages/EPA_logo.svg.jpg" width="297" height="91" alt="" data-on-view data-css-remove="fade-in-right">
+{#                    <img src="/img/product-pages/1200px-Seal_of_the_United_States_Environmental_Protection_Agency.svg.png" width="136" height="135" alt="" data-on-view data-css-remove="fade-in-up">#}
+                </div>
+            </div>
+        </section>
+
+        <div class="clean-air-bg text-white">
+            <section class="clean-air">
+                <div class="big-block w-md" data-on-view data-css-remove="fade-in-left">
+                    <h2>Bringing clean air to the workpiece</h2>
+                    <p>
+                        DuroRoom enclosures are flexible, and designed to contain processes where they are created in your
+                        plant workflow. With the right filtration, clean air is brought to the workpiece with no worry of
+                        complicated moves and risk of damage to large components.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <section>
+            <div class="relative ">
+                <div class="bar-block h-auto" data-on-view data-css-add="inview">
+                    <div class="content">
+                        <h2 class="m-0">Systems provide:</h2>
+                    </div>
+                </div>
+                <div class="provide-line hidden lg:block" data-on-view data-css-add="inview"></div>
+            </div>
+
+            <div class="lg:grid grid-cols-3 items-center text-center portable">
+                <img src="/img/product-pages/028A0854.jpg" class="mx-auto" width="385" height="368" alt="" data-on-view data-css-remove="fade-in-left">
+                <div class="relative" data-on-view data-css-remove="fade-in-down">
+                    <strong class="title">Flexibility</strong>
+                    <p>Move the enclosure not the workpiece.</p>
+                    <div class="vertical-line portable-line" data-on-view data-css-add="inview"></div>
+                </div>
+                <img src="/img/product-pages/028A0854 Copy.jpg" class="mx-auto" width="385" height="368" alt="" data-on-view data-css-remove="fade-in-right">
+            </div>
+            <strong class="title text-center">Streamlined Workflow</strong>
+            <p class="text-center">Need a controlled environment for mechanical assembly? Duroair can design a clean air
+                solution and integrate it into your plant layout.</p>
+        </section>
+        <div class="section-padding">
+            <div class="glide" data-on-view data-js="startCarousel">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+
+                        {%- set data = [
+                            {
+                                img:'/img/product-pages/dur-gallery-1---work-cells.jpg',
+                                copy:'Integrate a 3 in 1 enclosure into current work cells. The flexibility enables production needs to determine its use. Use as one large cell or as 2 or 3 smaller cells.'
+                            },
+                            {
+                                img:'/img/product-pages/dur-gallery-3---painting.jpg',
+                                copy:'Use one enclosure to prepare surfaces (composite repair, sanding, bonding) and then apply coatings.'
+                            }
+                        ] -%}
+                        {% for i in range(0,2) %}
+                            {% for s in data %}
+                                <li class="glide__slide">
+                                    <img src="{{ s.img }}" width="683" height="484" alt="">
+                                    <div>{{ s.copy }}</div>
+                                </li>
+                            {% endfor %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="carousel-btn prev" data-glide-dir="<">prev</button>
+                    <button class="carousel-btn next" data-glide-dir=">">next</button>
+                </div>
+            </div>
+
+
+        </div>
+        <section class="pb-0">
+            <div class="relative" style="height: 90px;">
+                <div class="vertical-line contained" data-on-view data-css-add="inview"></div>
+            </div>
+            <img src="/media/uploads/manufacturers-are-often-forced.jpg" width="1285" height="688" alt="">
+            <p class="mx-auto w-lg text-center">
+                Manufacturers are often forced to transport large pieces by dolly into a separate bay. This type of
+                movement may cause other workflows to temporarily stop, slowing work in progress. Instead, retract an
+                enclosure and move a large work piece in place by an overhead crane or easily position in place and
+                extend the room around the workpiece.</p>
+        </section>
+
+        <section class="pt-0">
+            <div class="relative" style="height: 90px;margin:20px 0;">
+                <div class="vertical-line" style="--h:90px;" data-on-view data-css-add="inview"></div>
+            </div>
+            <h2 class="title text-center">Retracts in minutes</h2>
+            <div class="media-container" data-on-view data-css-remove="fade-in">
+                <img src="/img/product-pages/Group 11.jpg" data-on-view data-css-remove="fade-in" width="1280" height="683" alt="">
+                <video id="portability-video" width="100%" height="100%" muted playsinline class="">
+                    <source src="/img/product-pages/test.mp4">
+                </video>
+            </div>
+            <p class="py-10 text-center mx-auto w-lg">
+                When painting and/or prep work is completed, the enclosure can be retracted and
+                stored at a fraction of its functional space. Or, can move to be used in an alternate location.
+            </p>
+        </section>
+
+        <div class="maximum-flexibility">
+            <div>
+                <section class="text-white" style="padding-bottom: 0">
+                    <div class="big-block" data-on-view data-css-remove="fade-in-left">
+                        <h2 class="">How it provides maximum flexibility</h2>
+                        <p>Duroair has taken its engineering ingenuity to a new level by designing a multi-chamber booth that accommodates up to three separate clean-air operations at the same time.</p>
+                    </div>
+                </section>
+                <div style="background-color: #0098c1;">
+                <section>
+                    <div class="">
+                        <div class="bar-block med h-auto" style="max-width: none" data-on-view data-css-add="inview">
+                            <div class="content">
+                                <h2 class="text-white">Setup Options</h2>
+                                <p class="text-white">
+                                    The three chambers can be used independently,
+                                    or one or both of the interior curtains can be opened so that one or two functions can be performed. Easily prep, paint, or coat three workpieces at the same time!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
+            </div>
+            <div class="bg-white">
+                <section>
+                    <div class="setup-list">
+                        <div data-on-view data-css-remove="fade-in-left">
+                            <strong>1-1-1 ratio for three separate operations.</strong>
+                            <p>In the case of prep work, painting, and coating, the workpiece is moved the shortest possible distance for the next function.</p>
+                            <img src="/img/product-pages/1-1-1.jpg" width="800" height="518" alt="">
+                        </div>
+                        <div data-on-view data-css-remove="fade-in-left">
+                            <strong>2-1 ratio for two operations.</strong>
+                            <p>This can eliminate or reduce backlogs, especially since some functions require more time than others.</p>
+                            <img src="/img/product-pages/2-1.jpg" width="800" height="518" alt="">
+                        </div>
+                        <div data-on-view data-css-remove="fade-in-left">
+                            <strong>1 single operation in the entire space.</strong>
+                            <p>This accommodates a larger workpiece, such as the wing of an aircraft, an entire wind turbine, or a large engine workpiece.</p>
+                            <img src="/img/product-pages/1.jpg" width="800" height="518" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section>
+                <div class="grid grid-cols-2 items-center opportunities">
+                    <div>
+                        <img src="/img/product-pages/028A1566.jpg" width="676" height="704" alt="" data-on-view data-css-remove="fade-in-left">
+                    </div>
+                    <div class="opportunities-copy w-md text-p20" data-on-view data-css-remove="fade-in-right">
+                        <h2 class="text-white">Workflow Opportunities</h2>
+                        <p class="light-blue light text-p28">The flexibility provides opportunities.</p>
+                        <p class="text-white">
+                            More easily manage multiple projects that all involve surface prep, sanding, painting and/or coating.
+                        </p>
+                        <p class="text-white">
+                            Eliminate outsourcing of one or more functions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="stages">
+            <div data-on-view data-js="particlesStart"></div>
+            <div id="canvas-container">
+                <div class="canvas-content">
+                    <h2 data-on-view data-css-remove="fade-in-left">How the 6-stage air <br>filtration system works</h2>
+                    <div class="w-lg mx-auto" data-on-view data-css-remove="fade-in-left">
+                        <h4>STAGES 1-3</h4>
+                        <p class="stage-copy">
+                            The first three stages capture particulates, including hexavalent chromium and particulate isocyanates. The air filtration system places less expensive filters in front of more expensive, technically-advanced filters to protect them and extend filter life.
+                        </p>
+                    </div>
+                    <div class="stage stage-1" data-on-view data-css-remove="fade-in-left">
+                        STAGE 1: captures particulates to 10 microns in size.
+                    </div>
+                    <div class="stage stage-2" data-on-view data-css-remove="fade-in-left">
+                        STAGE 2: captures particulates to 5 microns in size.
+                    </div>
+                    <div class="stage stage-3" data-on-view data-css-remove="fade-in-left">
+                        STAGE 3: captures particulates to 1 micron in size.
+                    </div>
+                    <div class="w-lg mx-auto" data-on-view data-css-remove="fade-in-left">
+                        <p class="stage-copy">The third stage filter can be changed to accommodate Merv15, HEPA, NESHAP 319 standards, depending upon needs. This provides the manufacturing flexibility to do different operations in the enclosure.</p>
+                    </div>
+                    <div id="canvas-line" data-on-view data-css-remove="fade-in-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="808" height="34" viewBox="0 0 808 34">
+                            <path fill="none" fill-rule="evenodd" stroke="#979797" stroke-linecap="square" d="M0 1h372.8l30.7 32.4L433.9 1H808"/>
+                        </svg>
+                    </div>
+                    <div class="w-lg mx-auto " data-on-view data-css-remove="fade-in-left">
+                        <h4>Stages 4-6</h4>
+                        <p class="stage-copy">
+                            The three-stage gas filtration process includes photocatalytic oxidation (PCO) and UV light to separate and destroy VOCs.
+                            Carbon adsorbs contaminants and UV light destroys VOCs.
+                        </p>
+                    </div>
+                    <div class="stage stage-4" data-on-view data-css-remove="fade-in-left">
+                        STAGE 4
+                    </div>
+                    <div class="stage  stage-5" data-on-view data-css-remove="fade-in-left">
+                        STAGE 5
+                    </div>
+                    <div class="stage stage-6" data-on-view data-css-remove="fade-in-left">
+                        STAGE 6
+                    </div>
+                </div>
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+
+        <div class="bg-primary  text-center">
+            <div class="bottom-number">
+                <h2 class="light-blue" style="font-size: 200px;" data-on-view data-js="startBottomPercent"><span id="bottom-percent" data-target="99" data-speed="20" dat-increment="7">0</span>%</h2>
+                <p class="p34 text-white w-lg mx-auto" data-on-view data-css-remove="fade-in-left">
+                    The system safely captures and destroys 99+ percent of airborne particulates, including:
+                </p>
+            </div>
+            <div class="capture-types p34 light-blue">
+                <div data-on-view data-css-remove="fade-in-right">
+                    Hexavalent chromium, Isocyanates, Volatile Organic Compounds
+                </div>
+            </div>
+        </div>
+        <section id="get-started">
+            <div class="form-container" style="max-width:660px;margin:auto; ">
+                <h4 class="h3 text-center">Contact Us</h4><br><br>
+                {% include "partials/hubspot-form.njk" %}
+            </div>
+        </section>
+    </div>
+{% endblock %}
+{% block additionalScripts %}
+    <script src="/js/product.page.js"></script>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "layout.njk" %}{% block body %}
+<div class="container">
+    <div class="blog">
+        <section class="section blog-section {{ image_alignment }}">
+            <article>
+                <h1 class="h3">{{title}}</h1>
+                {{ contents | safe }}
+            </article>
+            {% if cta %}
+                <div class="blog-cta">
+                    <div class="blog-cta-copy">
+                        {{cta.copy}}
+                    </div>
+                    <a href="{{cta.url}}" class="btn">{{cta.label}}</a>
+                </div>
+            {% endif %}
+        </section>
+        {% include "partials/blog-sidebar.njk" %}
+    </div>
+</div>
+{%- include 'partials/pagination-blocks.njk' -%}
+{% set grid = collection | getRelatedPosts(collections) %}
+{%- if grid and grid.length -%}
+    <section class="section">
+        <h3 class="text-center ruled">Related Posts</h3>
+        <br><br>
+        {% set grid = collection | getRelatedPosts(collections) %}
+        {% set gridCssClass = 'grid-3 related-posts' %}
+        {% set cardCssClass = 'simple'%}
+        {% set cardType = 'simple'%}
+        {% include "partials/grid.njk" %}
+    </section>
+{%- endif -%}
+<script type="application/ld+json">
+    { "@context": "http://schema.org", 
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{siteConfig.siteUrl}}/{{path}}"
+    },
+    "headline": "{{title}}",
+    "image": "{{siteConfig.siteUrl}}/{{img}}",
+    "publisher": {
+        "@type":"Organization",
+        "name" : "{{siteConfig.siteName}}",
+        "logo": {
+        "@type": "ImageObject",
+        "url": "{{siteConfig.siteUrl}}/img/logo.png"
+        }
+    },
+    "author":{
+        "@type":"Organization",
+        "name" : "{{siteConfig.siteName}}"
+    },
+    "url": "{{siteConfig.siteUrl}}/{{path}}",
+    "datePublished": "{{date}}",
+    "dateCreated": "{{date}}",
+    "dateModified": "{{date}}",
+    "articleBody": "{{ contents | escape }}"
+    }
+</script>
+{% endblock %}

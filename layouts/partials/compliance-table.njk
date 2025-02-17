@@ -1,0 +1,12 @@
+<table class="code-compliance">
+    <thead>
+        <th>Code Compliance</th>
+        <th>Code Description</th>
+    </thead>
+    {%- for item in compliance -%}
+    <tr>
+        <td><strong>{{item.code}}</strong></td>
+        <td>{{item.description}}</td>
+    </tr>
+    {%- endfor -%}
+</table>

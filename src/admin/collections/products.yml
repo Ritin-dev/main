@@ -1,0 +1,25 @@
+- name: "product"
+  label: "Products"
+  folder: "src/content/products"
+  create: true
+  fields:
+    <!-- @include-static ../partials/base-fields.yml -->
+    <!-- @include-static ../partials/jumbotron.yml -->
+    - {label: "Layout", name: "layout", widget: "hidden", default: "product.njk"}
+    - {label: "Permalink", name: "permalink", widget: "string", required: false}
+    - {label: "Product Image", name: "product_image", widget: "image", required: false}
+    - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+    - {label: "Short Description", name: "short_description", widget: "markdown"}
+    - {label: "Intro", name: "body", widget: "markdown"}
+    - {label: "Page Image 1", name: "image_1", widget: "image", required: false}
+    - {label: "Technical Specifications", name: "technical_specifications", widget: "markdown"}
+    - {label: "Key Features", name: "key_features", widget: "markdown"}
+    - {label: "Page Image 2", name: "image_2", widget: "image", required: false}
+    - name: compliance 
+      label: Compliance 
+      widget: list
+      fields:
+        - {label: Code, name: code, widget: string}
+        - {label: Description, name: description, widget: text}
+    - { label: Brochure, name: brochure, widget: file, required: false, allow_multiple: false}
+    - {label: "Download Button Label", name: "btn_label", widget: "string", default: "Download Brochure", required: false,}

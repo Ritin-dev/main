@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% include "partials/head.njk" %}
+    {% block additionalHead %}{% endblock %}
+</head>
+<body class="page-{{ path | cssClassify }} {{ layout | cssClassify }}">
+    {%- include "partials/gtm-noscript.njk" -%}
+    {% include "partials/header.njk" %}
+    {% include "partials/jumbotron.njk" %}
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+    {% block testimonial %}{% endblock %}
+    {% include "partials/footer-cta.njk" %}
+    {% include "partials/footer.njk" %}
+    {% block additionalScripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+- name: "about"
+  label: "About"
+  file: "src/content/about/index.md"
+  fields:
+    - {label: "Layout", name: "layout", widget: "hidden", default: "about.njk"}
+    <!-- @include-static ../partials/base-fields.yml -->
+    <!-- @include-static ../partials/nav-fields.yml -->
+    <!-- @include-static ../partials/jumbotron.yml -->
+    - {label: Intro, name: body, widget: markdown }
+    - {label: "Image", name: "image_1", widget: "image"}
+    - {label: Copy Block 1 , name: copy_block_1, widget: markdown }
+    - {label: "Image 2", name: "image_2", widget: "image"}
+    - name: cards 
+      label: Bottom Cards
+      widget: list
+      fields:
+        - {label: copy, name: copy, widget: markdown}
+        - {label: title, name: title, widget: string}
+        - {label: URL, name: url, widget: string}
+        - {label: "Image", name: "image", widget: "image"}

@@ -1,0 +1,35 @@
+{% extends "layout.njk" %}
+{% set additionalScript = '/js/vivus.min.js' %}
+{% block body %}
+    <section class="section">
+        <div class="grid-2 vc">
+            <div>
+                    <a data-vid="{{ 'https://www.youtube.com/watch?v=XcazObYMdro' | getYoutubeId}}"><img src="/img/image-1-how-we-work.jpg" class="img-responsive shadow img-1" /></a>
+            </div>
+            <div>
+                <h3 class="ruled">Always Engineered to Meet Your Production Goals</h3>
+                <p>Combining our innovative retractable enclosures with our advanced air filtration systems, a Duroair solution is a true end-to-end air filtration solution built to isolate, capture, and contain a wide variety of industrial processes.</p>
+                <p>Partnering with us means partnering with a solutions provider that is always responsive to the manufacturing reality of your lean production system. The result is a clean air solution that is <a href="/about/beyond-compliance">better for compliance</a>, better for overall employee health and safety, and better for your bottom line.</p>
+            </div>
+        </div>
+    </section>
+    <div class="bg-light">
+        <section class="section">
+            <h3 class="text-center ruled">Ensuring Your Requirements Come First</h3>
+            <div class="icon-block-container">
+                <div class="grid-2 center space-row" >
+                    {%- for b in blocks-%}
+                        <div class="icon-block">
+                            <object id="svg-{{loop.index}}" data-animate-svg="svg-{{loop.index}}" type="image/svg+xml" data="{{b.icon}}" alt="icon"></object>
+                            <br>
+                            {{b.copy}}
+                        </div>
+                    {%- endfor -%}
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
+{% block testimonial %}
+{% include "partials/testimonial.njk" %}
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "layout.njk" %}
+{% set waveType = 'gray' %}
+{% block body %}
+<div class="bg-light">
+<section class="section">
+    <div class="grid-2 vc">
+        <div>
+            <a data-vid="{{ 'https://www.youtube.com/watch?v=O1sUOCKsrZU' | getYoutubeId}}"><img src="{{image_1}}" class="img-responsive shadow image-1" alt="" /></a><br><br>
+        </div>
+        <div>
+            {{ contents | safe }}
+        </div>
+    </div>
+</section>
+</div>
+<section class=" full">
+    <div class="grid-2 ruled-headers  full-col">
+        <div class="copy-col">
+                {{ copy_block_1 | md }}
+        </div>
+        <div style="background-image:url('{{image_2}}');" class="img-col">&nbsp;</div>
+    </div>
+</section>
+<div class="bg-light">
+    <section class="section">
+        <h3 class="text-center ruled">Always Engineered, Never Off the Shelf</h3><br><br>
+        {%- for card in cards -%}
+        <div class="card card-horizontal" data-href="{{card.url}}">
+            <div class="card-img-container">
+                <img src="{{card.image}}" class="img-responsive card-img" alt="">
+            </div>
+            <div class="card-copy">
+                <h4 class="h3 pc">{{card.title}}</h4>
+                {{card.copy}}
+                <br><a href="{{card.url}}" class="link-learn-more card-link">Learn More</a>
+            </div>
+        </div>
+        {%- endfor %}
+    </section>
+</div>
+<section class="section">
+    <h3 class="ruled text-center">Solutions Delivered</h3>
+    <br><br>
+        {% include "partials/solutions-delivered.njk" %}
+</section>
+<section class="section">
+    <h3 class="ruled text-center">Duroair, a Nederman Company</h3>
+    <br><br>
+        {% include "partials/about-us-additional.njk" %}
+</section>
+{% endblock %}

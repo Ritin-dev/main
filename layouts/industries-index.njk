@@ -1,0 +1,15 @@
+{% extends "layout.njk" %}
+{% set waveType = 'gray' %}
+{% block body %}
+<div class="bg-light">
+<section class="section">
+    <div class="intro center">
+        <h2 class="ruled text-center">Solutions for Your Industry</h2>
+        From industrial air filtration to cellular manufacturing to non-destructive testing, Duroair engineers end-to-end solutions to shield your specific industry processes from dust or fumes that invite non-compliance fines, threaten employee safety, and derail productivity.
+    </div>
+    {% set grid = industries %}
+    {% set gridCssClass = 'grid-3 industries-grid' %}
+    {% include "partials/grid.njk" %}
+</section>
+</div>
+{% endblock %}

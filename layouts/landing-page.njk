@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% include "partials/head.njk" %}
+    </head>
+    <body class="page-{{ title | cssClassify }}  landing-page ">
+        {%- include "partials/gtm-noscript.njk" -%}
+        <div id="hero" class="{{waveType}} lp-hero">
+            <div class="container lp-logo-container">
+                <a class="header-logo" href="/" title="Duroair Home">{% include "partials/inline-svg-logo.njk" %}</a>
+            </div>
+            <div class="container lp-header">
+                <div class="jumbo-content">
+                    {# <div class="date">{{date}}</div> #}
+                    <h1 class="jumbotron-headline">{{ jumbotron.headline if jumbotron.headline else title }}</h1>
+                    <div class="jumbo-tagline">{{ jumbotron.tagline }}</div>
+                    <a href="#form-container" class="btn btn-default" data-ga-event="Button" data-ga-action="Click">{{jumbotron.ctaText if jumbotron.ctaText else 'Download Now' }}</a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        <section class="section lp-top">
+            <img src="{{header_img}}" alt="" class="img-responsive header-img">
+            <div class="grid-2">
+                <div class="lp-content">
+                    {{ contents | safe }}
+                </div>
+                <div class="form-container" id="form-container">
+                    <div class="form-intro">{{form_intro | md}}</div>
+                    {% include "partials/hubspot-form.njk" %}
+                </div>
+            </div>
+        </section>
+        {%- include "partials/colophon.njk" -%}
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        {% include "partials/footer-scripts.njk" %}
+    </body>
+</html>
