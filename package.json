@@ -8,7 +8,7 @@
         "start": "export NODE_ENV=dev; npm run build && netlify dev & dev:cms-proxy-server",
         "build": "npm run build:js && npm run build:css && npm run build:admin:config && npm run build:metalsmith && npm run build:product:page",
         "build:metalsmith": "node build.js && npm run build:public",
-         "build:public": "cp -R public/* build/",,
+        "build:public": "cp -R public/* build/",
         "build:admin:config": "node src/admin/preprocess.js src/admin/admin-template.yml public/admin/config.yml",
         "build:css": "lessc --js src/less/style.less public/css/style.css  --clean-css='--s0 --advanced'  --source-map && cp -R public/css build/",
         "build:product:page": "npm run build:product:page:css && npm run build:product:page:js",
