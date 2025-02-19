@@ -9,7 +9,7 @@
                 {%- set segments = page.url | split('/') -%}
                 {%- set pathAccumulator = '' -%}
                 {%- for segment in segments if segment -%}
-                    {%- set pathAccumulator = pathAccumulator + '/' + segment -%}
+
                     <li>
                         <a href="{{ pathAccumulator }}">{{ segment | capitalize }}</a>
                     </li>
