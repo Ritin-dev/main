@@ -3,18 +3,13 @@
 <div id="hero" style="background-image: url('{{heroImg}}');" class="{{waveType}}">
     <div class="container">
       <nav class="breadcrumb">
-        <a href="/">Home</a>
-        {% set pathSegments = page.url | replace("/", " ") | trim | split(" ") %}
-        {% set urlPath = "" %}
-        {% for segment in pathSegments %}
-            {% set urlPath = urlPath + "/" + segment %}
-            {% if loop.last %}
-                <span> &gt; {{ segment | replace("-", " ") | capitalize }}</span>
-            {% else %}
-                <span> &gt; <a href="{{ urlPath }}">{{ segment | replace("-", " ") | capitalize }}</a></span>
-            {% endif %}
-        {% endfor %}
-        </nav>
+        {% if page %}
+            <p>Page object exists</p>
+            <p>Page URL: {{ page.url }}</p>
+        {% else %}
+            <p>Page object is missing</p>
+        {% endif %}
+       </nav>
         <div class="jumbo-content">
             {% if jumbotron.subhead or jumbotron_subhead %}
             <div class="subhead">{{ jumbotron.subhead }}{{jumbotron_subhead}}</div>
