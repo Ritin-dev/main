@@ -1,3 +1,5 @@
+this is my buils.js file 
+
 const metalsmith = require("metalsmith");
 const permalinks = require("metalsmith-permalinks");
 const collections = require("metalsmith-collections");
@@ -14,14 +16,10 @@ const industrial = require("./lib/industrial.js");
 const initYoutubes = require("./lib/youtubes.js");
 const industrialPrivate = require("./lib/industrial.private.js");
 const adjustSitemap = require("./lib/industrial.adjust-sitemap.js");
-const lunr = require("metalsmith-lunr-index");
-const path = require("path");
-const fs = require("fs");
-
-console.log("Starting Metalsmith build...");
-console.time("build");
-
-// Template Engine Config
+const lunr = require('metalsmith-lunr-index');
+console.log('Staring Metalsmith build');
+console.time('build');
+//
 const templateConfig = {
     engineOptions: {
         filters: {
@@ -39,18 +37,17 @@ const templateConfig = {
         autoescape: false
     }
 };
-
-const now = new Date();
+const now = new Date(); 
 const siteBuild = metalsmith(__dirname)
     .metadata({
         modified: now,
         lastmod: now,
         year: now.getFullYear(),
         siteConfig: industrial.siteConfig,
-        site: {
-            title: "Duroair"
+        site:{
+            title: 'Duroair'
         },
-        env: process.env.NODE_ENV
+        env: process.env.NODE_ENV 
     })
     .source("./src/content/")
     .destination("./build/")
@@ -98,97 +95,65 @@ const siteBuild = metalsmith(__dirname)
                 refer: false
             }
         })
-    )
-    .use(
+    );
+    // if (process.env.NODE_ENV !== "dev") {
+    //     siteBuild.use(
+    //         tags({
+    //             posts: {
+    //                 path: "blog/tags/:tag.html",
+    //                 layout: "blog-index.njk",
+    //                 pathPage: "blog/tags/:tag/:num/index.html",
+    //                 perPage: 5
+    //             }
+    //         })
+    //     )
+    // }
+    
+    siteBuild.use(
         pagination({
             "collections.posts": {
                 perPage: 8,
                 layout: "blog-index.njk",
                 first: "blog/index.html",
                 path: "blog/:num/index.html",
-                filter: function (page) {
-                    return page.private != "true";
+                filter: function(page) {
+                    return page.private != 'true';
                 },
                 pageMetadata: {
-                    seo: {
-                        description:
-                            "The latest articles around end-to-end air quality solutions such as clean rooms and retractable enclosures."
+                    seo:{
+                        description:"The latest articles around end-to-end air quality solutions such as clean rooms and retractable enclosures."
                     }
                 }
             }
         })
     )
     .use(markdown())
-    .use(
-        permalinks({
-            relative: false,
-            pattern: ":slug/" // Forces URLs to be folders with index.html inside
-        })
-    )
+    .use(permalinks({ relative: false }))
     .use(industrial.plugin())
-    .use(
-        emailfeed({
-            collection: "posts",
-            site_url: process.env.SITE_URL || industrial.siteConfig.siteUrl,
-            template: "layouts/rss/email-rss.njk"
-        })
-    )
-    .use(
-        emailfeed({
-            collection: "posts",
-            site_url: industrial.siteConfig.siteUrl,
-            destination: "rss.xml"
-        })
-    )
+    .use(emailfeed({collection: 'posts', site_url:  process.env.SITE_URL || industrial.siteConfig.siteUrl, template: 'layouts/rss/email-rss.njk'}))
+    .use(emailfeed({collection: 'posts', site_url: industrial.siteConfig.siteUrl, destination:'rss.xml'}))
     .use(nav(industrial.siteConfig.navConfigs, industrial.siteConfig.navSettings))
     .use(layouts(templateConfig));
-
-// Search Indexing (Exclude certain pages)
-let searchPattern;
-if (process.env.NODE_ENV === "dev") {
-    searchPattern = ["*.html"];
-} else {
-    searchPattern = ["**/*.html", "!**/tags/**", "!**/?/*.html", "!404.html", "!privacy-policy/*", "!terms-conditions/*", "!resources/blog/*"];
-}
-
-siteBuild.use(
-    lunr({
-        pattern: searchPattern
-    })
-);
-
-// Sitemap Generation
-siteBuild.use(
-    sitemap({
-        frontmatterIgnore: "exclude_from_sitemap",
-        hostname: industrial.siteConfig.siteUrl,
-        omitIndex: true,
-        xslUrl: "/sitemap.xsl",
-        lastmod: now
-    })
-);
-
-// Debugging in Dev Mode
+    var searchPattern;
+    if (process.env.NODE_ENV === "dev") {
+        searchPattern = ['*.html'];
+    }else{
+        searchPattern = ['**/*.html','!**/tags/**','!**/?/*.html','!404.html','!privacy-policy/*','!terms-conditions/*','!resources/blog/*']
+    }
+        siteBuild.use(lunr({
+            pattern: searchPattern
+        }));
+        
+    siteBuild.use(sitemap({frontmatterIgnore:'exclude_from_sitemap', hostname:industrial.siteConfig.siteUrl, omitIndex: true, xslUrl:'/sitemap.xsl', lastmod:now  }));
 if (process.env.NODE_ENV === "dev") {
     siteBuild.use(debugUi.report());
 }
-
-// Final Sitemap Adjustments
-siteBuild.use(adjustSitemap.plugin());
-
-// Create `_redirects` file in the build folder
-siteBuild.use((files, metalsmith, done) => {
-    const redirectsPath = path.join(metalsmith.destination(), "_redirects");
-    fs.writeFileSync(redirectsPath, "/*    /index.html   200");
-    done();
-});
-
-// Build Process
-siteBuild.build(function (err, files) {
+siteBuild.use(adjustSitemap.plugin())
+siteBuild.build(function(err, files) {
     if (err) {
-        console.log("!!!!! Build Error:", err);
+        console.log("!!!!!", err);
     }
 
-    console.log("✅ Metalsmith build complete!");
-    console.timeEnd("build");
+    console.log("Metalsmith finished!",process.env.SITE_URL);
+    console.timeEnd('build');
 });
