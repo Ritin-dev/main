@@ -1,5 +1,3 @@
-this is my buils.js file 
-
 const metalsmith = require("metalsmith");
 const permalinks = require("metalsmith-permalinks");
 const collections = require("metalsmith-collections");
