@@ -9,7 +9,7 @@
         "start": "cross-env NODE_ENV=dev npm run build && netlify dev & npm run dev:cms-proxy-server",
 
         "build": "npm run ensure-build-dir && npm run build:js && npm run build:css && npm run build:admin:config && npm run build:metalsmith && npm run build:product:page",
-        "ensure-build-dir": "mkdir -p build",
+        "ensure-build-dir": "node -e \"require('fs').mkdirSync('build', { recursive: true })\",
 
         "build:metalsmith": "node build.js && npm run build:public",
         "build:public": "cp -R public/* build/",
