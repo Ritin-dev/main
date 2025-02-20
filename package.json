@@ -12,7 +12,7 @@
         "ensure-build-dir": "node -e \"require('fs').mkdirSync('build', { recursive: true })\"",
 
         "build:metalsmith": "node build.js && npm run build:public",
-        "build:public": "cp -R public/* build/",
+        "build:public": "mkdir -p build && cp -R public/* build/",
 
         "build:admin:config": "node src/admin/preprocess.js src/admin/admin-template.yml public/admin/config.yml",
 
