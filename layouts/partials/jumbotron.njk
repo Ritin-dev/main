@@ -7,6 +7,14 @@
             <ul class="breadcrumb">
                 <li><a href="/">Home</a></li>
                 {%- set segments = page.url | split('/') -%}
+                {%- set pathAccumulator = site.url -%} {# Ensure absolute URLs #}
+                {%- for segment in segments if segment -%}
+                {%- set pathAccumulator = pathAccumulator ~ '/' ~ segment -%}
+                <li>
+                <a href="{{ pathAccumulator | replace('//', '/') }}">{{ segment | capitalize }}</a>
+                </li>
+                {%- endfor -%}
+
             </ul>
         </nav>
         <div class="jumbo-content">
