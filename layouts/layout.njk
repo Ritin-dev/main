@@ -8,6 +8,7 @@
     {%- include "partials/gtm-noscript.njk" -%}
     {% include "partials/header.njk" %}
     {% include "partials/jumbotron.njk" %}
+    {% include "jumbotron.njk" with { page: page } %}
     <main>
         {% block body %}{% endblock %}
     </main>
