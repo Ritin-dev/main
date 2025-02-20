@@ -2,24 +2,6 @@
 {%- set heroImg = jumbotron.img if jumbotron.img else '/img/heros/hero-default.jpg' -%}
 <div id="hero" style="background-image: url('{{heroImg}}');" class="{{waveType}}">
     <div class="container">
-      {% if url and url != "/" %}
-    <nav class="breadcrumb">
-        <a href="/">Home</a>
-        {% set pathSegments = url | replace("/", " ") | trim | split(" ") %}
-        {% set urlPath = "" %}
-        {% for segment in pathSegments %}
-            {% if segment != "" %}
-                {% set urlPath = urlPath + "/" + segment %}
-                {% if loop.last %}
-                    <span> &gt; {{ segment | replace("-", " ") | capitalize }}</span>
-                {% else %}
-                    <span> &gt; <a href="{{ urlPath }}">{{ segment | replace("-", " ") | capitalize }}</a></span>
-                {% endif %}
-            {% endif %}
-        {% endfor %}
-    </nav>
-{% endif %}
-
         <div class="jumbo-content">
             {% if jumbotron.subhead or jumbotron_subhead %}
             <div class="subhead">{{ jumbotron.subhead }}{{jumbotron_subhead}}</div>
