@@ -6,16 +6,6 @@
 <nav aria-label="breadcrumb">
     <ul class="breadcrumb">
         <li><a href="/">Home</a></li>
-        {%- if page.url -%} {# Ensure page.url is not empty #}
-            {%- set segments = page.url | trim('/') | split('/') -%}
-            {%- set pathAccumulator = '' -%}  {# Start with an empty string #}
-            {%- for segment in segments if segment -%}
-                {%- set pathAccumulator = pathAccumulator ~ '/' ~ segment -%}
-                <li>
-                    <a href="{{ pathAccumulator | prepend: '/' }}">{{ segment | replace('-', ' ') | capitalize }}</a>
-                </li>
-            {%- endfor -%}
-        {%- endif -%}
     </ul>
 </nav>
         <div class="jumbo-content">
