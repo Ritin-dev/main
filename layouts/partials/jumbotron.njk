@@ -2,14 +2,7 @@
 {%- set heroImg = jumbotron.img if jumbotron.img else '/img/heros/hero-default.jpg' -%}
 <div id="hero" style="background-image: url('{{heroImg}}');" class="{{waveType}}">
     <div class="container">
-      <nav class="breadcrumb">
-        {% if page %}
-            <p>Page object exists</p>
-            <p>Page URL: {{ page.url }}</p>
-        {% else %}
-            <p>Page object is missing</p>
-        {% endif %}
-       </nav>
+      <p>URL: {{ url }}</p>
         <div class="jumbo-content">
             {% if jumbotron.subhead or jumbotron_subhead %}
             <div class="subhead">{{ jumbotron.subhead }}{{jumbotron_subhead}}</div>
