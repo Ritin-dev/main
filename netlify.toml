@@ -11,3 +11,9 @@ publish = "build" # If you use a _redirect file, provide the path to your static
 framework = "metalsmith"
 [context.dev]
 environment = { NODE_ENV = "dev"}
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
