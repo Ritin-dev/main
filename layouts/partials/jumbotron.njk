@@ -6,6 +6,14 @@
 <nav aria-label="breadcrumb">
     <ul class="breadcrumb">
         <li><a href="/">Home</a></li>
+        {%- set segments = page.url | split('/') -%}
+        {%- set pathParts = [] -%}
+        {%- for segment in segments if segment -%}
+            {%- set pathParts = pathParts.append(segment) -%}
+            <li>
+                <a href="/{{ pathParts | join('/') }}">{{ segment | capitalize }}</a>
+            </li>
+        {%- endfor -%}
     </ul>
 </nav>
         <div class="jumbo-content">
