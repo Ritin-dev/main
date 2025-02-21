@@ -3,6 +3,7 @@
 <div id="hero" style="background-image: url('{{heroImg}}');" class="{{waveType}}">
     <div class="container">
 {% if url %}
+<pre>Current URL: {{ url }}</pre>
     <nav class="breadcrumb">
         <a href="/">Home</a>
         {% for item in navs.primary %}
