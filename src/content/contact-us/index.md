@@ -1,7 +1,7 @@
 ---
 layout: form-page.njk
 title: Contact
-show_in_menu: 'false'
+show_in_menu: 'true'
 nav_sort: 5000
 hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
 redirectUrl: /contact-us/success/
