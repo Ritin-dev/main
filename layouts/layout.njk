@@ -7,7 +7,7 @@
 <body class="page-{{ path | cssClassify }} {{ layout | cssClassify }}">
     {%- include "partials/gtm-noscript.njk" -%}
     {% include "partials/header.njk" %}
-    {% include "partials/jumbotron.njk" with { url: page.file.path, navs: navs } %}
+    {% include "partials/jumbotron.njk" %}
     <main>
         {% block body %}{% endblock %}
     </main>
