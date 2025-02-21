@@ -2,7 +2,7 @@
 {%- set heroImg = jumbotron.img if jumbotron.img else '/img/heros/hero-default.jpg' -%}
 <div id="hero" style="background-image: url('{{heroImg}}');" class="{{waveType}}">
     <div class="container">
-        {% if url %}
+
     <nav class="breadcrumb">
         <a href="/">Home</a>
         {% for item in navs.primary %}
@@ -17,7 +17,6 @@
             {% endif %}
         {% endfor %}
     </nav>
-{% endif %}
 
         <div class="jumbo-content">
             {% if jumbotron.subhead or jumbotron_subhead %}
