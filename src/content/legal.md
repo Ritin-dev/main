@@ -3,7 +3,7 @@ layout: default.njk
 title: Terms Conditions
 nav_sort: 3000
 ---
-Copyright © 2025 Duroair Technologies Inc.
+<p class="copyright">Copyright © 2025 Duroair Technologies Inc.</p>
 
 #### Ownership of copyright
 
