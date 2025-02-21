@@ -1,7 +1,7 @@
 ---
 layout: form-page.njk
 title: Contact
-show_in_menu: 'true'
+show_in_menu: 'false'
 nav_sort: 5000
 hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
 redirectUrl: /contact-us/success/
@@ -12,9 +12,4 @@ form_intro: Contact Us
 ---
 
 ### Have Questions About Our Air Purification System?
-Use the contact form to request more information on how Duroair’s industrial air purification systems and clean air solutions deliver bottom-line benefits and EHS compliance peace of mind for such industries as aerospace & aviation, alternative energy, lean manufacturing, marine, metal fabrication, military & defense, stone cutting, and transportation.
-
-Please note that we engineer solutions specific to each customer’s needs, so we do not quote pricing on our website. 
-See our [FAQs](/resources/faq/) for more information. Need a pricing quote? Visit our [RFQ](/request-for-quote/) page to request a quote.
-
-You can also email us directly at info@duroair.com or call 888.730.0911.
+On 'The Path to Success,' you will encounter challenges and obstacles that test your resolve. But with determination and perseverance.
