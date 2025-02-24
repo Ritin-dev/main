@@ -50,7 +50,7 @@
     </div>
 </div>
 </footer>
-
+{%- include "partials/colophon.njk" -%}
 </div>
 {% if ettings[0].enabled %}
 
@@ -83,6 +83,6 @@
 </div>
 </div>
 {% endif %}
-{%- include "partials/colophon.njk" -%}
+
 {%- include "partials/schema.njk" -%}
 {% include "partials/footer-scripts.njk" %}
