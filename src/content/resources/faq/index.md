@@ -8,6 +8,8 @@ seo:
   page_title: Indoor Air Quality FAQ | Lean Production System
 nav_sort: 5000
 show_in_menu: "true"
+jumbotron:
+  img: /media/uploads/group-3769.png
 questions:
   - answer: >-
       Duroair’s patented [DuroPure™](/products/duropure) filtration technology
