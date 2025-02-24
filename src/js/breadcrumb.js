@@ -3,8 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!breadcrumbContainer) return;
 
     const pathArray = window.location.pathname.split('/').filter(Boolean);
-    let breadcrumbHTML = `<a href="/">Home</a>`;
 
+    // Hide breadcrumb on the homepage
+    if (pathArray.length === 0) {
+        breadcrumbContainer.style.display = "none";
+        return;
+    }
+
+    let breadcrumbHTML = `<a href="/">Home</a>`;
     let path = "";
 
     pathArray.forEach((segment, index) => {
