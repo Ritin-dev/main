@@ -1,6 +1,6 @@
 {% set title = "Blog" + ( " page " + pagination.num if pagination.num >1 else "") %}
 {{ "true" if foo else "false" }}
-{%- set hideJumbotronTitle = true -%}
+{%- set hideJumbotronTitle = false -%}
 {% extends "layout.njk" %}{% block body %}
 {% if tag %}
 {% set postsCollection = tags[tag] %}
