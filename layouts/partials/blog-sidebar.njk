@@ -13,7 +13,7 @@
             </script>
     </div>
     <br>
-    <h6>Recently Posted</h6>
+    <h6 style="width: 240px;border-bottom: 1px solid #D6D6D6;padding-bottom: 10px;">Latest Blogs</h6>
     <div class="recent-posts">
         {%- for p in posts.slice(0,3) -%}
         <div class="card-horizontal recent-post" data-href="/{{ p.path }}">
