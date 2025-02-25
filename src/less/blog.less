@@ -232,15 +232,30 @@ article {
     //featured blog post
     .blog-post-featured {
         min-height: 512px;
-        top: -580px;
+        // top: -580px;
         color: #fff;
         padding: 0 88px ;
 
+        p{
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            font-family: 'Inter';
+            color: #353535; 
+        }
+
         .title {
-            line-height: 1.1;
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: 600;
+            font-family: 'Inter';
+            color: #003A70;
         }
         .content {
-            max-width: 770px;
+            max-width: 650px;
+            background-color: #FFFFFFCC;
+            padding: 30px 40px;
+            border-radius: 40px;
         }
     }
     .related-posts {
@@ -294,8 +309,9 @@ article {
         left: 0;
         // top: -570px;
         margin-left: 32px;
-        position: absolute;
+        // position: absolute;
         transition: all 0.3s;
+        border-radius: 40px;
 
         &:hover {
         }
