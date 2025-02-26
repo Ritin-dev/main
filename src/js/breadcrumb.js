@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let path = "";
 
     pathArray.forEach((segment, index) => {
+        // Ignore numbers (pagination) and single blog post titles
+        if (!isNaN(segment) || (pathArray[0] === "blog" && index > 0)) return;
+
         path += `/${segment}`;
         const isLast = index === pathArray.length - 1;
         breadcrumbHTML += ` &raquo; ${
