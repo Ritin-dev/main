@@ -9,3 +9,6 @@ seo:
   page_title: Videos | Clean Air Lean Techniques
   description: Check out these videos to see how Duroair uses lean techniques to create adaptable, efficient, integral air filtration solutions for manufacturing and operations.
 ---
+## Explore Our Video Library
+
+Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo.
