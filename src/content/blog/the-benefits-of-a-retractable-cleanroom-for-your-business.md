@@ -1,16 +1,18 @@
 ---
 title: The Benefits of a Retractable Cleanroom
 seo:
-  description: >-
-    For those focused on creating lean, smart manufacturing environments,
-    retractable cleanrooms offer many benefits. Find out how they can help your
-    business.
+  description: For those focused on creating lean, smart manufacturing
+    environments, retractable cleanrooms offer many benefits. Find out how they
+    can help your business.
   page_title: The Benefits of a Retractable Cleanroom for Your Business
-short_description: >-
-  A retractable clean room is the secret ingredient to lean, smart manufacturing
-  environment.
-date: 2015-08-31
+jumbotron:
+  img: /media/uploads/image-27-.png
+small_image: /media/uploads/image-27-.png
+short_description: A retractable clean room is the secret ingredient to lean,
+  smart manufacturing environment.
 layout: blog-post.njk
+date: 2015-08-31
+image_alignment: images-left
 collection:
   - Clean Rooms
   - Painting & Coating
