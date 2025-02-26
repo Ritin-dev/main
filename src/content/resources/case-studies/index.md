@@ -8,5 +8,5 @@ seo:
   page_title: Case Studies | Lean Strategy
   description: Browse our Case Studies to learn how we've used lean strategy to develop clean air solutions responsive to manufacturers’ environmental, safety, and budgetary needs.
 ---
-## See Our Work
+## Real Results, Proven Solutions
 Browse our Case Studies to learn how we've engineered lean strategies to create clean air solutions responsive to manufacturers’ environmental, safety, and budgetary needs.
