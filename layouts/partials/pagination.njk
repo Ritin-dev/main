@@ -17,14 +17,13 @@
 
     {# Loop through all pages and generate numbered links #}
     <div class="custom-number-page">
-    {% for page in pagination.pages %}
-        {% set isActive = (page.path == pagination.current.path) %}
-        {% if isActive %}
-            <span class="pagination-number active">{{ loop.index }}</span>
-        {% else %}
-            <a href="/{{ page.path }}" class="pagination-number">{{ loop.index }}</a>
-        {% endif %}
-    {% endfor %}
+        {% for page in pagination.pages %}
+            {% if page.path == pagination.current.path %}
+                <span class="pagination-number active">{{ page.pageNumber }}</span>
+            {% else %}
+                <a href="/{{ page.path }}" class="pagination-number">{{ page.pageNumber }}</a>
+            {% endif %}
+        {% endfor %}
     </div>
 
     {% if pagination.next %}
