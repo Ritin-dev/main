@@ -8,3 +8,6 @@ seo:
   page_title: White Papers | Lean Thinking For Clean Air
   description: These whitepapers will help you understand the clean air challenges facing your manufacturing operations, and how lean thinking can bring you new, efficient solutions. 
 ---
+## Insights for Cleaner Air
+
+Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo.
