@@ -22,7 +22,7 @@
 {% set grid = collection | getRelatedPosts(collections) %}
 {%- if grid and grid.length -%}
     <section class="section">
-        <h3 class="text-center ruled">Related Posts</h3>
+        <h3 class="text-center ruled">More Posts You Might Like</h3>
         <br><br>
         {% set grid = collection | getRelatedPosts(collections) %}
         {% set gridCssClass = 'grid-3 related-posts' %}

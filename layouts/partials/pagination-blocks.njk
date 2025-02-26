@@ -1,6 +1,7 @@
 {%- set paginationBlockLabelType = paginationBlockLabelType if paginationBlockLabelType else 'post' -%}
 {%- set paginationBlockCollectionKey = paginationBlockCollectionKey if paginationBlockCollectionKey else 'posts' -%}
 <div class="pagination-blocks {% if not next or not previous-%}full{%- endif -%}">
+    <div class="custom-left-page-block">
     {% if not previous %}
         {%- set previous = collections[paginationBlockCollectionKey] | last -%}
     {% endif %} 
@@ -9,10 +10,11 @@
             <svg width="12px" height="12px" viewBox="0 0 28 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-19.000000, -20.000000)" fill="#FFFFFF"><g transform="translate(33.000000, 32.000000) scale(-1, 1) translate(-33.000000, -32.000000) translate(19.000000, 20.000000)"><polygon points="1.71322621 0 0 1.58252298 11.27822 12.0003197 0 22.4181164 1.71322621 24 14 12.6505928 14 11.3494072"></polygon><polygon points="15.7132262 0 14 1.58252298 25.27822 12.0003197 14 22.4181164 15.7132262 24 28 12.6505928 28 11.3494072"></polygon></g></g></g></svg>
             previous {{paginationBlockLabelType}}
         </span>
-        <span class="pagination-block-title">{{ previous.title}}</span>
-        <picture><img src="{{ previous.small_image}}" alt="" loading="lazy"/></picture>
     </a>
-    
+    <span class="pagination-block-title">{{ previous.title}}</span>
+    <picture><img src="{{ previous.small_image}}" alt="" loading="lazy"/></picture>
+    </div>
+    <div class="custom-right-page-block">
     {% if not next %}
         {%- set next = collections[paginationBlockCollectionKey] | first -%}
     {% endif %} 
@@ -21,7 +23,8 @@
             next {{paginationBlockLabelType}}
             <svg width="12px" height="12px" viewBox="0 0 28 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#FFFFFF"><g><polygon points="1.71322621 0 0 1.58252298 11.27822 12.0003197 0 22.4181164 1.71322621 24 14 12.6505928 14 11.3494072"></polygon><polygon points="15.7132262 0 14 1.58252298 25.27822 12.0003197 14 22.4181164 15.7132262 24 28 12.6505928 28 11.3494072"></polygon></g></g></g></svg>
         </span>
-        <span class="pagination-block-title">{{ next.title}}</span>
-        <picture><img src="{{ next.small_image}}" alt="" loading="lazy"/></picture>
     </a>
+    <span class="pagination-block-title">{{ next.title}}</span>
+        <picture><img src="{{ next.small_image}}" alt="" loading="lazy"/></picture>
+    </div>
 </div>
