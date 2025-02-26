@@ -78,8 +78,12 @@
         min-height: 450px !important;
         margin-bottom: -310px;
     }
-    .blog-section {
+    .page-blog .blog-section {
         padding-top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 .blog-section {
@@ -357,12 +361,13 @@ article {
 
 
 .card-horizontal.blog-post-item {
-        background: #fff;
-        box-shadow: 0px 11px 13px 0px #b7b7b7;
-        display: flex;
-        flex-direction: column;
-        border-radius: 40px;
-        padding: 25px 25px 40px 25px;
+    background: #fff;
+    box-shadow: 0 11px 13px 0 #b7b7b7;
+    display: flex;
+    width: 48%;
+    border-radius: 40px;
+    padding: 25px 25px 40px;
+    flex-direction: column;
 }
 
 
