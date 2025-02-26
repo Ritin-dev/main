@@ -14,11 +14,12 @@
                     <a href="{{cta.url}}" class="btn">{{cta.label}}</a>
                 </div>
             {% endif %}
+            {%- include 'partials/pagination-blocks.njk' -%}
         </section>
         {% include "partials/blog-sidebar.njk" %}
     </div>
 </div>
-{%- include 'partials/pagination-blocks.njk' -%}
+
 {% set grid = collection | getRelatedPosts(collections) %}
 {%- if grid and grid.length -%}
     <section class="section">
