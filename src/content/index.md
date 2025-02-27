@@ -8,7 +8,7 @@ seo:
 jumbotron:
   ctaText: Our Solutions
   ctaUrl: /solutions/
-  headline: Good for Compliance<br>Better for Your Bottom Line
+  headline: Flexibility to Control Your Environment
   tagline: The advantages of a healthy workforce go beyond keeping environmental
     regulators off your back. We engineer<br>flexible, end-to-end clean air
     solutions that meet EHS compliance, safeguard employees, and maximize
