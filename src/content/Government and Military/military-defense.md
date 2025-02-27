@@ -1,5 +1,5 @@
 ---
-title: Military & Defense
+title: Government and Military
 seo:
   description: Duroair modular industrial air filtration solutions bring clean air
     to each rapid-moving defense manufacturing operation.
