@@ -2,7 +2,7 @@
 layout: how-we-work.njk
 title: How We Work
 show_in_menu: 'true'
-nav_sort: 4000
+nav_sort: 2000
 jumbotron:
   img: /img/heros/hero-howwework.jpg
 seo:
