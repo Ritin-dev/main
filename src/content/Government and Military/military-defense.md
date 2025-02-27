@@ -4,7 +4,7 @@ seo:
   description: Duroair modular industrial air filtration solutions bring clean air
     to each rapid-moving defense manufacturing operation.
   page_title: Military & Defense Air Filtration Solutions
-nav_sort: 2600
+nav_sort: 3000
 show_in_menu: "true"
 jumbotron:
   img: /img/heros/hero-militarydefense.jpg
