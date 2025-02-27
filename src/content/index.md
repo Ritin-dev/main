@@ -6,8 +6,8 @@ seo:
     that meet EHS compliance, safeguard employees, and maximize productivity.
   page_title: "Industrial Air Solutions for Manufacturing Processes "
 jumbotron:
-  ctaText: Our Solutions
-  ctaUrl: /solutions/
+  ctaText: Request for quote
+  ctaUrl: /request-for-quote/
   headline: Flexibility to Control Your Environment
   tagline: The advantages of a healthy workforce go beyond keeping environmental
     regulators off your back. We engineer<br>flexible, end-to-end clean air
