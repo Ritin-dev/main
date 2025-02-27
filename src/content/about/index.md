@@ -7,7 +7,7 @@ seo:
     exact needs.
   page_title: About Us | Why Lean Manufacturing?
 nav_title: About
-nav_sort: 4500
+nav_sort: 5000
 show_in_menu: "true"
 jumbotron:
   img: /img/heros/hero-about.jpg
