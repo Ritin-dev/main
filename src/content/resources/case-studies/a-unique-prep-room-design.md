@@ -11,6 +11,7 @@ jumbotron:
   img: /img/case-study/Case-study_preproom.jpg
 layout: case-study.njk
 headline: Prototyping Material Flow for R&D Fabrications
+small_image:
 short_description: Modular air filtration solves R&D work-in-place and air makeup challenges.
 situation: >-
   A North American research and development facility of a U.S. based
