@@ -28,6 +28,7 @@
     - name: cta
       label: CTA
       widget: object
+      required: false
       hint: 'Optional cta'
       fields: 
         - {label: "Copy", name: "copy", widget: "string"}
