@@ -10,7 +10,7 @@
     - {label: "Layout", name: "layout", widget: "hidden", default: "case-study.njk"}
     - {label: "Permalink", name: "permalink", widget: "string", required: false}
     - {label: "Headline", name: "headline", widget: "string"}
-    - {label: "Small Image", name: "small_image", widget: "image", hint: "shows on blog overview/listing page  308px X 308px"}
+    - {label: "Small Image", name: "small_image", widget: "image", hint: "shows on case studies overview/listing page  308px X 308px"}
     - {label: "Short Description", name: "short_description", widget: "markdown"}
     - {label: "Situation", name: "situation", widget: "markdown"}
     - {label: "Situation image", name: "situation_image", widget: "image", required: false}
