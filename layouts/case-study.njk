@@ -5,8 +5,42 @@
     <h4>Situation</h4>
     {{ situation | md }}
 </section>
-{%- set solution_image = solution_image if solution_image else jumbotron.img -%}
-<div class="full-bg " style="background-image:url('{{solution_image}}');"></div>
+
+
+<div class="case-study-detail-imgs cmn-gap has-texture newtexturepos">
+                        <div class="texture">
+                            <img src="/img/shape-4.png" alt="Texture">
+                        </div>
+                        <div class="texture-2 texture">
+                            <img src="/img/shape-4.png" alt="Texture">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="case-study-detail-img-wrp">
+                                    <div class="case-study-detail-img">
+                                    {%- if main_image_1 -%}
+                                        <img src="{{ main_image_1 }}" alt="Case Study Detail Image">
+                                    {%- endif -%}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="case-study-detail-img-wrp">
+                                    <div class="case-study-detail-img small">
+                                        {%- if main_image_2 -%}
+                                        <img src="{{ main_image_2 }}" alt="Case Study Detail Image">
+                                        {%- endif -%}
+                                    </div>
+                                    <div class="case-study-detail-img">
+                                        {%- if main_image_3 -%}
+                                        <img src="{{ main_image_3 }}" alt="Case Study Detail Image">
+                                        {%- endif -%}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 <section class="section narrow custom">
     <h4>Solution</h4>
     {{ solution | md }}
