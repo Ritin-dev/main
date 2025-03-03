@@ -24,14 +24,24 @@
     <br><br>
     <div class="text-center"><a href="/about/beyond-compliance/" class="btn btn-outline">Learn More About Compliance</a></div>
 </section>
-<div class="bg-light">
-    <section class="section">
-        <div class="grid-2 vc">
-            <div> 
-                <img src="{{image_2}}" width="535" height="262" loading="lazy" class="img-responsive shadow grid-img" alt="Duroair" />
+    <!-- RESPONSIVE-REQUIREMENTS-SECTION -->
+        <div class="responsive-requirements-wrap">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="responsive-requirements-in">
+                    <div class="responsive-requirements-image"> 
+                        <img src="{{image_2}}" loading="lazy" class="img-responsive shadow grid-img" alt="Duroair" />
+                    </div>
+                    <div class="responsive-requirements-text">
+                        {{ copy_block_1 | md }}
+                    </div>
+                  </div>
+                </div>
             </div>
-            <div class="ruled-headers paddless-p">{{ copy_block_1 | md }}</div>
+            </div>
         </div>
+    <!-- RESPONSIVE-REQUIREMENTS-SECTION -->
     </section>
 </div>
 <section class="section">
@@ -44,8 +54,8 @@
                 </div>
                 </div>
                 <div class="col-lg-12">
-    {% include "partials/solutions-delivered.njk" %}
-    </div>
+                  {% include "partials/solutions-delivered.njk" %}
+                </div>
             </div>
             </div>
         </div>
