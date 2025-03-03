@@ -7,7 +7,7 @@
 </section>
 {%- set solution_image = solution_image if solution_image else jumbotron.img -%}
 <div class="full-bg " style="background-image:url('{{solution_image}}');"></div>
-<section class="section narrow">
+<section class="section narrow custom">
     <h4>Solution</h4>
     {{ solution | md }}
     {%- if results_image -%}    
