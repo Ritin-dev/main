@@ -14,6 +14,9 @@
     - {label: "Short Description", name: "short_description", widget: "markdown"}
     - {label: "Situation", name: "situation", widget: "markdown"}
     - {label: "Situation image", name: "situation_image", widget: "image", required: false}
+    - {label: "main image 1", name: "main_image_1", widget: "image", required: true}
+    - {label: "main image 2", name: "main_image_2", widget: "image", required: true}
+    - {label: "main image 3", name: "main_image_3", widget: "image", required: true}
     - {label: "Solution", name: "solution", widget: "markdown"}
     - {label: "Solution image", name: "solution_image", widget: "image", required: false}
     - {label: "Results", name: "results", widget: "markdown"}
