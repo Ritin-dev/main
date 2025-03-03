@@ -22,8 +22,8 @@ copy_block_1: >-
 
 
   <a href="/how-we-work/" class="btn btn-outline">How We Work</a>
-image_2: /img/home-image-2.jpg
-copy_block_2: >-
+image_2: /media/uploads/left-bg.png
+copy_block_2: new
 image_3: /img/home-image-3.jpg
 ---
 <h2 class="h3 block">Industries Walking the<br>Compliance Talk</h2>
