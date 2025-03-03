@@ -8,16 +8,36 @@
         <div class="ruled-headers">{{ contents | safe }}</div>
     </div>
 </section>
-<div class="bg-light">
-    <section class="section">
-        <br><br><strong class="h3  block text-center ruled">Industrial Air Solutions Engineered For Your Processes</strong>
-        <div class="solutions">
-            {%- for solution in solutions -%}
-            <a data-duration class="solution-item" href="/{{solution.path}}" style="background-image:url('{{solution.thumbnail}}');"><span>{{solution.title}}</span></a>
-        {%- endfor -%}
+
+<!-- CLEAN-AIR-APPLICATIONS-SECTION -->
+
+<div class="clean-air-app-wrap">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+        <div class="section-heading">
+            <h2>Clean Air Applications</h2>
         </div>
-    </section>
+        </div>
+        <div class="col-lg-12">
+        <div class="clean-air-app-grid row">
+            {%- for solution in solutions -%}
+            <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="clean-air-app-item">
+                <a href="/{{solution.path}}"> <span>{{solution.title}}</span>
+                <img src="{{solution.thumbnail}}" alt="Image">
+                <span class="btn-arw-icon"><img src="/img/arw-btn-icon.svg" alt="Icon"></span>
+                </a>
+            </div>
+            </div>
+            {%- endfor -%}
+        </div>
+        </div>
+    </div>
+    </div>
 </div>
+<!-- CLEAN-AIR-APPLICATIONS-SECTION -->
+
 <section class="section">
     <strong class="h3 block text-center">Beyond Compliance</strong><br><br>
     {%- include "partials/beyond-compliance-icon-blocks.njk" -%}
