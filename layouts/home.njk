@@ -37,38 +37,38 @@
                                 <div class="industries-grid-left">
                                     <div class="industries-grid-box">
                                         <div class="industries-grid-text">
-                                            <h2>{{ industry.data.title }}</h2>
-                                            <p>{{ industry.data.short_description }}</p>
-                                            <a href="{{ industry.data.permalink }}" class="button">Explore Now<span class="button__spotlight"></span></a>
+                                            <h2>{{ industry.title }}</h2>
+                                            <p>{{ industry.short_description }}</p>
+                                            <a href="{{ industry.path }}" class="button">Explore Now<span class="button__spotlight"></span></a>
                                         </div>
-                                        <img src="{{ industry.data.thumbnail }}" alt="{{ industry.data.title }}">
+                                        <img src="{{ industry.thumbnail }}" alt="{{ industry.title }}">
                                     </div>
                                 </div>
                                 <div class="industries-grid-right">
-                                    {%- if industry.data.text_1 and industry.data.image_1 -%}
+                                    {%- if industry.text_1 and industry.image_1 -%}
                                     <div class="industries-grid-box">
                                         <div class="industries-grid-text">
-                                            <h2>{{ industry.data.text_1 }}</h2>
+                                            <h2>{{ industry.text_1 }}</h2>
                                         </div>
-                                        <img src="{{ industry.data.image_1 }}" alt="{{ industry.data.text_1 }}">
+                                        <img src="{{ industry.image_1 }}" alt="{{ industry.text_1 }}">
                                     </div>
                                     {%- endif -%}
 
-                                    {%- if industry.data.text_2 and industry.data.image_2 -%}
+                                    {%- if industry.text_2 and industry.image_2 -%}
                                     <div class="industries-grid-box">
                                         <div class="industries-grid-text">
-                                            <h2>{{ industry.data.text_2 }}</h2>
+                                            <h2>{{ industry.text_2 }}</h2>
                                         </div>
-                                        <img src="{{ industry.data.image_2 }}" alt="{{ industry.data.text_2 }}">
+                                        <img src="{{ industry.image_2 }}" alt="{{ industry.text_2 }}">
                                     </div>
                                     {%- endif -%}
 
                                     {%- if industry.data.text_3 and industry.data.image_3 -%}
                                     <div class="industries-grid-box">
                                         <div class="industries-grid-text">
-                                            <h2>{{ industry.data.text_3 }}</h2>
+                                            <h2>{{ industry.text_3 }}</h2>
                                         </div>
-                                        <img src="{{ industry.data.image_3 }}" alt="{{ industry.data.text_3 }}">
+                                        <img src="{{ industry.image_3 }}" alt="{{ industry.text_3 }}">
                                     </div>
                                     {%- endif -%}
                                 </div>
