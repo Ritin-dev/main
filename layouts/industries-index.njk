@@ -46,11 +46,7 @@
                 <div class="indsoution-card-wrp col-lg-4">
                     {%- for industry in industries -%}
                         {%- if loop.index <= 2 -%}
-                            <div class="indsolution-card">
-                                <img src="{{ industry.thumbnail }}" alt="{{ industry.title }}">
-                                <h3>{{ industry.title }}</h3>
-                                <a href="{{ industry.path }}" class="button">Explore More</a>
-                            </div>
+                            {% include "partials/industry.njk" %}
                         {%- endif -%}
                     {%- endfor -%}
                 </div>
@@ -58,11 +54,7 @@
                 <div class="indsoution-card-wrp col-lg-4">
                     {%- for industry in industries -%}
                         {%- if loop.index > 2 and loop.index <= 5 -%}
-                            <div class="indsolution-card">
-                                <img src="{{ industry.thumbnail }}" alt="{{ industry.title }}">
-                                <h3>{{ industry.title }}</h3>
-                                <a href="{{ industry.path }}" class="button">Explore More</a>
-                            </div>
+                            {% include "partials/industry.njk" %}
                         {%- endif -%}
                     {%- endfor -%}
                 </div>
@@ -70,11 +62,7 @@
                 <div class="indsoution-card-wrp col-lg-4">
                     {%- for industry in industries -%}
                         {%- if loop.index > 5 -%}
-                            <div class="indsolution-card">
-                                <img src="{{ industry.thumbnail }}" alt="{{ industry.title }}">
-                                <h3>{{ industry.title }}</h3>
-                                <a href="{{ industry.path }}" class="button">Explore More</a>
-                            </div>
+                            {% include "partials/industry.njk" %}
                         {%- endif -%}
                     {%- endfor -%}
                 </div>
