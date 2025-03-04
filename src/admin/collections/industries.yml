@@ -12,6 +12,7 @@
     - {label: "Thumbnail", name: "thumbnail", widget: "image", required: true}
     - {label: "Body Image 1", name: "image_1", widget: "image", required: false}
     - {label: "Body Image 2", name: "image_2", widget: "image", required: false}
+    - {label: "Body Image 3", name: "image_3", widget: "image", required: false}
     - {label: "Permalink", name: "permalink", widget: "string", required: false}
     - {label: "Short Description", name: "short_description", widget: "text", 'hint':'shows on cards and summaries'}
     - {label: "Copy Block 1", name: "body", widget: "markdown", 'hint':'shows at top of page'}
