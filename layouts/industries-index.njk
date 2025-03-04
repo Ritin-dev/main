@@ -116,56 +116,7 @@
 
 <!-- End of Indus Solution Section -->
 
-<!-- Case Studies Section Begin -->
-<div class="case-study-sec">
-    <div class="container">
-        <div class="case-study-inr">
-            <div class="sec-head">
-                <h2>Case Studies</h2>
-            </div>
-            <div class="row">
-                <div class="case-study-slider-wrp">
-                    <div class="case-study-slider">
-                        {%- for case-study in case-studies -%}
-                        <div class="casesl-item">
-                            <div class="cs-item-inr">
-                                <div class="csitem-img">
-                                    <img src="{{ case-study.thumbnail }}" alt="{{ case-study.title }}">
-                                </div>
-                                <div class="case-sdy-content">
-                                    <h3>{{ case-study.title }}</h3>
-                                    <a href="/{{ case-study.permalink }}" class="arw-btn-icon">
-                                        <img src="images/arw-btn-icon.svg" alt="Icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        {%- endfor -%}
-                    </div>
-                </div>
-                <div class="case-study-nav-slider-wrp">
-                    <div class="cstdy-slider-nav-inr-wrp">
-                        <div class="csstdy-nav-slider cmnslider">
-                            {%- for case-study in case-studies -%}
-                            <div class="csstdy-slider-item">
-                                <div class="csstdy-item-inr">
-                                    <div class="csstdyitem-img">
-                                        <img src="{{ case-study.thumbnail }}" alt="{{ case-study.title }}">
-                                    </div>
-                                    <div class="csstdynv-content">
-                                        <h3>{{ case-study.title }}</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            {%- endfor -%}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Of Case Studies Section -->
+
 
 
 
