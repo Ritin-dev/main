@@ -34,6 +34,10 @@
   <!-- End Of Industries Section -->
 
   <!-- Indus Solution Section begin -->
+{%- assign col1 = industries | slice: 0, 2 -%}  {# First 2 items #}
+{%- assign col2 = industries | slice: 2, 3 -%}  {# Next 3 items #}
+{%- assign col3 = industries | slice: 5, 2 -%}  {# Last 2 items #}
+
 <div class="ind-solution-sec">
     <div class="container">
         <div class="ind-solution-inr has-texture">
@@ -42,33 +46,33 @@
                 <h2>Solutions for Your Industry</h2>
             </div>
             <div class="indsolution-cards-row row">
-                {%- assign industry_groups = industries | each_slice: 2, 3, 2 -%}
 
-                {%- for group in industry_groups -%}
+                {# First Column (2 items) #}
                 <div class="indsoution-card-wrp col-lg-4">
-                    {%- for industry in group -%}
-                    <div class="indsolution-card">
-                        <div class="indsolution-img">
-                            <img src="{{ industry.thumbnail }}" alt="{{ industry.title }}">
-                            <h3>{{ industry.title }}</h3>
-                        </div>
-                        <div class="onhvr-card">
-                            <div class="indsolutiononhvr-cntnt">
-                                <div class="h3-title">{{ industry.title }}</div>
-                                <p>{{ industry.short_description }}</p>
-                            </div>
-                            <a href="/{{ industry.path }}" class="button">Explore More
-                                <span class="button__spotlight"></span>
-                            </a>
-                        </div>
-                    </div>
+                    {%- for industry in col1 -%}
+                        {% include 'industry-card.njk' %}
                     {%- endfor -%}
                 </div>
-                {%- endfor -%}
+
+                {# Second Column (3 items) #}
+                <div class="indsoution-card-wrp col-lg-4">
+                    {%- for industry in col2 -%}
+                        {% include 'industry-card.njk' %}
+                    {%- endfor -%}
+                </div>
+
+                {# Third Column (2 items) #}
+                <div class="indsoution-card-wrp col-lg-4">
+                    {%- for industry in col3 -%}
+                        {% include 'industry-card.njk' %}
+                    {%- endfor -%}
+                </div>
+
             </div>
         </div>
     </div>
 </div>
+
 <!-- End of Indus Solution Section -->
 
 
