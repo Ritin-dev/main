@@ -32,6 +32,46 @@
     </div>
 
   <!-- End Of Industries Section -->
+
+  <!-- Indus Solution Section begin -->
+<div class="ind-solution-sec">
+    <div class="container">
+        <div class="ind-solution-inr has-texture">
+            <div class="texture"><img src="images/curved-bg.svg" alt="Texture"></div>
+            <div class="sec-head">
+                <h2>Solutions for Your Industry</h2>
+            </div>
+            <div class="indsolution-cards-row row">
+                {%- assign industry_groups = industries | each_slice: 2, 3, 2 -%}
+
+                {%- for group in industry_groups -%}
+                <div class="indsoution-card-wrp col-lg-4">
+                    {%- for industry in group -%}
+                    <div class="indsolution-card">
+                        <div class="indsolution-img">
+                            <img src="{{ industry.thumbnail }}" alt="{{ industry.title }}">
+                            <h3>{{ industry.title }}</h3>
+                        </div>
+                        <div class="onhvr-card">
+                            <div class="indsolutiononhvr-cntnt">
+                                <div class="h3-title">{{ industry.title }}</div>
+                                <p>{{ industry.short_description }}</p>
+                            </div>
+                            <a href="/{{ industry.path }}" class="button">Explore More
+                                <span class="button__spotlight"></span>
+                            </a>
+                        </div>
+                    </div>
+                    {%- endfor -%}
+                </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Indus Solution Section -->
+
+
     {% set grid = industries %}
     {% set gridCssClass = 'grid-3 industries-grid' %}
     {% include "partials/grid.njk" %}
