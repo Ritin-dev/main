@@ -34,10 +34,6 @@
   <!-- End Of Industries Section -->
 
   <!-- Indus Solution Section begin -->
-{%- assign col1 = industries | slice: 0, 2 -%}  {# First 2 items #}
-{%- assign col2 = industries | slice: 2, 3 -%}  {# Next 3 items #}
-{%- assign col3 = industries | slice: 5, 2 -%}  {# Last 2 items #}
-
 <div class="ind-solution-sec">
     <div class="container">
         <div class="ind-solution-inr has-texture">
@@ -49,22 +45,28 @@
 
                 {# First Column (2 items) #}
                 <div class="indsoution-card-wrp col-lg-4">
-                    {%- for industry in col1 -%}
-                        {% include "partials/industry-card.njk" %}
+                    {%- for industry in industries -%}
+                        {%- if forloop.index <= 2 -%}
+                            {% include "partials/industry-card.njk" %}
+                        {%- endif -%}
                     {%- endfor -%}
                 </div>
 
                 {# Second Column (3 items) #}
                 <div class="indsoution-card-wrp col-lg-4">
-                    {%- for industry in col2 -%}
-                        {% include "partials/industry-card.njk" %}
+                    {%- for industry in industries -%}
+                        {%- if forloop.index > 2 and forloop.index <= 5 -%}
+                            {% include "partials/industry-card.njk" %}
+                        {%- endif -%}
                     {%- endfor -%}
                 </div>
 
                 {# Third Column (2 items) #}
                 <div class="indsoution-card-wrp col-lg-4">
-                    {%- for industry in col3 -%}
-                        {% include "partials/industry-card.njk" %}
+                    {%- for industry in industries -%}
+                        {%- if forloop.index > 5 -%}
+                            {% include "partials/industry-card.njk" %}
+                        {%- endif -%}
                     {%- endfor -%}
                 </div>
 
