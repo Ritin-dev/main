@@ -13,14 +13,14 @@
                 <div class="industries-in">
                     <!-- TAB-SLIDER -->
                     <ul class="nav nav-pills tab-slider" id="pills-tab" role="tablist">
-                        {%- for industry in collections.industry -%}
+                        {%- for industry in industries -%}
                         <div>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link {% if loop.first %} active {% endif %}" id="pills-{{ loop.index }}-tab"
                                     data-bs-toggle="pill" data-bs-target="#pills-{{ loop.index }}" type="button"
                                     role="tab" aria-controls="pills-{{ loop.index }}" 
                                     aria-selected="{{ 'true' if loop.first else 'false' }}">
-                                    {{ industry.data.title }}
+                                    {{ industry.title }}
                                 </button>
                             </li>
                         </div>
