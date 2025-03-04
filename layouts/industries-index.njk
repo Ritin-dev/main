@@ -43,30 +43,35 @@
             </div>
             <div class="indsolution-cards-row row">
 
-                {# First Column (2 items) #}
+                {%- assign col1 = [] -%}
+                {%- assign col2 = [] -%}
+                {%- assign col3 = [] -%}
+
+                {%- for industry in industries -%}
+                    {%- if forloop.index <= 2 -%}
+                        {%- assign col1 = col1 | push: industry -%}
+                    {%- elsif forloop.index <= 5 -%}
+                        {%- assign col2 = col2 | push: industry -%}
+                    {%- else -%}
+                        {%- assign col3 = col3 | push: industry -%}
+                    {%- endif -%}
+                {%- endfor -%}
+
                 <div class="indsoution-card-wrp col-lg-4">
-                    {%- for industry in industries -%}
-                        {%- if forloop.index <= 2 -%}
-                            {% include "partials/industry-card.njk" %}
-                        {%- endif -%}
+                    {%- for industry in col1 -%}
+                        {% include"partials/'industry-card.njk" %}
                     {%- endfor -%}
                 </div>
 
-                {# Second Column (3 items) #}
                 <div class="indsoution-card-wrp col-lg-4">
-                    {%- for industry in industries -%}
-                        {%- if forloop.index > 2 and forloop.index <= 5 -%}
-                            {% include "partials/industry-card.njk" %}
-                        {%- endif -%}
+                    {%- for industry in col2 -%}
+                        {% include "partials/industry-card.njk" %}
                     {%- endfor -%}
                 </div>
 
-                {# Third Column (2 items) #}
                 <div class="indsoution-card-wrp col-lg-4">
-                    {%- for industry in industries -%}
-                        {%- if forloop.index > 5 -%}
-                            {% include "partials/industry-card.njk" %}
-                        {%- endif -%}
+                    {%- for industry in col3 -%}
+                        {% include "partials/industry-card.njk" %}
                     {%- endfor -%}
                 </div>
 
