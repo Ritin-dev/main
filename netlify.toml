@@ -17,3 +17,9 @@ environment = { NODE_ENV = "dev"}
   to = "/index.html"
   status = 200
 
+[[redirects]]
+  from = "/js/*"
+  to = "/js/:splat"
+  status = 200
+
+
