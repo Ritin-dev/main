@@ -373,6 +373,44 @@ collections:
           - {label: "Image 2", name: "image_2", widget: "image"}
           - {label: Copy Block 2, name: copy_block_2, widget: markdown }
           - {label: "Image 3", name: "image_3", widget: "image"}
+      - name: "Goverment and military"
+        label: "Govermant And Miltary"
+        file: "src/content/goverment-and-military/index.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "goverment-and-military.njk"}
+          - {label: "Title", name: "title", widget: "string"}
+          - label: SEO
+            name: "seo"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Page Title", name: "page_title", widget: "string", required: false, 'hint':'Will be suffixed with " | Duroair"'}
+              - {label: "Page Description", name: "description", widget: "string", required: false}
+              - {label: "No index, no follow", name: "noindex", widget: "boolean", required: false}
+          - label: "Show in nav?"
+            name: "show_in_menu"
+            widget: "select"
+            required: false
+            options:
+              - { label: "Yes", value: "true" }
+              - { label: "No", value: "false" }    
+          - label: "Hero"
+            name: "jumbotron"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Headline", name: "headline", widget: "string", required: false, "hint":"This is used as the 'short title' on blogs, case studies, etc."}
+              - {label: "Tagline", name: "tagline", widget: "string", required: false}
+              - {label: "CTA Url", name: "ctaUrl", widget: "string", required: false}
+              - {label: "CTA Label", name: "ctaText", widget: "string", required: false}
+              - {label: "Image", name: "img", widget: "image", 'hint':"1400 x 420", required: false}
+          - {label: Intro, name: body, widget: markdown }
+          - {label: "Image 1", name: "image_1", widget: "image"}
+          - {label: Copy Block 1, name: copy_block_1, widget: markdown }
+          - {label: "Image 2", name: "image_2", widget: "image"}
+          - {label: Copy Block 2, name: copy_block_2, widget: markdown }
+          - {label: "Image 3", name: "image_3", widget: "image"}
+
       - name: "leadership"
         label: "Leadership"
         file: "src/content/about/leadership/index.md"
