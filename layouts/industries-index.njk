@@ -78,7 +78,7 @@
                                         <div class="h3-title">{{ industry.title }}</div>
                                         <p>{{ industry.description }}</p>
                                     </div>
-                                    <a href="{{ industry.permalink }}" class="button">Explore More
+                                    <a href="{{ industry.path }}" class="button">Explore More
                                         <span class="button__spotlight"></span>
                                     </a>
                                 </div>
@@ -116,7 +116,11 @@
 
 <!-- End of Indus Solution Section -->
 
-
+{%- for case-study in case-studies -%}
+    <p>Title: {{ case-study.title }}</p>
+{%- else -%}
+    <p>No case studies found.</p>
+{%- endfor -%}
 
 
 
