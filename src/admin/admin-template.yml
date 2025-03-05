@@ -17,7 +17,6 @@ collections:
     name: "pages"
     files:
       <!-- @include collections/home.yml -->
-      <!-- @include collections/goverment-and-military.yml -->
       <!-- @include collections/leadership.yml -->
       <!-- @include collections/faq.yml -->
       <!-- @include collections/beyond-compliance.yml -->
