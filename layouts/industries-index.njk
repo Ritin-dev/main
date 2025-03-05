@@ -116,9 +116,58 @@
 
 <!-- End of Indus Solution Section -->
 
-{%- for caseStudy in caseStudies -%}
-    <p>Title: {{ caseStudy.title }}</p>
-{%- endfor -%}
+<!-- Case Studies Section Begin -->
+
+<div class="case-study-sec">
+    <div class="container">
+        <div class="case-study-inr">
+            <div class="sec-head">
+                <h2>Case Studies</h2>
+            </div>
+            <div class="row">
+                <div class="case-study-slider-wrp">
+                    <div class="case-study-slider">
+                        {%- for caseStudy in caseStudies -%}
+                        <div class="casesl-item">
+                            <div class="cs-item-inr">
+                                <div class="csitem-img">
+                                    <img src="{{ caseStudy.thumbnail }}" alt="{{ caseStudy.title }}">
+                                </div>
+                                <div class="case-sdy-content">
+                                    <h3>{{ caseStudy.title }}</h3>
+                                    <a href="/{{ caseStudy.path }}" class="arw-btn-icon">
+                                        <img src="/img/arw-btn-icon.svg" alt="Icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {%- endfor -%}
+                    </div>
+                </div>
+                <div class="case-study-nav-slider-wrp">
+                    <div class="cstdy-slider-nav-inr-wrp">
+                        <div class="csstdy-nav-slider cmnslider">
+                            {%- for caseStudy in caseStudies -%}
+                            <div class="csstdy-slider-item">
+                                <div class="csstdy-item-inr">
+                                    <div class="csstdyitem-img">
+                                        <img src="{{ caseStudy.thumbnail }}" alt="{{ caseStudy.title }}">
+                                    </div>
+                                    <div class="csstdynv-content">
+                                        <h3>{{ caseStudy.title }}</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            {%- endfor -%}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Of Case Studies Section -->
+
 
 
 
