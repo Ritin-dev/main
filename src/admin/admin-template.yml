@@ -17,6 +17,7 @@ collections:
     name: "pages"
     files:
       <!-- @include collections/home.yml -->
+      <!-- @include collections/goverment-and-military.yml -->
       <!-- @include collections/leadership.yml -->
       <!-- @include collections/faq.yml -->
       <!-- @include collections/beyond-compliance.yml -->
@@ -24,6 +25,7 @@ collections:
       <!-- @include collections/products-overview.yml -->
       <!-- @include collections/industry-associations.yml -->
       <!-- @include collections/resources.yml -->
+      
   - label: "Site"
     name: "site"
     files:
