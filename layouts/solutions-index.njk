@@ -4,6 +4,73 @@
     <!-- Solution process section Begin -->
         {{ contents | safe }}
     <!-- End Of Solution process section -->
+
+    <!-- INDUSTRIES-SECTION -->
+        <div class="solution-products-sec solution-pg">
+            <div class="container">
+                <div class="solutions-product-inr">
+                    <div class="sec-head noline">
+                        <h2>Solutions Powered by Duroair Products</h2>
+                        <p>Each Duroair product integrates seamlessly with specific solution needs, addressing compliance, safety, and operational challenges.</p>
+                    </div>
+
+                    <div class="slnpr-tab-wrp cmnslider">
+                        <div class="slnpr-tab-head-wrp">
+                            <ul>
+                                {%- for solution in solutions -%}
+                                <li class="{% if loop.first %}active{% endif %}">{{ solution.title }}</li>
+                                {%- endfor -%}
+                            </ul>
+                        </div>
+
+                        <div class="slnpr-tab-items-wrp">
+                            {%- for solution in solutions -%}
+                            <div class="slnpr-tab-item {{ solution.slug }}">
+                                <div class="slnprt-item-inr row">
+                                    <!-- Solution Data -->
+                                    <div class="slnprt-item-lg">
+                                        <div class="slnprt-item-lg-inr">
+                                            <div class="slnprti-img">
+                                                <img src="{{ solution.image }}" alt="{{ solution.title }}">
+                                                <h3>{{ solution.title }}</h3>
+                                            </div>
+                                            <div class="slnprt-conent">
+                                                <div class="h3-title">{{ solution.title }}</div>
+                                                <p>{{ solution.description }}</p>
+                                                <a href="{{ solution.url }}" class="button cmn-btn">Learn More<span class="button__spotlight"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Related Products -->
+                                    <div class="slnprt-item-right">
+                                        <div class="row">
+                                            {%- for p in solution.related_products -%}
+                                            {%- set item = p | findByField('title', products) -%}
+                                            <div class="slnprt-item-sm col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="slnprt-item-inr">
+                                                    <div class="slnprti-img">
+                                                        <img src="{{ item.image }}" alt="{{ item.title }}">
+                                                        <h3>{{ item.title }}</h3>
+                                                        <a href="/{{ item.path }}" class="arrow-symbol">
+                                                            <img src="/img/arrow-badge.svg" alt="Arrow">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {%- endfor -%}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {%- endfor -%}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- INDUSTRIES-SECTION -->
+
         {% set grid = solutions %}
         {% set gridCssClass = 'grid-3' %}
         {% include "partials/grid.njk" %}
