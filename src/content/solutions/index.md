@@ -4,7 +4,7 @@ title: Industrial Air Solutions
 show_in_menu: 'true'
 nav_sort: 1000
 seo:
-  page_title: Industrial Air Solutions | Air Filtration Systems
+  page_title: Solutions | Air Filtration Systems
   description: Duroair specializes in creating custom industrial air solutions to meet the toughest air quality challenges and clean air filtration standards.
 ---
 <div class="nederman-sec solution-process-sec">
