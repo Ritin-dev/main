@@ -47,18 +47,21 @@
                                         <div class="row">
                                             {%- for p in solution.related_products -%}
                                             {%- set item = p | findByField('title', products) -%}
-                                            <div class="slnprt-item-sm col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                <div class="slnprt-item-inr">
-                                                    <div class="slnprti-img">
-                                                        <img src="{{ item.thumbnail }}" alt="{{ item.title }}">
-                                                        <h3>{{ item.title }}</h3>
-                                                        <a href="/{{ item.path }}" class="arrow-symbol">
-                                                            <img src="/img/arrow-badge.svg" alt="Arrow">
-                                                        </a>
+                                            {%- if item and item.thumbnail and item.title -%} 
+                                                <div class="slnprt-item-sm col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                    <div class="slnprt-item-inr">
+                                                        <div class="slnprti-img">
+                                                            <img src="{{ item.thumbnail }}" alt="{{ item.title }}">
+                                                            <h3>{{ item.title }}</h3>
+                                                            <a href="/{{ item.path }}" class="arrow-symbol">
+                                                                <img src="/img/arrow-badge.svg" alt="Arrow">
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            {%- endfor -%}
+                                            {%- endif -%}
+                                        {%- endfor -%}
+
                                         </div>
                                     </div>
                                 </div>
