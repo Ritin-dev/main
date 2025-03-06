@@ -36,9 +36,20 @@
         {%- endfor %}
     </section>
 </div>
-<section class="section">
-    <h3 class="ruled text-center">Solutions Delivered</h3>
-    <br><br>
-        {% include "partials/solutions-delivered.njk" %}
-</section>
+    <!-- GLOBAL-LEADERS-SECTION -->
+        <div class="global-leaders-wrap">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Trusted by Global Leaders</h2>
+                </div>
+                </div>
+                <div class="col-lg-12">
+                  {% include "partials/solutions-delivered.njk" %}
+                </div>
+            </div>
+            </div>
+        </div>
+    <!-- GLOBAL-LEADERS-SECTION -->
 {% endblock %}
