@@ -1,21 +1,50 @@
 <nav id="nav">
     <ul class="primary-nav">
         {%- for item in navs.primary -%}
-        <li class="nav-item-main nav-{{item.name}} {{ "has-menu" if item.children.length else "" }} nav-item-{{ item.name | lower }}">
-                <a href="/{{item.file.path}}"  class="link primary-link level-0">{{ item.name | reverseSlug }}</a>
+        <li class="nav-item-main nav-{{ item.name | lower }} {{ 'has-menu' if item.children.length else '' }}">
+            <a href="/{{ item.file.path | replace('index.html', '') }}" class="link primary-link level-0">
+                {{ item.name | reverseSlug }}
+                {%- if item.children.length -%} <i class="far fa-chevron-down"></i> {%- endif -%}
+            </a>
+
             {%- if item.children.length -%}
-            <span class="nav-arrow"></span>
-            <ul class="submenu">
-                {%- for child in item.children -%}
-                <li class="nav-item level-1"><a href="/{{child.file.path | replace('index.html','')}}" class="link sublink ">{{ child.file | navLabel }}</a></li>
-                    {%- for secondary_child in child.children -%}
-                        <li class="nav-item level-1"><a href="/{{secondary_child.file.path | replace('index.html','')}}" class="link sublink ">{{ secondary_child.file | navLabel }}</a></li>
-                    {%- endfor -%}
-                {%- endfor -%}
-            </ul>
+            <div class="nav-dropdown" aria-hidden="true">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="nav-dropdown-in">
+                                <h2>{{ item.name }}</h2>
+                                <div class="nav-dropdown-in-item-outer">
+                                    {%- for child in item.children -%}
+                                    <div class="nav-dropdown-in-item">
+                                        <a href="/{{ child.file.path | replace('index.html', '') }}">
+                                            {{ child.file | navLabel }} <img src="images/nav-icon.svg" alt="Image">
+                                        </a>
+                                    </div>
+                                    
+                                    {%- if child.children.length -%}
+                                    {%- for secondary_child in child.children -%}
+                                    <div class="nav-dropdown-in-item">
+                                        <a href="/{{ secondary_child.file.path | replace('index.html', '') }}">
+                                            {{ secondary_child.file | navLabel }} <img src="images/nav-icon.svg" alt="Image">
+                                        </a>
+                                    </div>
+                                    {%- endfor -%}
+                                    {%- endif -%}
+
+                                    {%- endfor -%}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {%- endif -%}
         </li>
         {%- endfor -%}
-        <li class="rfq-container"><a href="/request-for-quote/" class="btn btn-rfq">Request for Quote</a></li>
+        
+        <li class="rfq-container">
+            <a href="/request-for-quote/" class="btn btn-rfq">Request for Quote</a>
+        </li>
     </ul>
 </nav>
