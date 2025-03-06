@@ -1,4 +1,4 @@
-<header id="header" class="show">
+<header id="header" class="header-wrap show">
     <div class="search-container" id="search-container">
         <form class="search" id="search-form" autocomplete="off">
             <input type="text" placeholder="search" name="durq" id="search-field" value="" class="search-ui">
@@ -8,14 +8,15 @@
         </form>
     </div>
     {# <div class="header-msg striped">{% include 'partials/global-message.njk' %}</div> #}
-    <div class="container header-container">
-        <button type="button" id="nav-toggle" class="navbar-toggle" aria-label="menu toggle">
-            <div></div>
-            <div></div>
-            <div></div>
-        </button>
-        <a id="search-trigger" data-search-trigger><svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21"><g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2" transform="rotate(-49 9.065 8.931)"><circle cx="8.97" cy="8.928" r="8" /><path stroke-linecap="round" d="M8.83695536,16.9684378 L8.83695536,24.9684378" /></g></svg></a>
-        <a class="header-logo" href="/" title="Duroair Home">{% include "partials/inline-svg-logo.njk" %}</a>
+    <div class="nav-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
             {% include "partials/primary-nav.njk" %}
+          </div>
+        </div>
+      </div>
     </div>
+     <!-- NAVBAR-SECTION -->
+    <button class="navbar-toggler collapsed" id="navoverlay" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
 </header>
