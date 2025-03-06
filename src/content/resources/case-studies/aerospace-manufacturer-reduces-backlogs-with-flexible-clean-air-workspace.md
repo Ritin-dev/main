@@ -11,6 +11,7 @@ jumbotron:
   img: /media/uploads/dur-201402-case-study-june.jpg
 layout: case-study.njk
 headline: Aerospace Manufacturer Reduces Backlogs With Flexible Clean Air Workspace
+small_image: /media/uploads/contact-pg-btm-img.png
 short_description: Aerospace manufacturer uses an ingenious engineering design
   for clean air to triple its productivity for sanding and painting and reduce
   material handling.
@@ -27,6 +28,9 @@ situation: >-
 
   The client needed more flexibility to paint and sand in the same area of the facility, and they needed more flexibility within that space.
 situation_image: ""
+main_image_1: /media/uploads/AZZ-enclosure-with-use-of-crane.jpg
+main_image_2: /media/uploads/DuroClean 1.jpeg
+main_image_3: /media/uploads/airplane.jpg
 solution: >-
   Duroair designed a solution with up to three clean-air chambers, each with its
   patented six-stage DuroPure™ air filtration system. These portable enclosures

@@ -11,6 +11,7 @@ jumbotron:
   img: /media/uploads/dur_may2020_casestudy_01-img.jpg
 layout: case-study.njk
 headline: Lean Into Clean, Safe Manufacturing
+small_image: /media/uploads/dur-221402-april-blog1-img.jpg
 short_description: Lean-minded global energy equipment manufacturer reduces
   costly waste with industrial air filtration.
 situation: >-
@@ -34,6 +35,10 @@ situation: >-
 
 
   Creating a designated, hard-walled paint booth would significantly disrupt lean, cellular workflows in the space-constrained hangar. Plus, hard-wall booths don’t allow for crane access, which is why the manufacturer was forced to transport the large pieces by dolly to move them into a separate bay. This type of movement significantly slows work in progress (WIP) and requires excessive man-hours and material handling.
+situation_image: ""
+main_image_1: /media/uploads/dur-221408_fabtech_blog-img.jpg.jpg
+main_image_2: /media/uploads/dur-2402_december-newsletter_1511x789_r1.jpg
+main_image_3: /media/uploads/dur-221402-april-blog1-img.jpg
 solution: >-
   Duroair engineered a [lean, dual-purpose clean air
   solution](https://www.duroair.com/industries/lean-manufacturing) to

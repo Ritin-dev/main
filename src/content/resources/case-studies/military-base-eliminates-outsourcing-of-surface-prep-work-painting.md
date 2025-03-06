@@ -10,6 +10,7 @@ jumbotron:
   img: /media/uploads/dur-201401-case-study-march.jpg
 layout: case-study.njk
 headline: Insourcing Surface Prep & Painting Can Save Millions
+small_image: /media/uploads/AZZ-enclosure-with-use-of-crane.jpg
 short_description: A military base saves millions by insourcing its sanding,
   painting and corrosion prevention work with a retractable clean air solution.
 situation: >-
@@ -25,6 +26,9 @@ situation: >-
 
 
   The base was not in a position to expand its maintenance space and needed more flexibility as they were doing a wide variety of maintenance and repair operations.
+main_image_1: /media/uploads/coating.jpg
+main_image_2: /media/uploads/dur-201314-november-1-thumb-2.jpg
+main_image_3: /media/uploads/dur-201314-november-2-thumb-2.jpg
 solution: >-
   Duroair engineered a solution with its patented DuroPure™ technology, a
   six-stage filtration system that captures all particulates and cleans the air
