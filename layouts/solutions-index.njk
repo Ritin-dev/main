@@ -1,13 +1,11 @@
 {% extends "layout.njk" %}
 {% set waveType = 'gray' %}
 {% block body %}
-<div class="bg-light">
-    <section class="section">
+    <!-- Solution process section Begin -->
         {{ contents | safe }}
-    
+    <!-- End Of Solution process section -->
         {% set grid = solutions %}
         {% set gridCssClass = 'grid-3' %}
         {% include "partials/grid.njk" %}
-    </section>
-</div>
+
 {% endblock %}
