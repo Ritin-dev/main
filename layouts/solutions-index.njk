@@ -1,6 +1,47 @@
 {% extends "layout.njk" %}
 {% set waveType = 'gray' %}
 {% block body %}
+
+
+    <!-- Transforming Solution Section Begin -->
+
+    <div class="transforming-solution-sec cmn-gap">
+        <div class="container">
+            <div class="transforming-solution-inr has-texture">
+                <div class="texture"><img src="/img/military-csstdy-texture.png" alt="Texture"></div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="transfrom-solution-left">
+                            <div class="sec-inr-head">
+                                <h2>Transforming Workspaces with Reliable Solutions and Trusted  Products.</h2>
+                                <p>Explore Duroair’s innovative solutions—Clean Rooms, Dust  Collection, Painting & Coating, and more—powered by our advanced product  lineup.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="transfrom-solution-right row">
+                            <div class="transfromsl-img-wrp">
+                                <div class="transforming-solution-img">
+                                    <img src="/img/transform-solution-2.png" alt="Image">
+                                </div>
+                                <div class="blob1"></div>
+                            </div>
+                            <div class="transfromsl-img-wrp">
+                                <div class="transforming-solution-img">
+                                    <img src="/img/transform-solution-1.png" alt="Image">
+                                </div>
+                                <div class="blob1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- End Of Transforming Solution Section -->
+
+
     <!-- Solution process section Begin -->
         {{ contents | safe }}
     <!-- End Of Solution process section -->
@@ -128,9 +169,5 @@
             </div>
         </div>
         <!-- GLOBAL-LEADERS-SECTION -->
-
-        {% set grid = solutions %}
-        {% set gridCssClass = 'grid-3' %}
-        {% include "partials/grid.njk" %}
 
 {% endblock %}
