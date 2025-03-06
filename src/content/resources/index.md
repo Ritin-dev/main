@@ -9,7 +9,14 @@ nav_sort: 7000
 show_in_menu: "true"
 jumbotron:
   headline: Resources
+head: Understand the Impact of Clean Air on the Manufacturing Bottom Line
+desc: Because we're committed to helping you achieve a clean, compliant, and
+  safe working environment, we've created a library of resources to help you
+  learn lean manufacturing clean air solutions and tackle this challenge head
+  on.
 image_1: /media/uploads/airplane.jpg
+image_2: /media/uploads/dur_dec2020_blog_02-img.jpg
+image_3: /media/uploads/dur_dec2020_blog_02-img.jpg
 cards:
   - copy: Get insights and tips from Duroair's clean air experts on turning the
       manufacturing clean air challenge into a competitive advantage.
