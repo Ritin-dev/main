@@ -7,7 +7,9 @@
     <!-- @include-static ../partials/nav-fields.yml -->
     <!-- @include-static ../partials/jumbotron.yml -->
     - {label: Copy, name: body, widget: markdown }
-    - {label: "Image", name: "image_1", widget: "image", required: false}
+    - {label: "Image1", name: "image_1", widget: "image", required: false}
+    - {label: "Image1", name: "image_2", widget: "image", required: false}
+    - {label: "Image1", name: "image_3", widget: "image", required: false}
     - name: cards 
       label: Bottom Cards
       widget: list
