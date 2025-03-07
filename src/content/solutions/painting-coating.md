@@ -16,6 +16,13 @@ image_2: /img/image-2-paintingcoating.jpg
 image_3: /img/image-3-paintingcoating.png
 short_description: Portable paint booths safeguard employees while reducing
   spraying and coating capital expenses.
+Intro:
+  intr_head: " Retractable, Compliant Fume Exhaust Systems for Painting & Coating"
+  intr_desc: Whether your focus is aesthetics quality control or corrosion
+    protection, surface-prep dust can wreak havoc on your coating and painting
+    processes. Add the impact of conventional industrial spray booths on
+    intermittent applications and material handling, and you have a recipe for
+    the bottom-line blues.
 copy_block_list: >-
   
 
