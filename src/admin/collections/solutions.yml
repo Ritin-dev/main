@@ -14,8 +14,8 @@
     - {label: "Page Image 2", name: "image_2", widget: "image", required: false}
     - {label: "Page Image 3", name: "image_3", widget: "image", required: false}
     - {label: "Short Description", name: "short_description", widget: "text", 'hint':'shows on cards and summaries'}
-    - name: Intro
-      label: intro
+    - name: intro
+      label: Intro
       widget: "object"
       fields:
         - {label: "Intro heading", name: "intro_head", widget: string}
