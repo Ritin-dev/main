@@ -10,27 +10,14 @@ jumbotron:
 nav_sort: 2000
 show_in_menu: "true"
 layout: solution.njk
-hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
-redirectUrl: /contact-us/success/
-form_intro: Contact Us
 thumbnail: /img/thumbs/hero-paintingcoating.jpg
 image_1: /img/image-1-paintingcoating.jpg
 image_2: /img/image-2-paintingcoating.jpg
 image_3: /img/image-3-paintingcoating.png
 short_description: Portable paint booths safeguard employees while reducing
   spraying and coating capital expenses.
-copy_block_1: >-
-  ### Bring Clean Air to Your Painting and Coating Operations
-
-
-  Duroair combines our [DuroRoom™](/products/duroroom), [DuroCap™](/products/durocap), and [DuroPure™](/products/duropure) technologies into one industrial air cleaning system to make sure you get your clean air requirements right every time.
-
-
-  Our [portable paint booths](https://www.duroair.com/blog/five-reasons-why-a-portable-paint-booth-makes-sense) offer flexible, compliant clean air solutions for painting and coating processes that bring the benefits of clean air to each workplace.
-
-
-  Duroair’s portable, retractable enclosure with [DuroCap™](/products/durocap) vented and [DuroPure™](/products/duropure) recirculating air filtration systems can be custom tailored to your facility workflows. Our solutions prevent costly surface rework from contaminants, while capturing toxins like VOC’s, hexavalent chromium, and isocyanates.
-
+copy_block_list: >-
+  
 
   Duroair’s painting and coating fume exhaust systems provide:
 
@@ -46,6 +33,17 @@ copy_block_1: >-
   * 99.4% of airborne particulates captured with [DuroCap™](/products/durocap) vented solution
 
   * Unmatched employee protection with [DuroPure’s™](/products/duropure) high-efficiency, six-stage filtration process that captures 100% of airborne particulates, gases, and vapors
+copy_block_1: >-
+  ### Bring Clean Air to Your Painting and Coating Operations
+
+
+  Duroair combines our [DuroRoom™](/products/duroroom), [DuroCap™](/products/durocap), and [DuroPure™](/products/duropure) technologies into one industrial air cleaning system to make sure you get your clean air requirements right every time.
+
+
+  Our [portable paint booths](https://www.duroair.com/blog/five-reasons-why-a-portable-paint-booth-makes-sense) offer flexible, compliant clean air solutions for painting and coating processes that bring the benefits of clean air to each workplace.
+
+
+  Duroair’s portable, retractable enclosure with [DuroCap™](/products/durocap) vented and [DuroPure™](/products/duropure) recirculating air filtration systems can be custom tailored to your facility workflows. Our solutions prevent costly surface rework from contaminants, while capturing toxins like VOC’s, hexavalent chromium, and isocyanates.
 copy_block_2: >-
   ### Technical Specifications
 
@@ -92,6 +90,9 @@ related_products:
   - DuroPure™
   - DuroCollector™
   - DuroTower™
+form_intro: Contact Us
+hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
+redirectUrl: /contact-us/success/
 ---
 ### **Retractable, Compliant Fume Exhaust Systems for Painting & Coating**
 
