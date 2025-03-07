@@ -1,5 +1,37 @@
 {% extends "layout.njk" %}
 {% block body %}
+
+<!-- Cmn About Section Begin -->
+
+        <div class="cmn-about-sec cmn-gap durocap-about-sec">
+            <div class="container">
+                <div class="cmn-about-inr">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="cmn-about-right">
+                                <div class="cmn-about-right-inr">
+                                    <div class="sec-inr-head">
+                                        <h2>{{ product-intro.heading }}</h2>
+                                    </div>
+                                    <div class="cmnabt-box">
+                                        <p>{{ product-intro.description }}</p>
+                                    </div>
+                                    <a href="#url" class="cmn-btn button"><span class="button__spotlight"></span>Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cmn-about-left">
+                                <div class="cmnabt-img"><img src="{{ thumbnail }}" alt="Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- End Of Cmn About Section -->
+    
     <section class="section">
         <div class="grid-2">
             <div>
