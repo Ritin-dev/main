@@ -8,6 +8,12 @@
     - {label: "Layout", name: "layout", widget: "hidden", default: "product.njk"}
     - {label: "Permalink", name: "permalink", widget: "string", required: false}
     - {label: "Product Image", name: "product_image", widget: "image", required: false}
+    - name: product-intro
+      label: Product Intro
+      widget: object
+      fields:
+        - {label: Heading, name: heading, widget: string}
+        - {label: Description, name: description, widget: markdown}
     - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
     - {label: "Short Description", name: "short_description", widget: "markdown"}
     - {label: "Intro", name: "body", widget: "markdown"}
