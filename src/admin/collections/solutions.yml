@@ -15,6 +15,7 @@
     - {label: "Page Image 3", name: "image_3", widget: "image", required: false}
     - {label: "Short Description", name: "short_description", widget: "text", 'hint':'shows on cards and summaries'}
     - {label: "Intro", name: "body", widget: "markdown"}
+    - {label: "Copy Block List", name: "copy_block_list", widget: "markdown"}
     - {label: "Copy Block 1", name: "copy_block_1", widget: "markdown"}
     - {label: "Copy Block 2", name: "copy_block_2", widget: "markdown", 'hint': 'technical specs, etc.'}
     - name: compliance
