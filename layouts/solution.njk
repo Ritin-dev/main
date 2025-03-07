@@ -151,18 +151,52 @@
 
     <!-- End Of Contact Us Section -->
 
-<div class="bg-light">
-    <section class="section">
-        <h3 class="ruled text-center">Duroair Products</h3><br><br>
-        <div class="grid-3 related-products">
-            {%- for p in related_products -%}
-            {%- set item  = p | findByField('title', products) -%}
-            {%- set cardCssClass  = 'card-product' -%}
-            {% include "partials/card.njk" %}
-            {%- endfor -%}
+<!-- Specialised Section Begin -->
+
+<div class="specialised-sec">
+    <div class="container">
+        <div class="specialised-inr">
+            <div class="gr-brdr"><img src="images/gr-brdr.png" alt="Gradient Border"></div>
+            <div class="row">
+                <div class="specialised-left-wrp">
+                    <div class="spacialised-left">
+                        <div class="sec-inr-head">
+                            <h2>Duroair Products Applicable to your Solutions</h2>
+                        </div>
+                        <p>Between manufacturing, MRO, and prototyping, you don’t have time to rearrange your entire facility with the dedicated space and</p>
+                    </div>
+                </div>
+                <div class="specialised-slider-wrp">
+                    <div class="specialised-slider">
+                        {%- for p in related_products -%}
+                        {%- set item = p | findByField('title', products) -%}
+                        {%- if item and item.title and item.thumbnail -%}
+                        <div class="specialised-slider-item">
+                            <div class="specialised-item-inr">
+                                <a href="{{ item.path }}" class="specialised-img">
+                                    <img src="{{ item.thumbnail }}" alt="{{ item.title }}">
+                                </a>
+                                <div class="specialised-card-content">
+                                    <div class="spcl-card-content-inr">
+                                        <h3><a href="{{ item.path }}">{{ item.title }}</a></h3>
+                                        <p>{{ item.description }}</p>
+                                    </div>
+                                    <a href="{{ item.path }}">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        {%- endif -%}
+                        {%- endfor -%}
+                    </div>
+                </div>                
+            </div>
         </div>
-    </section>
+    </div>
 </div>
+
+
+<!-- End Of Specialised Section -->
+
 {% endblock %}
 {% block testimonial %}
 {% include "partials/testimonial.njk" %}
