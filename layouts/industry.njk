@@ -1,13 +1,43 @@
 {% extends "layout.njk" %}
 {% block body %}
-    <section class="ruled-headers section">
-        <div class="grid-2 vc">
-            <div>
-                <img src="{{image_1}}" class="img-responsive shadow img-1" alt="" />
+
+    <!-- Transforming Solution Section Begin -->
+
+    <div class="transforming-solution-sec cmn-gap airospace-aviation-pg">
+        <div class="container">
+            <div class="transforming-solution-inr has-texture">
+                <div class="texture"><img src="/img/military-csstdy-texture.png" alt="Texture"></div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="transfrom-solution-left">
+                            <div class="sec-inr-head">
+                                {{ contents | safe }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="transfrom-solution-right row">
+                            <div class="transfromsl-img-wrp">
+                                <div class="transforming-solution-img">
+                                    <img src="{{image_1}}" alt="Image">
+                                </div>
+                                <div class="blob1"></div>
+                            </div>
+                            <div class="transfromsl-img-wrp">
+                                <div class="transforming-solution-img">
+                                    <img src="{{image_3}}" alt="Image">
+                                </div>
+                                <div class="blob1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="ruled-headers">{{ contents | safe }}</div>
         </div>
-    </section>
+    </div>
+
+    <!-- End Of Transforming Solution Section -->
+
     <div class="grid-2 ruled-headers bg-light full-col">
         <div class="copy-col">
             {{ secondary_copy | md }}
