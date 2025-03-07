@@ -1,5 +1,4 @@
 ---
-title: Painting & Coating
 seo:
   description: We engineer portable spray booths for flexible, compliant clean air
     solutions, including fume exhaust systems for painting and coating
@@ -7,18 +6,26 @@ seo:
   page_title: Portable Paint Booths for Painting & Coating
 jumbotron:
   img: /img/heros/hero-paintingcoating.jpg
-nav_sort: 2000
-show_in_menu: "true"
 layout: solution.njk
 thumbnail: /img/thumbs/hero-paintingcoating.jpg
+Intro:
+  intr_head: " Retractable, Compliant Fume Exhaust Systems for Painting & Coating"
+  intr_desc: Whether your focus is aesthetics quality control or corrosion
+    protection, surface-prep dust can wreak havoc on your coating and painting
+    processes. Add the impact of conventional industrial spray booths on
+    intermittent applications and material handling, and you have a recipe for
+    the bottom-line blues.
+title: Painting & Coating
+nav_sort: 2000
+show_in_menu: "true"
 image_1: /img/image-1-paintingcoating.jpg
 image_2: /img/image-2-paintingcoating.jpg
 image_3: /img/image-3-paintingcoating.png
 short_description: Portable paint booths safeguard employees while reducing
   spraying and coating capital expenses.
-Intro:
-  intr_head: " Retractable, Compliant Fume Exhaust Systems for Painting & Coating"
-  intr_desc: Whether your focus is aesthetics quality control or corrosion
+intro:
+  intro_head: Retractable, Compliant Fume Exhaust Systems for Painting & Coating
+  intro_desc: Whether your focus is aesthetics quality control or corrosion
     protection, surface-prep dust can wreak havoc on your coating and painting
     processes. Add the impact of conventional industrial spray booths on
     intermittent applications and material handling, and you have a recipe for
