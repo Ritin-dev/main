@@ -63,15 +63,47 @@
 
     <!-- End Of Expertise Section -->
 
-    <section class="section">
-        <br><br><h3 class="text-center ruled">Solutions for Your Industry</h3>
-        <div class="solutions">
-            {%- for item in solutions_for_industry -%}
-            {%- set solution  = item | findByField('title', solutions) -%}
-            <a data-duration class="solution-item" href="/{{solution.path}}" style="background-image:url('{{solution.thumbnail}}');"><span>{{solution.title}}</span></a>
-        {%- endfor -%}
+    <!-- Specialised Section Begin -->
+        <div class="specialised-sec">
+            <div class="container">
+                <div class="specialised-inr">
+                    <div class="gr-brdr"><img src="/img/gr-brdr.png" alt="Gradient Border"></div>
+                    <div class="row">
+                        <div class="specialised-left-wrp">
+                            <div class="spacialised-left">
+                                <div class="sec-inr-head">
+                                    <h2>Specialised Solutions for Your Industry</h2>
+                                </div>
+                                <p>Between manufacturing, MRO, and prototyping, you don’t have time to rearrange your entire facility with the dedicated space and</p>
+                            </div>
+                        </div>
+                        <div class="specialised-slider-wrp">
+                            <div class="specialised-slider">
+                                {%- for item in solutions_for_industry -%}
+                                {%- set solution = item | findByField('title', solutions) -%}
+                                <div class="specialised-slider-item">
+                                    <div class="specialised-item-inr">
+                                        <a href="/{{ solution.path }}" class="specialised-img">
+                                            <img src="{{ solution.thumbnail }}" alt="{{ solution.title }}">
+                                        </a>
+                                        <div class="specialised-card-content">
+                                            <div class="spcl-card-content-inr">
+                                                <h3><a href="/{{ solution.path }}">{{ solution.title }}</a></h3>
+                                                <p>{{ solution.description }}</p>
+                                            </div>
+                                            <a href="/{{ solution.path }}">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                {%- endfor -%}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    <!-- End Of Specialised Section -->
+
     <div class="bg-light">
       {%- if related_products -%}
         <section class="section">
