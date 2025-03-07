@@ -18,8 +18,8 @@
       label: intro
       widget: "object"
       fields:
-        - {label: "Intro heading", name: "intr_head", widget: string}
-        - {label: "Intro description", name: "intr_desc", widget: markdown}
+        - {label: "Intro heading", name: "intro_head", widget: string}
+        - {label: "Intro description", name: "intro_desc", widget: markdown}
     - {label: "Copy Block List", name: "copy_block_list", widget: "markdown"}
     - {label: "Copy Block 1", name: "copy_block_1", widget: "markdown"}
     - {label: "Copy Block 2", name: "copy_block_2", widget: "markdown", 'hint': 'technical specs, etc.'}
