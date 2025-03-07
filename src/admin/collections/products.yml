@@ -8,7 +8,7 @@
     - {label: "Layout", name: "layout", widget: "hidden", default: "product.njk"}
     - {label: "Permalink", name: "permalink", widget: "string", required: false}
     - {label: "Product Image", name: "product_image", widget: "image", required: false}
-    - name: product-intro
+    - name: productIntro
       label: Product Intro
       widget: object
       fields:
@@ -25,7 +25,7 @@
       fields:
         - {label: Heading, name: heading, widget: string}
         - {label: Description, name: description, widget: markdown}
-    - name: key-images
+    - name: keyImages
       label: Key Images
       widget: object
       fields:
