@@ -98,21 +98,35 @@
 
 <!-- End Of Tech Specs Section -->
 
-<section class="section">
-    <h3 class="text-center ruled">Clean Air Code Compliance</h3>
-        <table class="code-compliance">
-            <thead>
-                <th class="col-1">Code Compliance</th>
-                <th>Code Description</th>
-            </thead>
-            {%- for item in compliance -%}
-            <tr>
-                <td class="col-1"><strong>{{item.code}}</strong></td>
-                <td>{{item.description}}</td>
-            </tr>
-            {%- endfor -%}
-        </table>
-</section>
+<!-- Code Compliance Section Begin -->
+
+<div class="code-compliance-sec cmn-gap">
+    <div class="container">
+        <div class="code-compliance-inr">
+            <div class="sec-head newhedline">
+                <h2>Clean Air Code Compliance</h2>
+            </div>
+            <div class="codecom-cards-wrp">
+                <div class="codecomp-head">Code Compliance & Code Description</div>
+                <div class="codesomp-cards-row row row-cols-5">
+                    {%- for item in compliance -%}
+                    <div class="col">
+                        <div class="codesomp-card">
+                            <div class="codesomp-card-inr">
+                                <h3>{{ item.code }}</h3>
+                                <p>{{ item.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Of Code Compliance Section -->
+
 <section class="section">
     <div id="contact-us-form" class="form-container narrow">
         <h4 class="h3 text-center">{{form_intro}}</h4><br><br>
