@@ -127,13 +127,30 @@
 
 <!-- End Of Code Compliance Section -->
 
-<section class="section">
-    <div id="contact-us-form" class="form-container narrow">
-        <h4 class="h3 text-center">{{form_intro}}</h4><br><br>
-        {%- set redirectUrl = '/contact-us/success/?page=solutions'  -%}
-        {% include "partials/hubspot-form.njk" %}
-    </div>
-</section>
+<!-- Contact Us Section Begin -->
+
+        <div class="contact-us-sec cmn-gap contact-us-sec-2 pt-0 ">
+            <div class="container">
+                <div class="contact-us-inr has-texture newtexturepos">
+                    <div class="texture">
+                        <img src="/img/shape-4.png" alt="Texture">
+                    </div>
+                    <div class="texture-2 texture">
+                        <img src="/img/shape-4.png" alt="Texture">
+                    </div>
+                    <div class="contact-us-inr-wrp">
+                        <div id="contact-us-form" class="form-container narrow">
+                            <h4 class="h3 text-center">{{form_intro}}</h4><br><br>
+                            {%- set redirectUrl = '/contact-us/success/?page=solutions'  -%}
+                            {% include "partials/hubspot-form.njk" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- End Of Contact Us Section -->
+
 <div class="bg-light">
     <section class="section">
         <h3 class="ruled text-center">Duroair Products</h3><br><br>
