@@ -16,6 +16,7 @@
     - {label: "Short Description", name: "short_description", widget: "text", 'hint':'shows on cards and summaries'}
     - name: Intro
       label: intro
+      widget: "object"
       fields:
         - {label: "Intro heading", name: "intr_head", widget: string}
         - {label: "Intro description", name: "intr_desc", widget: markdown}
