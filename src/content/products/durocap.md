@@ -1,4 +1,10 @@
 ---
+brochure: /media/uploads/Duroair DuroCap™ System.pdf
+key-images:
+  image_1: /media/uploads/DuroClean 1.jpeg
+  image_2: /media/uploads/airplane.jpg
+  image_3: /media/uploads/case-study-detail-img-3.png
+  image_4: /media/uploads/dur-201305-february-blog-img.jpg
 title: DuroCap™
 seo:
   description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
@@ -8,7 +14,7 @@ jumbotron:
   img: /img/heros/hero-durocap.jpg
 layout: product.njk
 product_image: /img/image-1-durocap.jpg
-product-intro:
+product_intro:
   heading: Clean Shop Air for the Entire Floor
   description: Welding toxic fumes and laser-cutting dust can threaten employee
     safety, derail productivity, and place you directly in the crosshairs of the
@@ -31,30 +37,6 @@ technical_specifications: >-
   * Pairs with enclosure made of a durable fire rated PVC vinyl meeting the requirements of NFPA 701.
 
   * System exhausts air to the exterior and requires ducting and make-up air.
-new-key-features:
-  - heading: Easy Assembly
-    description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
-      free from dangerous particulates and corrosive dust contaminants.
-  - heading: Taper Draft Airflow Technology
-    description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
-      free from dangerous particulates and corrosive dust contaminants.
-  - heading: Meets/Exceeds CFM Requirements
-    description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
-      free from dangerous particulates and corrosive dust contaminants.
-  - heading: Vented Solution
-    description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
-      free from dangerous particulates and corrosive dust contaminants.
-  - description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
-      free from dangerous particulates and corrosive dust contaminants.
-    heading: Variable Frequency Drive
-  - description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
-      free from dangerous particulates and corrosive dust contaminants.
-    heading: Fire Suppression
-key-images:
-  image_1: /media/uploads/DuroClean 1.jpeg
-  image_2: /media/uploads/airplane.jpg
-  image_3: /media/uploads/case-study-detail-img-3.png
-  image_4: /media/uploads/dur-201305-february-blog-img.jpg
 key_features: >-
   * **Easy Assembly**: Comes fully assembled with a pre-wired control panel
   (lockable fused disconnect and C/UL/US Listed). Combined with a DuroRoom, the
@@ -98,9 +80,39 @@ related_solutions:
   - Painting & Coating
   - Clean Rooms
   - Dust Collection
-brochure: /media/uploads/Duroair DuroCap™ System.pdf
+product-intro:
+  heading: Clean Shop Air for the Entire Floor
+  description: Welding toxic fumes and laser-cutting dust can threaten employee
+    safety, derail productivity, and place you directly in the crosshairs of the
+    EPA. Just a single spark can ignite welding “smoke” and endanger your entire
+    shop floor. Welding contaminants can also reduce the life of your cooling
+    fans and valuable CNC machinery.
 btn_label: DOWNLOAD FACT SHEET
 show_in_menu: "true"
+new-key-features:
+  - heading: Easy Assembly
+    description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+  - heading: Taper Draft Airflow Technology
+    description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+  - heading: Meets/Exceeds CFM Requirements
+    description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+  - heading: Vented Solution
+    description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+  - description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+    heading: Variable Frequency Drive
+  - description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+    heading: Fire Suppression
+keyImages:
+  image_1: /media/uploads/DUR_Feb2020_Blog-thumb.jpg
+  image_2: /media/uploads/cusotm_hard-walled_clean_room_solutions.jpg
+  image_3: /media/uploads/dur-221402-april-bloghumb.jpg
+  image_4: /media/uploads/dur-201309-thumb.jpg
 nav_title: DuroCap
 ---
 ### How it Works
