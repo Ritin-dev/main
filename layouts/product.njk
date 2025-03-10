@@ -94,25 +94,69 @@
 <!-- End Of DuroCap Features Section -->
 
 
-    <div class="relative overflow-x-hidden">
-        <section class="section static fi-container">
-            <img class="floating-image" src="{{ image_2 }}" alt="">
-            <div class="grid-2 ruled-headers">
-                <div class="">
-                    <h3>Technical Specifications</h3>
-                    {{ technical_specifications | md }}
-                    {% if brochure %}
-                        <p>For
-                            {% if nav_title != 'DuroDust' %}
-                                    ISO classifications and
-                            {% endif %}
-                        other technical information, download our {{ nav_title}} fact sheet!</p>
-                        <a href="{{ brochure }}" class="btn btn-outline brand-primary" target="_blank">{{ btn_label | default( "Download Brochure") }}</a>
-                    {% endif %}
+    <!-- Tech Specs Section Begin -->
+
+<div class="tech-specs-sec cmn-gap has-texture dcap-pg">
+    <div class="nwtexture"><img src="/img/oval-texture.png" alt="Texture"></div>
+    <div class="container">
+        <div class="tech-specs-inr">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="tech-specs-left">
+                        <div class="sec-inr-head">
+                            <h2>{{ techncal_specification.technical_heading }}</h2>
+                        </div>
+                        <div class="tecspecs-list mb-5">
+                            <p>{{ techncal_specification.technical_description }}</p>
+                            <p>For ISO classifications and other technical information, download our DuroCap fact sheet!</p>
+                        </div>
+                        <a href="{{ brochure }}" class="cmn-btn button" target="_blank">{{ btn_label | default( "Download Brochure") }} <span class="button__spotlight"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tech-specs-right has-texture">
+                        <div class="radial-shape"><img src="/img/radial-shape.png" alt="Shape"></div>
+                        <div class="tecspecs-img">
+                            <img src="{{ image_2 }}" alt="Image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="dcap-classification-wrp">
+                <div class="dcapclassification-heading">
+                    <h4>{{ title }} ISO 14644-1 Classifications</h4>
+                    <span class="dcap-classification-icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                </div>
+                <div class="dcap-classification-content">
+                    <p>All classifications are in accordance with U.S. Federal Standard 209E and represent concentrations of particles using reference size of 0.5 micron.</p>
+                    <div class="dcapclfication-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Code Compliance</td>
+                                    <td>Code Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {%- for item in compliance -%}
+                                <tr>
+                                    <td><strong>{{ item.code }}</strong></td>
+                                    <td>{{ item.description | nl2br }}</td>
+                                </tr>
+                                {%- endfor -%}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
+</div>
+
+<!-- End Of Tech Specs Section -->
 
     <section class="section pt-0">
         {#        <h3 class="text-center ruled">{{ title }} ISO 14644-1 Classifications</h3> #}
