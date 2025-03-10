@@ -34,22 +34,21 @@ about_intro:
 a_nederman_company:
   heading: Duroair, a Nederman Company
   description: >-
-    Nederman is an environmental technology company and a global leader in
-    industrial air filtration dedicated to capturing, measuring, controlling and
-    cleaning air to make industrial production more efficient, safe and
-    sustainable. With expertise, products and turnkey solutions the Nederman
-    Group protect people, planet and production from harmful effects of
-    industrial processes. From duct and filters to advanced measurements
-    technology for monitoring and control of the filtration process Nederman
-    Group provide clean air optimized – reduced energy consumption, improved
-    process efficiency, health and safety and compliance with laws and
-    regulations.
+    At Duroair, we believe everyone deserves a clean, productive and safe
+    working environment. For more than a decade, we’ve invested in research and
+    development to design and manufacture industrial clean air solutions that
+    not only meet EHS compliance, but also have a measurable impact on the
+    manufacturing bottom line.  
 
 
-    Nederman is listed on Nasdaq Stockholm and present in more than 50 countries.
+    From North America to Asia, Europe and beyond, we’re committed to:
 
 
-    With local expertise and global presence our mission is clear – we shape the future for clean air. Learn more at [nedermangroup.com](#url)
+    * Improving overall health and safety in lean manufacturing facilities
+
+    * Engineering [solutions](/solutions) to isolate, capture, and contain a wide variety of industrial processes
+
+    * Going [beyond EHS compliance](/about/beyond-compliance/) to maximize efficiency and productivity
 key_milestone:
   - year: "2018"
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
