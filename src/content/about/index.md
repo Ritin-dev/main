@@ -29,6 +29,8 @@ about_intro:
 
     * Going [beyond EHS compliance](#url) to maximize efficiency and productivity
   heading: "Our Legacy: Transforming Air Quality for Over [X] Years"
+  image_1: /media/uploads/dur-201305-february-blog-thumb.jpg
+  image_2: /media/uploads/dur-201305-february-blog-thumb.jpg
 a_nederman_company:
   heading: Duroair, a Nederman Company
   description: >-
