@@ -21,7 +21,7 @@
         - {label: Description, name: description, widget: markdown}
     - name: key_milestone
       label: Key Milestone
-      widget: object
+      widget: list
       fields:
         - {label: Year, name: year, widget: string}
         - {label: Description, name: description, widget: markdown}
