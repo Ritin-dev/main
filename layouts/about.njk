@@ -36,27 +36,24 @@
     </div>
 
   <!-- End Of Our Lagecy Section -->
-  
-<div class="bg-light">
-<section class="section">
-    <div class="grid-2 vc"> 
-        <div>
-            <a data-vid="{{ 'https://www.youtube.com/watch?v=O1sUOCKsrZU' | getYoutubeId}}"><img src="{{image_1}}" class="img-responsive shadow image-1" alt="" /></a><br><br>
-        </div>
-        <div>
-            {{ contents | safe }}
-        </div>
-    </div>
-</section>
+
+<!-- Nederman Section Begin -->
+
+<div class="nederman-sec">
+  <div class="container">
+      <div class="nederman-inr">
+          <div class="heading">
+              <h2>{{ a_nederman_company.heading }}</h2>
+          </div>
+          <div class="nederman-content">
+            {{ a_nederman_company.heading }}
+          </div>
+      </div>
+  </div>
 </div>
-<section class=" full">
-    <div class="grid-2 ruled-headers  full-col">
-        <div class="copy-col">
-                {{ copy_block_1 | md }}
-        </div>
-        <div style="background-image:url('{{image_2}}');" class="img-col">&nbsp;</div>
-    </div>
-</section>
+
+<!-- End Of Nederman Section -->
+
 <div class="bg-light">
     <section class="section">
         <h3 class="text-center ruled">Always Engineered, Never Off the Shelf</h3><br><br>
