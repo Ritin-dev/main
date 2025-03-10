@@ -32,31 +32,68 @@
 
     <!-- End Of Cmn About Section -->
 
-    <section class="section">
-        <div class="grid-2">
-            <div>
-                {% if youtube_url %}
-                    <div class="video-embed h-[300px]">
-                        <iframe width="525" height="300" src="//www.youtube.com/embed/{{ youtube_url | getYoutubeId }}?autoplay=0&rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                {% else %}
-                    <img src="{{ product_image }}" class="img-responsive" alt=""/>
-                {% endif %}
+    <!-- DuroCap Features Section Begin -->
+
+<div class="durocap-features-sec has-texture newtexturepos cmn-gap">
+    <div class="container">
+        <div class="durocap-features-inr">
+            <div class="texture">
+                <img src="/img/shape-4.png" alt="Texture">
             </div>
-            <div class="ruled-headers product-intro">{{ contents | safe }}</div>
-        </div>
-    </section>
-    <div class="bg-light">
-        <div class="bg-light section-v-padding">
-            <div class="grid-2 ruled-headers full-col no-margin">
-                <div style="background-image:url('{{ image_1 }}');" class="img-col">&nbsp;</div>
-                <div class="copy-col {% if remove_key_features_margin %}low-margin{% endif %}">
-                    <h3>Key Features</h3>
-                    {{ key_features | md }}
+            <div class="texture-2 texture">
+                <img src="/img/shape-4.png" alt="Texture">
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="durocap-features-left">
+                        <div class="durocap-features-img-col pt">
+                            <div class="dcapfture-img">
+                                <img src="{{ keyImages.images_1 }}" alt="DuroCap Features Image">
+                            </div>
+                            <div class="dcapfture-img">
+                                <img src="{{ keyImages.images_2 }}" alt="DuroCap Features Image">
+                            </div>
+                        </div>
+                        <div class="durocap-features-img-col pb">
+                            <div class="dcapfture-img">
+                                <img src="{{ keyImages.images_3 }}" alt="DuroCap Features Image">
+                            </div>
+                            <div class="dcapfture-img">
+                                <img src="{{ keyImages.images_4 }}" alt="DuroCap Features Image">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-lg-6">
+                    <div class="durocap-features-right">
+                        <div class="sec-inr-head">
+                            <h2>Key Features</h2>
+                        </div>
+                        <div class="durocap-features-items-wrp">
+                            {%- for feature in product.new-key-features -%}
+                            <div class="durocap-features-item">
+                                <div class="dcapftures-heading">
+                                    <h3>{{ feature.heading }}</h3>
+                                    <span class="chevron">
+                                        <i class="fa-solid fa-chevron-up"></i>
+                                    </span>
+                                </div>
+                                <div class="dcapftures-content">
+                                    <p>{{ feature.description }}</p>
+                                </div>
+                            </div>
+                            {%- endfor -%}
+                        </div>
+                    </div>
+                </div>                
             </div>
         </div>
     </div>
+</div>
+
+<!-- End Of DuroCap Features Section -->
+
+
     <div class="relative overflow-x-hidden">
         <section class="section static fi-container">
             <img class="floating-image" src="{{ image_2 }}" alt="">
