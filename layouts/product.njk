@@ -48,18 +48,18 @@
                     <div class="durocap-features-left">
                         <div class="durocap-features-img-col pt">
                             <div class="dcapfture-img">
-                                <img src="{{ key-images.images_1 }}" alt="DuroCap Features Image">
+                                <img src="{{ key_images.images_1 }}" alt="DuroCap Features Image">
                             </div>
                             <div class="dcapfture-img">
-                                <img src="{{ key-images.images_2 }}" alt="DuroCap Features Image">
+                                <img src="{{ key_images.images_2 }}" alt="DuroCap Features Image">
                             </div>
                         </div>
                         <div class="durocap-features-img-col pb">
                             <div class="dcapfture-img">
-                                <img src="{{ key-images.images_3 }}" alt="DuroCap Features Image">
+                                <img src="{{ key_images.images_3 }}" alt="DuroCap Features Image">
                             </div>
                             <div class="dcapfture-img">
-                                <img src="{{ key-images.images_4 }}" alt="DuroCap Features Image">
+                                <img src="{{ key_images.images_4 }}" alt="DuroCap Features Image">
                             </div>
                         </div>
                     </div>
@@ -70,16 +70,16 @@
                             <h2>Key Features</h2>
                         </div>
                         <div class="durocap-features-items-wrp">
-                            {%- for feature in product.new-key-features -%}
+                            {%- for item in new_key_features -%}
                             <div class="durocap-features-item">
                                 <div class="dcapftures-heading">
-                                    <h3>{{ feature.heading }}</h3>
+                                    <h3>{{ item.heading }}</h3>
                                     <span class="chevron">
                                         <i class="fa-solid fa-chevron-up"></i>
                                     </span>
                                 </div>
                                 <div class="dcapftures-content">
-                                    <p>{{ feature.description }}</p>
+                                    <p>{{ item.description }}</p>
                                 </div>
                             </div>
                             {%- endfor -%}
