@@ -6,7 +6,7 @@ seo:
     DuroDust™ can be tailored to capture specific dust contaminants threatening
     your operations and safety.
   page_title: Duroair Products
-nav_sort: 9000
+nav_sort: 
 show_in_menu: "false"
 jumbotron:
   img: /media/uploads/products-overview-hero.jpg
