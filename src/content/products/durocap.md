@@ -37,20 +37,30 @@ technical_specifications: >-
   * Pairs with enclosure made of a durable fire rated PVC vinyl meeting the requirements of NFPA 701.
 
   * System exhausts air to the exterior and requires ducting and make-up air.
-key_features: >-
-  * **Easy Assembly**: Comes fully assembled with a pre-wired control panel
-  (lockable fused disconnect and C/UL/US Listed). Combined with a DuroRoom, the
-  system can be installed in two to three days with a small crew.
-
-  * **[Taper Draft Airflow Technology](/products/taper-draft-airflow-technology)**: Directs air down the center of the enclosure to maximize control of overspray, keep the sidewalls clean, and speed drying time.
-
-  * **Meets/Exceeds CFM Requirements**:   Engineered airflow requirements from 13,500 CFM to 120,000 CFM and beyond, to achieve airflow over 100 FPM at the intake filter face and ensure airflow remains below code requirements of 25% of the LEL (lower explosion limit).
-
-  * **Vented Solution**: Suitable for production painting and paints over 2.8 lbs VOCs per gallon.
-
-  * **Variable Frequency Drive**: Energy-efficient VFD with adjustable air speeds, doubles as a soft starter to eliminate the need for a motor starter.
-
-  * **Fire Suppression**: Designed by Kidde Badger for protection of exhaust systems and the enclosure, while meeting NFPA 17 standards and is UL listed. Wet or dry systems are available depending upon requirements. Wet systems are for non-retracting only.
+new_key_features:
+  - description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+    heading: Easy Assembly
+  - description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+    heading: Taper Draft Airflow Technology
+  - description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+    heading: Meets/Exceeds CFM Requirements
+  - description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+    heading: Vented Solution
+  - description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+    heading: Variable Frequency Drive
+  - description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
+      free from dangerous particulates and corrosive dust contaminants.
+    heading: Fire Suppression
+key_images:
+  image_1: /media/uploads/dur-221408_fabtech_blog-img.jpg.jpg
+  image_2: /media/uploads/DUR-201314-thumb.jpg
+  image_3: /media/uploads/AZZ-enclosure-with-use-of-crane.jpg
+  image_4: /media/uploads/airplane.jpg
 image_2: /media/uploads/durocap-2.png
 compliance:
   - code: NFPA 33
@@ -89,6 +99,11 @@ product-intro:
     fans and valuable CNC machinery.
 btn_label: DOWNLOAD FACT SHEET
 show_in_menu: "true"
+keyImages:
+  image_1: /media/uploads/DUR_Feb2020_Blog-thumb.jpg
+  image_2: /media/uploads/cusotm_hard-walled_clean_room_solutions.jpg
+  image_3: /media/uploads/dur-221402-april-bloghumb.jpg
+  image_4: /media/uploads/dur-201309-thumb.jpg
 new-key-features:
   - heading: Easy Assembly
     description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
@@ -108,12 +123,21 @@ new-key-features:
   - description: DuroCap™ vented filtration creates a clean air chamber nearly 100%
       free from dangerous particulates and corrosive dust contaminants.
     heading: Fire Suppression
-keyImages:
-  image_1: /media/uploads/DUR_Feb2020_Blog-thumb.jpg
-  image_2: /media/uploads/cusotm_hard-walled_clean_room_solutions.jpg
-  image_3: /media/uploads/dur-221402-april-bloghumb.jpg
-  image_4: /media/uploads/dur-201309-thumb.jpg
 nav_title: DuroCap
+key_features: >-
+  * **Easy Assembly**: Comes fully assembled with a pre-wired control panel
+  (lockable fused disconnect and C/UL/US Listed). Combined with a DuroRoom, the
+  system can be installed in two to three days with a small crew.
+
+  * **[Taper Draft Airflow Technology](/products/taper-draft-airflow-technology)**: Directs air down the center of the enclosure to maximize control of overspray, keep the sidewalls clean, and speed drying time.
+
+  * **Meets/Exceeds CFM Requirements**:   Engineered airflow requirements from 13,500 CFM to 120,000 CFM and beyond, to achieve airflow over 100 FPM at the intake filter face and ensure airflow remains below code requirements of 25% of the LEL (lower explosion limit).
+
+  * **Vented Solution**: Suitable for production painting and paints over 2.8 lbs VOCs per gallon.
+
+  * **Variable Frequency Drive**: Energy-efficient VFD with adjustable air speeds, doubles as a soft starter to eliminate the need for a motor starter.
+
+  * **Fire Suppression**: Designed by Kidde Badger for protection of exhaust systems and the enclosure, while meeting NFPA 17 standards and is UL listed. Wet or dry systems are available depending upon requirements. Wet systems are for non-retracting only.
 ---
 ### How it Works
 
