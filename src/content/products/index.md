@@ -7,7 +7,7 @@ seo:
     your operations and safety.
   page_title: Duroair Products
 nav_sort: 9000
-show_in_menu: "false"
+show_in_menu: "true"
 jumbotron:
   img: /media/uploads/products-overview-hero.jpg
 intro_img: /media/uploads/products-intro.jpg
