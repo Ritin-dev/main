@@ -158,25 +158,47 @@
 
 <!-- End Of Tech Specs Section -->
 
-    <section class="section pt-0">
-        {#        <h3 class="text-center ruled">{{ title }} ISO 14644-1 Classifications</h3> #}
-        <div class="collapse-trigger-container bg-white" data-toggle="#iso-info">
-            <h4 class="collapse-trigger">{{ title }} ISO 14644-1 Classifications</h4>
-            <div class="collapsible" id="iso-info"><br>
-                <p class="text-center">All classifications are in accordance with U.S. Federal Standard 209E and represent concentrations of particles using reference size of 0.5 micron.</p>
-                <table class="code-compliance bg-white">
-                    <thead>
-                    <th>Code Compliance</th>
-                    <th>Code Description</th>
-                    </thead>
-                    {%- for item in compliance -%}
-                        <tr>
-                            <td><strong>{{ item.code }}</strong></td>
-                            <td>{{ item.description | nl2br }}</td>
-                        </tr>
-                    {%- endfor -%}
-                </table>
+    <!-- Specialised Section Begin -->
+
+<div class="specialised-sec">
+    <div class="container">
+        <div class="specialised-inr">
+            <div class="gr-brdr"><img src="/img/gr-brdr.png" alt="Gradient Border"></div>
+            <div class="row">
+                <div class="specialised-left-wrp">
+                    <div class="spacialised-left">
+                        <div class="sec-inr-head">
+                            <h2>Specialised Solutions for Your Product</h2>
+                        </div>
+                        <p>Between manufacturing, MRO, and prototyping, you don’t have time to rearrange your entire facility with the dedicated space and</p>
+                    </div>
+                </div>
+                <div class="specialised-slider-wrp">
+                    <div class="specialised-slider">
+                        {%- for item in related_solutions -%}
+                        {%- set solution = item | findByField('title', solutions) -%}
+                        <div class="specialised-slider-item">
+                            <div class="specialised-item-inr">
+                                <a href="/{{ solution.path }}" class="specialised-img">
+                                    <img src="{{ solution.thumbnail }}" alt="Specialised Image">
+                                </a>
+                                <div class="specialised-card-content">
+                                    <div class="spcl-card-content-inr"> 
+                                        <h3><a href="/{{ solution.path }}">{{ solution.title }}</a></h3>
+                                        <p>{{ solution.short_description }}</p>
+                                    </div>
+                                    <a href="/{{ solution.path }}">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+
+<!-- End Of Specialised Section -->
+
+
 {% endblock %}
