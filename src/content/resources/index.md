@@ -5,7 +5,7 @@ seo:
   description: Learn lean manufacturing tips from Duroair’s experts to turn the
     manufacturing clean air challenge into a competitive advantage.
   page_title: "Resources | Learn Lean Manufacturing Air Purification "
-nav_sort: 7000
+nav_sort: 6000
 show_in_menu: "true"
 jumbotron:
   headline: Resources
