@@ -1,8 +1,6 @@
 - name: "goverment-and-military"
-  label: "goverment-and-military"
+  label: "Goverment And Military"
   file: "src/content/goverment-and-military/index.md"
-  create: true
-  filter: {field: "layout", value: "goverment-and-military.njk"}
   fields:
     <!-- @include-static ../partials/base-fields.yml -->
     <!-- @include-static ../partials/jumbotron.yml -->
