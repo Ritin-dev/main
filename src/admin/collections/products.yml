@@ -22,7 +22,7 @@
       label: Technical Specification
       widget: object
       fields:
-        - {label: Technical Heading, name: technical_heading, widget: string}
+        - {label: Technical Heading, name: "technical_heading", widget: string}
         - {label: "Technical Description", name: "technical_description", widget: "markdown"}
     - name: new_key_features
       label: New Key Features
