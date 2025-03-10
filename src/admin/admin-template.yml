@@ -24,6 +24,7 @@ collections:
       <!-- @include collections/products-overview.yml -->
       <!-- @include collections/industry-associations.yml -->
       <!-- @include collections/resources.yml -->
+      <!-- @include collections/goverment-and-military.yml -->
       
   - label: "Site"
     name: "site"
