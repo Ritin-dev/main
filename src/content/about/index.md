@@ -81,6 +81,44 @@ our_experties:
       * Engineering [solutions](#url) to isolate, capture, and contain a wide variety of industrial processes
 
       * Going [beyond EHS compliance](#url) to maximize efficiency and productivity
+  - heading: Innovating Industrial Clean Air Solutions
+    description: >-
+      Never satisfied with the status quo, we’re always searching for new
+      technology and methods for creating a clean air competitive advantage:
+
+
+      * Hexavalent Chromium Protection: Through independent testing, Duroair has verified that our exhaust systems meet or exceed NESHAP 319 standards by capturing and containing hexavalent chromium - allowing clean air to be recirculated back into the manufacturing space or vented outside.
+
+      * Dust Collection Innovation: Because your employees are your most valuable assets, Duroair has developed [DuroDust™](#url), a dust collection system that provides a properly-vented, regulated work area that limits employees' exposure to respirable silica, metal dust, and other particulates.
+
+      * Space-Saving Hinge Design: Space efficiency is always a priority, so Duroair has created a new hinge design that does not impact the enclosure footprint and moves up in the vertical wall axis, while the building retracts to under 20 percent of its extended length.
+    image: /media/uploads/dur-201314-november-1-img-2.jpg
+  - heading: Safety First Philosophy
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    image: /media/uploads/key-features-pushing-enclosure-into-sea-can.webp
+  - heading: Sustainability Commitment
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    image: /media/uploads/DUR-201314-thumb.jpg
 image_1: /img/image-1-about2.jpg
 copy_block_1: >-
   ### Innovating Industrial Clean Air Solutions
