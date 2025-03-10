@@ -45,7 +45,7 @@
                                             {%- endfor -%}
 
                                             {# Add Products inside Solutions in a new column #}
-                                            {%- if navs.products.children.length -%}  
+                                            {%- if navs.products and navs.products.children and navs.products.children | length > 0 -%}  
                                                 
                                                 <!-- Force a new column for Products -->
                                                 <div class="nav-dropdown-column">  
