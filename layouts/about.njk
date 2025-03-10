@@ -151,32 +151,21 @@
 <!-- End Of More About Section -->
 
 
-
-<div class="bg-light">
-    <section class="section">
-        <h3 class="text-center ruled">Always Engineered, Never Off the Shelf</h3><br><br>
-        {%- for card in cards -%}
-        <div class="card card-horizontal" data-href="{{card.url}}">
-            <div class="card-img-container">
-                <img src="{{card.image}}" class="img-responsive card-img" alt="">
-            </div>
-            <div class="card-copy">
-                <h4 class="h3 pc">{{card.title}}</h4>
-                {{card.copy}}
-                <br><a href="{{card.url}}" class="link-learn-more card-link">Learn More</a>
-            </div>
+<!-- GLOBAL-LEADERS-SECTION -->
+  <div class="global-leaders-wrap pb-170">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Duroair's Global Impact </h2>
+          </div>
         </div>
-        {%- endfor %}
-    </section>
-</div>
-<section class="section">
-    <h3 class="ruled text-center">Solutions Delivered</h3>
-    <br><br>
-        {% include "partials/solutions-delivered.njk" %}
-</section>
-<section class="section">
-    <h3 class="ruled text-center">Duroair, a Nederman Company</h3>
-    <br><br>
-        {% include "partials/about-us-additional.njk" %}
-</section>
+        <div class="col-lg-12">
+         {% include "partials/solutions-delivered.njk" %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- GLOBAL-LEADERS-SECTION -->
+
 {% endblock %}
