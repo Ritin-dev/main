@@ -85,6 +85,42 @@
 
 <!-- End of Milestonse Section -->
 
+<!-- Expertise Section Begin -->
+
+<div class="expertise-sec">
+  <div class="container">
+      <div class="expertise-inr">
+          <div class="sec-head">
+              <h2>Our Expertise</h2>
+          </div>
+          {%- for item in our_experties -%}
+          <div class="expertise-cards row">
+              <div class="expts-card-left-wrp col-lg-6">
+                  <div class="expts-card-left">
+                      <div class="exptscd-img">
+                          <img src="{{ item.image }}" alt="Expertise Image">
+                      </div>
+                  </div>
+              </div>
+              <div class="expts-card-right-wrp col-lg-6">
+                  <div class="expts-card-right">
+                      <div class="sec-inr-head">
+                          <h3 class="h2-title">{{ item.heading }}</h3>
+                      </div>
+                      <div class="lagecy-content">
+                        {{ item.description }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+          {%- endfor -%}
+      </div>
+  </div>
+</div>
+
+<!-- End Of Expertise Section -->
+
+
 
 <div class="bg-light">
     <section class="section">
