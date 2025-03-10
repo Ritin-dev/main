@@ -8,11 +8,11 @@ nav_sort: 3000
 show_in_menu: "true"
 jumbotron:
   img: /img/heros/hero-militarydefense.jpg
-layout: goverment-and-military.njk
+layout: industry.njk
 thumbnail: /img/thumbs/hero-militarydefense.jpg
 image_1: /img/image-1-militarydefense.jpg
 image_2: /img/image-2-militarydefense.jpg
-permalink: /government-and-military
+permalink: industries/government-and-military
 short_description: Contain your largest jet, MRAP, or submarine manufacturing processes.
 secondary_copy: >-
   ### Modular Industrial Air Filtration Solutions for Military and Defense
