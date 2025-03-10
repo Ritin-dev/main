@@ -7,6 +7,31 @@
     <!-- @include-static ../partials/nav-fields.yml -->
     <!-- @include-static ../partials/jumbotron.yml -->
     - {label: Intro, name: body, widget: markdown }
+    - name: about_intro
+      label: About Intro
+      widget: object
+      fields:
+        - {label: Heading, name: heading, widget: string}
+        - {label: Description, name: description, widget: markdown}
+    - name: a_nederman_company
+      label: A Nedermen Company
+      widget: object
+      fields:
+        - {label: Heading, name: heading, widget: string}
+        - {label: Description, name: description, widget: markdown}
+    - name: key_milestone
+      label: Key Milestone
+      widget: object
+      fields:
+        - {label: Year, name: year, widget: string}
+        - {label: Description, name: description, widget: markdown}
+    - name: our_experties
+      label: Our Experties
+      widget: list
+      fields:
+        - {label: Heading, name: heading, widget: string}
+        - {label: "Image", name: "image", widget: "image"}
+        - {label: Description, name: description, widget: markdown}
     - {label: "Image", name: "image_1", widget: "image"}
     - {label: Copy Block 1 , name: copy_block_1, widget: markdown }
     - {label: "Image 2", name: "image_2", widget: "image"}
