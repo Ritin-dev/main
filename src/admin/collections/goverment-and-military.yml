@@ -2,10 +2,10 @@
   label: "Goverment And Military"
   file: "src/content/goverment-and-military/index.md"
   fields:
+    - {label: "Layout", name: "layout", widget: "hidden", default: "goverment-and-military.njk"}
     <!-- @include-static ../partials/base-fields.yml -->
     <!-- @include-static ../partials/jumbotron.yml -->
     <!-- @include-static ../partials/nav-fields.yml -->
-    - {label: "Layout", name: "layout", widget: "hidden", default: "goverment-and-military.njk"}
     - {label: "Permalink", name: "permalink", widget: "string", required: false}
     - {label: "Thumbnail", name: "thumbnail", widget: "image", required: true}
     - {label: "Page Image 1", name: "image_1", widget: "image", required: false}
