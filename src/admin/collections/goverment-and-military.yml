@@ -1,6 +1,8 @@
 - name: "goverment-and-military"
   label: "Goverment And Military"
   file: "src/content/goverment-and-military/index.md"
+  create: true
+  filter: {field: "layout", value: "goverment-and-military.njk"}
   fields:
     <!-- @include-static ../partials/base-fields.yml -->
     <!-- @include-static ../partials/jumbotron.yml -->
@@ -13,8 +15,8 @@
     - {label: "Page Image 3", name: "image_3", widget: "image", required: false}
     - {label: "Short Description", name: "short_description", widget: "text", 'hint':'shows on cards and summaries'}
     - {label: "Intro", name: "body", widget: "markdown"}
-    - {label: "Copy Block 1", name: "copy_block_1", widget: "markdown", required: false}
-    - {label: "Copy Block 2", name: "copy_block_2", widget: "markdown", 'hint': 'technical specs, etc.', required: false}
+    - {label: "Copy Block 1", name: "copy_block_1", widget: "markdown"}
+    - {label: "Copy Block 2", name: "copy_block_2", widget: "markdown", 'hint': 'technical specs, etc.'}
     - name: compliance
       label: Compliance
       widget: list
@@ -23,5 +25,5 @@
         - {label: Description, name: description, widget: string}
     - {label: "Related Products", name: "related_products", widget: "relation", multiple: true, collection: "product", search_fields: ["title"], value_field: "title", "hint":"Begin typing to select a related solution ", required: false}
     <!-- @include-static ../partials/testimonial.yml -->
-    - { label: "Form Intro", name: "form_intro", widget: "markdown", required: false }
-    - { label: "Hubspot Form ID", name: "hubspot_form_id", widget: "string", required: true, default: "8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4", required: false }
+    - { label: "Form Intro", name: "form_intro", widget: "markdown" }
+    - { label: "Hubspot Form ID", name: "hubspot_form_id", widget: "string", required: true, default: "8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4" }
