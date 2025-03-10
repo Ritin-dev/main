@@ -18,7 +18,12 @@
     - {label: "Short Description", name: "short_description", widget: "markdown"}
     - {label: "Intro", name: "body", widget: "markdown"}
     - {label: "Page Image 1", name: "image_1", widget: "image", required: false}
-    - {label: "Technical Specifications", name: "technical_specifications", widget: "markdown"}
+    - name: techncal_specification
+      label: Technical Specification
+      widget: object
+      fields:
+        - {label: Technical Heading, name: technical_heading, widget: string}
+        - {label: "Technical Description", name: "technical_description", widget: "markdown"}
     - name: new_key_features
       label: New Key Features
       widget: list
