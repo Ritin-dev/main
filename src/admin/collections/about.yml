@@ -39,7 +39,7 @@
       label: Bottom Cards
       widget: list
       fields:
-        - {label: copy, name: copy, widget: markdown}
         - {label: title, name: title, widget: string}
+        - {label: copy, name: copy, widget: markdown}
         - {label: URL, name: url, widget: string}
         - {label: "Image", name: "image", widget: "image"}
