@@ -375,7 +375,7 @@ collections:
           - {label: "Image 3", name: "image_3", widget: "image"}
       - name: "Goverment and military"
         label: "Govermant And Miltary"
-        files: "src/content/goverment-and-military/military-defense.md"
+        file: "src/content/goverment-and-military/military-defense.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "goverment-and-military.njk"}
           - {label: "Title", name: "title", widget: "string"}
