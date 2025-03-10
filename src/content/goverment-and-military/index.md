@@ -8,7 +8,7 @@ nav_sort: 3000
 show_in_menu: "true"
 jumbotron:
   img: /img/heros/hero-militarydefense.jpg
-layout: industry.njk
+layout: goverment-and-military.njk
 thumbnail: /img/thumbs/hero-militarydefense.jpg
 image_1: /img/image-1-militarydefense.jpg
 image_2: /img/image-2-militarydefense.jpg
