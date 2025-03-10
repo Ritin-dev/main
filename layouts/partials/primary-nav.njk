@@ -20,11 +20,12 @@
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="nav-dropdown-in">
-                                                {%- if item.name === solutions -%}
-                                 <h2>Applications</h2>
-                                 {%- else -%}
-                                 <h2>{{ item.name }}</h2>
-                                 {%- endif -%}
+                                                {%- if item.name == "solutions" -%}
+                                                    <h2>Applications</h2>
+                                                {%- else -%}
+                                                    <h2>{{ item.name }}</h2>
+                                                {%- endif -%}
+
                                                 <div class="nav-dropdown-in-item-outer">
                                                     <div class="nav-dropdown-columns">
                                                         {%- for child in item.children -%}
