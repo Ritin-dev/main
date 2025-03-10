@@ -1,6 +1,42 @@
 {% extends "layout.njk" %}
 {% set waveType = 'gray' %}
 {% block body %}
+
+<!-- Our Lagecy Section Begin -->
+
+    <div class="lagecy-sec">
+      <div class="container">
+        <div class="lagecy-inr">
+          <div class="lagecy-inr-row row">
+            <div class="lagecy-left-wrp col-lg-6">
+              <div class="lagecy-left">
+                <div class="sec-inr-head">
+                  <h2>{{ about_intro.heading }}</h2>
+                </div>
+                <div class="lagecy-content">
+                  {{ about_intro.description }}
+                </div>
+              </div>
+            </div>
+            <div class="lagecy-right-wrp col-lg-6">
+                <div class="lagecy-right">
+                    <div class="lagecy-right-imges">
+                        <div class="img-1 lagecy-img-wrp">
+                            <img src="{{ about_intro.image_1 }}" alt="Lagecy image">
+                        </div>
+                        <div class="img-2 lagecy-img-wrp">
+                            <img src="{{ about_intro.image_2 }}" alt="Lagecy Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- End Of Our Lagecy Section -->
+  
 <div class="bg-light">
 <section class="section">
     <div class="grid-2 vc"> 
