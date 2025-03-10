@@ -1,6 +1,6 @@
 - name: "goverment-and-military"
   label: "goverment-and-military"
-  folder: "src/content/goverment-and-military"
+  file: "src/content/goverment-and-military/index.md"
   create: true
   filter: {field: "layout", value: "goverment-and-military.njk"}
   fields:
