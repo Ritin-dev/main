@@ -120,6 +120,36 @@
 
 <!-- End Of Expertise Section -->
 
+<!-- More About Section Begin -->
+
+<div class="more-abt-sec">
+  <div class="container">
+      <div class="moreabt-inr">
+          <div class="sec-head">
+              <h2>Learn More About Duroair</h2>
+          </div>
+          <div class="mrabt-cards-outer">
+              <div class="mrabt-cards-row row">
+                {%- for card in cards -%}
+                  <div class="mr-abt-card col-lg-6 col-md-6 col-sm-6">
+                      <div class="mr-abt-card-inr" data-href="{{card.url}}">
+                          <div class="mrabtcdimg">
+                              <img src="{{card.image}}" alt="More About Card icon">
+                          </div>
+                          <div class="mrabtcdtitle">
+                              <h3>{{card.title}}</h3>
+                          </div>
+                      </div>
+                  </div>
+                  {%- endfor %}
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- End Of More About Section -->
+
 
 
 <div class="bg-light">
