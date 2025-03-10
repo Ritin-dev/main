@@ -54,6 +54,38 @@
 
 <!-- End Of Nederman Section -->
 
+<!-- Milestonse Section begin -->
+
+<div class="milestones-sec">
+  <div class="container">
+      <div class="mlstn-inr">
+          <div class="sec-head">
+              <h2>Key Milestones</h2>
+          </div>
+          
+          <div class="timeline-container">
+              <div class="timeline">
+                {%- for item in key_milestone -%}
+                  <div class="segment"></div>
+                {%- endfor -%}
+              </div>
+              {%- for item in key_milestone -%}
+              <div class="event">
+                  <div class="event-dtls">
+                      <h2>{{key_milestone.year}}</h2>
+                      <p>{{key_milestone.description}}</p>
+                  </div>
+                  <div class="dot"></div>
+              </div>
+              {%- endfor -%}
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- End of Milestonse Section -->
+
+
 <div class="bg-light">
     <section class="section">
         <h3 class="text-center ruled">Always Engineered, Never Off the Shelf</h3><br><br>
