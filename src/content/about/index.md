@@ -11,6 +11,75 @@ nav_sort: 5000
 show_in_menu: "true"
 jumbotron:
   img: /img/heros/hero-about.jpg
+about_intro:
+  description: >-
+    At Duroair, we believe everyone deserves a clean, productive and safe
+    working environment. For more than a decade, we've invested in research and
+    development to design and manufacture industrial clean air solutions that
+    not only meet EHS compliance, but also have a measurable impact on the
+    manufacturing bottom line.
+
+
+    From North America to Asia, Europe and beyond, we're committed to:
+
+
+    * Improving overall health and safety in lean manufacturing facilities
+
+    * Engineering [solutions](#url) to isolate, capture, and contain a wide variety of industrial processes
+
+    * Going [beyond EHS compliance](#url) to maximize efficiency and productivity
+  heading: "Our Legacy: Transforming Air Quality for Over [X] Years"
+a_nederman_company:
+  heading: Duroair, a Nederman Company
+  description: >-
+    Nederman is an environmental technology company and a global leader in
+    industrial air filtration dedicated to capturing, measuring, controlling and
+    cleaning air to make industrial production more efficient, safe and
+    sustainable. With expertise, products and turnkey solutions the Nederman
+    Group protect people, planet and production from harmful effects of
+    industrial processes. From duct and filters to advanced measurements
+    technology for monitoring and control of the filtration process Nederman
+    Group provide clean air optimized – reduced energy consumption, improved
+    process efficiency, health and safety and compliance with laws and
+    regulations.
+
+
+    Nederman is listed on Nasdaq Stockholm and present in more than 50 countries.
+
+
+    With local expertise and global presence our mission is clear – we shape the future for clean air. Learn more at [nedermangroup.com](#url)
+key_milestone:
+  - year: "2018"
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - year: "2019"
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - year: "2020"
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - year: "2021"
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+our_experties:
+  - heading: Making the Business Case for Clean Air
+    image: /media/uploads/dur-221401-march-blog1-img.jpg
+    description: >-
+      At Duroair, we believe everyone deserves a clean, productive and safe
+      working environment. For more than a decade, we've invested in research
+      and development to design and manufacture industrial clean air solutions
+      that not only meet EHS compliance, but also have a measurable impact on
+      the manufacturing bottom line.
+
+
+      From North America to Asia, Europe and beyond, we're committed to:
+
+
+      * Improving overall health and safety in lean manufacturing facilities
+
+      * Engineering [solutions](#url) to isolate, capture, and contain a wide variety of industrial processes
+
+      * Going [beyond EHS compliance](#url) to maximize efficiency and productivity
 image_1: /img/image-1-about2.jpg
 copy_block_1: >-
   ### Innovating Industrial Clean Air Solutions
@@ -26,17 +95,29 @@ copy_block_1: >-
   * **Space-Saving Hinge Design:** Space efficiency is always a priority, so Duroair has created a new hinge design that does not impact the enclosure footprint and moves up in the vertical wall axis, while the building retracts to under 20 percent of its extended length.
 image_2: /img/image-2-aerospace.jpg
 cards:
-  - copy: Duroair engineers custom solutions that meet EHS requirements and other
-      clean air compliance standards while improving the bottom line.
-    image: /img/beyond-compliance-card-img.jpg
-    title: Beyond Compliance
-    url: /about/beyond-compliance/
+  - title: Why Duroair
+    copy: Duroair’s consultative approach to engineering clean air solutions is
+      always responsive to manufacturers’ environmental, safety, and budgetary
+      needs.
+    image: /media/uploads/vector-10-.png
+    url: /about/why-duroair
   - copy: Duroair’s consultative approach to engineering clean air solutions is
       always responsive to manufacturers’ environmental, safety, and budgetary
       needs.
-    image: /img/how-we-work-card-img.jpg
+    image: /media/uploads/group-3-.png
     title: How We Work
     url: /how-we-work/
+  - copy: Duroair engineers custom solutions that meet EHS requirements and other
+      clean air compliance standards while improving the bottom line.
+    image: /media/uploads/group-3800.png
+    title: Beyond Compliance
+    url: /about/beyond-compliance/
+  - title: Industry Associations
+    copy: Duroair’s consultative approach to engineering clean air solutions is
+      always responsive to manufacturers’ environmental, safety, and budgetary
+      needs.
+    image: /media/uploads/group-3802.png
+    url: /about/industry-associations
 ---
 ### Making the Business Case<br>for Clean Air
 
