@@ -14,7 +14,7 @@
       label: Outro 
       widget: object
       fields:
-       - {label: Heading, name: heading, widget: markdown }
+       - {label: Heading, name: heading, widget: string }
        - {label: description, name: description, widget: markdown }
        - {label: "Image 2", name: "image_2", widget: "image"}
     - name: compliance 
