@@ -19,12 +19,16 @@ description: >-
 
 
   We can also help you increase productivity and improve overall operations to become:
-image_1: /img/image-1-beyondcompliance.jpg
+outro_head: Clean Air Solutions Tailored to Your Industry
+outro_desc: See [solutions for your industry](/solutions/) to lean how Duroair
+  can help you achieve EHS compliance and other clean air standards while
+  improving your bottom line.
 outro: >-
   ### Clean Air Solutions Tailored to Your Industry
 
 
   See [solutions for your industry](/industries) to lean how Duroair can help you achieve EHS compliance and other clean air standards while improving your bottom line.
+image_1: /img/image-1-beyondcompliance.jpg
 image_2: /img/image-2-beyondcompliance.jpg
 compliance:
   - code: ISO6 temperature and humidity control
