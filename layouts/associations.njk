@@ -4,9 +4,24 @@
     <div class="text-center">
         {{ contents | safe }}
         <br><br>
-        {% include "partials/associations.njk" %}
     </div>
 </section>
+
+    <!-- Industry Partner Section Begin -->
+
+        <div class="industry-partner-sec">
+            <div class="container">
+                <div class="industry-partner-inr">
+                    <div class="sec-head newhedline">
+                        <h2>Our Industry Association Partners</h2>
+                    </div>
+                    {% include "partials/associations.njk" %}
+                </div>
+            </div>
+        </div>
+
+    <!-- End Of Industry Partner Section -->
+
 {% endblock %}
 {% block testimonial %}
 {% include "partials/testimonial.njk" %}
