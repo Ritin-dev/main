@@ -46,6 +46,4 @@
         - {label: Code, name: code, widget: string}
         - {label: Description, name: description, widget: string}
     
-    <!-- @include-static ../partials/testimonial.yml -->
-    - { label: "Form Intro", name: "form_intro", widget: "markdown", required: false }
-    - { label: "Hubspot Form ID", name: "hubspot_form_id", widget: "string", required: true, default: "8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4", required: false }
+    
