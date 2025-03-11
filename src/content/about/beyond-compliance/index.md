@@ -20,9 +20,9 @@ description: >-
 
   We can also help you increase productivity and improve overall operations to become:
 outro_head: Clean Air Solutions Tailored to Your Industry
-outro_desc: See [solutions for your industry](/solutions/) to lean how Duroair
-  can help you achieve EHS compliance and other clean air standards while
-  improving your bottom line.
+outro_desc: See solutions for your industry to lean how Duroair can help you
+  achieve EHS compliance and other clean air standards while improving your
+  bottom line.
 outro: >-
   ### Clean Air Solutions Tailored to Your Industry
 
