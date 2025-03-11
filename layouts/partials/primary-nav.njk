@@ -14,7 +14,7 @@
                 {%- if item.children.length -%} <i class="far fa-chevron-down"></i> {%- endif -%}
             </a>
 
-            {%- if item.children.length or (item.name == "solutions" and navs.products.children) -%}
+            {%- if item.children.length or item.name == "solutions" -%}
             <div class="nav-dropdown" aria-hidden="true">
                 <div class="container">
                     <div class="row">
@@ -24,81 +24,70 @@
                                 <div class="nav-dropdown-in-item-outer">
                                     <div class="nav-dropdown-columns">
                                         
-                                        {%- if item.name == "Solutions" -%}
-                                            
-                                            {# Loop through Solutions normally #}
-                                            {%- for child in item.children -%}
-                                                {%- if loop.index0 % 5 == 0 -%} 
-                                                <div class="nav-dropdown-column">
-                                                {%- endif -%}
-                                                    
-                                                    <div class="nav-dropdown-in-item">
-                                                        <a href="/{{ child.file.path | replace('index.html', '') }}">
-                                                            {{ child.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
-                                                        </a>
-                                                    </div>
-
-                                                {%- if loop.index0 % 5 == 4 or loop.last -%} 
-                                                </div>
-                                                {%- endif -%}
-                                            {%- endfor -%}
-
-                                            {# Add Products inside Solutions in a new column #}
-                                            {%- if navs.products.children and navs.products.children.length > 0 -%}  
-                                                
-                                                <!-- Force a new column for Products -->
-                                                <div class="nav-dropdown-column">  
-                                                    <h3>Products</h3>
-                                                </div>
-
-                                                {%- for product in navs.products.children -%} 
-                                                    {%- if loop.index0 % 5 == 0 -%} 
-                                                    <div class="nav-dropdown-column">
-                                                    {%- endif -%}
-                                                    
-                                                    <div class="nav-dropdown-in-item">
-                                                        <a href="/{{ product.file.path | replace('index.html', '') }}">
-                                                            {{ product.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
-                                                        </a>
-                                                    </div>
-
-                                                    {%- if loop.index0 % 5 == 4 or loop.last -%} 
-                                                    </div>
-                                                    {%- endif -%}
-                                                {%- endfor -%}
-
+                                        {# Loop through normal children #}
+                                        {%- for child in item.children -%}
+                                            {%- if loop.index0 % 5 == 0 -%} 
+                                            <div class="nav-dropdown-column">
                                             {%- endif -%}
-
-                                        {%- else -%}
-                                            {%- for child in item.children -%}
-                                                {%- if loop.index0 % 5 == 0 -%} 
-                                                <div class="nav-dropdown-column">
-                                                {%- endif -%}
-                                                    
-                                                    <div class="nav-dropdown-in-item">
-                                                        <a href="/{{ child.file.path | replace('index.html', '') }}">
-                                                            {{ child.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
-                                                        </a>
-                                                    </div>
-
-                                                {%- if loop.index0 % 5 == 4 or loop.last -%} 
+                                                
+                                                <div class="nav-dropdown-in-item">
+                                                    <a href="/{{ child.file.path | replace('index.html', '') }}">
+                                                        {{ child.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
+                                                    </a>
                                                 </div>
-                                                {%- endif -%}
-                                            {%- endfor -%}
-                                        {%- endif -%}
+
+                                            {%- if loop.index0 % 5 == 4 or loop.last -%} 
+                                            </div>
+                                            {%- endif -%}
+                                        {%- endfor -%}
 
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
+
+                {# Restart the loop to add Products inside Solutions #}
+                {%- if item.name == "solutions" and navs.products.children -%}
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="nav-dropdown-in">
+                                <h3>Products</h3>
+                                <div class="nav-dropdown-in-item-outer">
+                                    <div class="nav-dropdown-columns">
+
+                                        {%- for product in navs.products.children -%}
+                                            {%- if loop.index0 % 5 == 0 -%} 
+                                            <div class="nav-dropdown-column">
+                                            {%- endif -%}
+
+                                            <div class="nav-dropdown-in-item">
+                                                <a href="/{{ product.file.path | replace('index.html', '') }}">
+                                                    {{ product.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
+                                                </a>
+                                            </div>
+
+                                            {%- if loop.index0 % 5 == 4 or loop.last -%} 
+                                            </div>
+                                            {%- endif -%}
+                                        {%- endfor -%}
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {%- endif -%}
+
             </div>
             {%- endif -%}
         </li>
     {%- endfor -%}
 </ul>
+
 
             </div>
         <div class="nav-right-part d-flex align-items-center">
