@@ -48,6 +48,15 @@
 
     <!-- End Of Industry Partner Section -->
 
+    {% if cta %}
+                <div class="blog-cta">
+                    <div class="blog-cta-copy">
+                        {{cta.copy}}
+                    </div>
+                    <a href="{{cta.url}}" class="btn">{{cta.label}}</a>
+                </div>
+            {% endif %}
+
 {% endblock %}
 {% block testimonial %}
 {% include "partials/testimonial.njk" %}
