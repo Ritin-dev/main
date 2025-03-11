@@ -151,7 +151,7 @@ collections:
       - {label: "Trade Show Date", name: "trade_show_date", widget: "string", hint: "Don't put full URL slug, only example-page"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Form Intro", name: "form_intro", widget: "string"}
-      - {label: "Hubspot Form ID", name: "hubspot_form_id", widget: "string"}
+      - {label: "Hubspot Form ID", name: "hubspot_form_id_1", widget: "string"}
       - {label: "Video Embed", name: "video_embed", widget: "text", required: false, hint: "Use the  embed code from youtube, vimeo, etc."}
       - name: bottom_section
         label: Bottom Page bottom
