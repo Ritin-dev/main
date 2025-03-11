@@ -9,6 +9,16 @@ nav_sort: 4000
 show_in_menu: "true"
 jumbotron:
   img: /img/heros/hero-beyondcompliance.jpg
+heading: We've Got Your EHS Compliance Covered
+description: >-
+  At Duroair, we go beyond compliance to deliver real value for your clean air
+  investment.
+
+
+  Keeping environmental regulators off your back is just good business. This is why Duroair engineers custom-designed, flexible clean air solutions that meet EPA, OSHA, NFPA, and NESHAP compliance standards.
+
+
+  We can also help you increase productivity and improve overall operations to become:
 image_1: /img/image-1-beyondcompliance.jpg
 outro: >-
   ### Clean Air Solutions Tailored to Your Industry
