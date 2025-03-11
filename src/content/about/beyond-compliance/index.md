@@ -29,7 +29,7 @@ outro: >-
 
   See [solutions for your industry](/industries) to lean how Duroair can help you achieve EHS compliance and other clean air standards while improving your bottom line.
 image_1: /img/image-1-beyondcompliance.jpg
-image_2: /img/image-2-beyondcompliance.jpg
+image_2: /media/uploads/dur-201305-february-blog-img.jpg
 compliance:
   - code: ISO6 temperature and humidity control
     description: ISO class clean room typically measures micron sizes 5.0µ, 0.5µ and 0.3µ
