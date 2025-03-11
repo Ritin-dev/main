@@ -33,13 +33,39 @@
 
     <!-- End Of Transforming Solution Section -->
 
-<div class="bg-light"> 
-<section class="section">
-    <h3 class="text-center ruled">We’ve Got Your Compliance Covered</h3>
-    <p class="text-center narrow-text">We can design a responsive solution to meet your industry’s clean air standards, including the following environmental and safety requirements.</p>
-    {% include "partials/compliance-table.njk" %}
-</section>
-</div>
+    <!-- BEYOND-COMPLIANCE-SECTION -->
+     
+        {%- include "partials/beyond-compliance-icon-blocks.njk" -%}
+
+    <!-- BEYOND-COMPLIANCE-SECTION -->
+
+
+
+<!-- Tech Specs Section Begin -->
+
+    <div class="tech-specs-sec cmn-gap beyond-compliance-pg pb-0">
+        <div class="container">
+            <div class="tech-specs-inr">
+                <div class="sec-head-wrp">
+                    <div class="sec-head newhedline">
+                        <h2>We’ve Got Your Compliance Covered</h2>
+                    </div>
+                    <p>We can design a responsive solution to meet your industry’s clean air standards, including the following environmental and safety requirements.</p>
+                </div>
+                <div class="dcap-classification-wrp">
+                    <div class="dcap-classification-content" style="display: block !important;">
+                        <div class="dcapclfication-table">
+                         {% include "partials/compliance-table.njk" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End Of Tech Specs Section -->
+
+
 <section class=" full" style="padding-bottom:0;">
 <div class="grid-2 ruled-headers full-col">
     <div class="copy-col">
