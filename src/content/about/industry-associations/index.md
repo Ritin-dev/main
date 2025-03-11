@@ -14,6 +14,7 @@ cta:
     bottom-line results in your manufacturing facility
   headline: Make Clean Air a Competitive Advantage
   label: Request a Quote
+  url: /contact/
 ---
 <h3 class="ruled text-center">Helping Us Meet Your Latest Industry Requirements</h3>
 
