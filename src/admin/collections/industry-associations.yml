@@ -11,6 +11,6 @@
      label: "Intro"
      fields:
       - {label: Copy, name: head, widget: string }
-      - {label: Copy, name: desc, widget: description }
+      - {label: Copy, name: desc, widget: markdown }
       - {label: Copy, name: image, widget: image }
     <!-- @include-static ../partials/cta-callout.yml -->
