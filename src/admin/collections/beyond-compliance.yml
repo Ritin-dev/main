@@ -12,7 +12,7 @@
     - {label: "Image", name: "image_1", widget: "image"}
     - name: outro 
       label: Outro 
-      widget: list
+      widget: object
       fields:
        - {label: Heading, name: heading, widget: markdown }
        - {label: description, name: description, widget: markdown }
