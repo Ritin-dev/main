@@ -8,7 +8,7 @@ seo:
 nav_sort: 3000
 show_in_menu: "true"
 jumbotron:
-  img: /img/heros/hero-industryassociations.jpg
+  img: /img/heros/industry-associates-bnr.png
 cta:
   copy: Contact us today to discuss a compliant clean air solution that delivers
     bottom-line results in your manufacturing facility
