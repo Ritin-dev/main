@@ -7,10 +7,7 @@
     <!-- @include-static ../partials/nav-fields.yml -->
     <!-- @include-static ../partials/jumbotron.yml -->
     - {label: Copy, name: body, widget: markdown }
-    name: "intro"
-    label: "Intro"
-    fields:
-      - {label: Copy, name: head, widget: string }
-      - {label: Copy, name: desc, widget: markdown }
-      - {label: Copy, name: image, widget: image }
+    - {label: Copy, name: head, widget: string }
+    - {label: Copy, name: desc, widget: markdown }
+    - {label: Copy, name: image, widget: image }
     <!-- @include-static ../partials/cta-callout.yml -->
