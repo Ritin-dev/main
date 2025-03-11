@@ -224,7 +224,7 @@ collections:
           - {label: "Attestant", name: "attestant", 'hint': "The person who said it ",  widget: "string", required: false}
           - {label: "Company", name: "company", 'hint': "Job title, company",  widget: "string", required: false}
       - { label: "Form Intro", name: "form_intro", widget: "markdown" }
-      - { label: "Hubspot Form ID", name: "hubspot_form_id", widget: "string", required: true, default: "8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4" }
+      - { label: "Hubspot Form ID", name: "hubspot_form_id_2", widget: "string", required: true, default: "8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4" }
   - name: "product"
     label: "Products"
     folder: "src/content/products"
