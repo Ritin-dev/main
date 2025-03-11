@@ -1,8 +1,8 @@
-- name: "associations"
-  label: "Associations"
-  file: "src/content/about/industry-associations/index.md"
+- name: "how-we-work"
+  label: "How We Work"
+  file: "src/content/about/how-we-work/index.md"
   fields:
-    - {label: "Layout", name: "layout", widget: "hidden", default: "associations.njk"}
+    - {label: "Layout", name: "layout", widget: "hidden", default: "how-we-work.njk"}
     <!-- @include-static ../partials/base-fields.yml -->
     <!-- @include-static ../partials/nav-fields.yml -->
     <!-- @include-static ../partials/jumbotron.yml -->
