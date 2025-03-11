@@ -10,8 +10,13 @@
     - {label: "Heading", name: "heading", widget: "string"}
     - {label: "Descrtion", name: "description", widget: "markdown"}
     - {label: "Image", name: "image_1", widget: "image"}
-    - {label: Outro, name: outro, widget: markdown }
-    - {label: "Image 2", name: "image_2", widget: "image"}
+    - name: outro 
+      label: Outro 
+      widget: list
+      fields:
+       - {label: Heading, name: heading, widget: markdown }
+       - {label: description, name: description, widget: markdown }
+       - {label: "Image 2", name: "image_2", widget: "image"}
     - name: compliance 
       label: Compliance 
       widget: list
