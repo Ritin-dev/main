@@ -49,26 +49,29 @@
                         {%- if item.name == "solutions" -%}
                                 <div class="col-lg-6">
                                     <div class="nav-dropdown-in">
-                                        <h3>Products</h3>
+                                        <h2>Products</h2>
                                         <div class="nav-dropdown-in-item-outer">
                                             <div class="nav-dropdown-columns">
-
-                                                {%- for product in navs.products.children -%}
+                                                {%- for item in navs.primary -%}
+                                                {%- if item.name == "products" -%}
+                                                {# Loop through normal children #}
+                                                {%- for child in item.children -%}
                                                     {%- if loop.index0 % 5 == 0 -%} 
                                                     <div class="nav-dropdown-column">
                                                     {%- endif -%}
-
-                                                    <div class="nav-dropdown-in-item">
-                                                        <a href="/{{ product.file.path | replace('index.html', '') }}">
-                                                            {{ product.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
-                                                        </a>
-                                                    </div>
+                                                        
+                                                        <div class="nav-dropdown-in-item">
+                                                            <a href="/{{ child.file.path | replace('index.html', '') }}">
+                                                                {{ child.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
+                                                            </a>
+                                                        </div>
 
                                                     {%- if loop.index0 % 5 == 4 or loop.last -%} 
                                                     </div>
                                                     {%- endif -%}
                                                 {%- endfor -%}
-
+                                                {%- endif -%}
+                                                {%- endfor -%}
                                             </div>
                                         </div>
                                     </div>
