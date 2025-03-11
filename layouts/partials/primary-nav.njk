@@ -7,54 +7,99 @@
                   <span class="stick"></span>
                 </button>
                 <ul class="navbar-nav ms-auto">
-                   {%- for item in navs.primary -%}
-                        <li class="nav-item-main nav-{{ item.name | lower }} {{ 'has-menu' if item.children.length else '' }}">
-                            <a href="/{{ item.file.path | replace('index.html', '') }}" class="link primary-link level-0">
-                                {{ item.name | reverseSlug }}
-                                {%- if item.children.length -%} <i class="far fa-chevron-down"></i> {%- endif -%}
-                            </a>
+    {%- for item in navs.primary -%}
+        <li class="nav-item-main nav-{{ item.name | lower }} {{ 'has-menu' if item.children.length else '' }}">
+            <a href="/{{ item.file.path | replace('index.html', '') }}" class="link primary-link level-0">
+                {{ item.name | reverseSlug }}
+                {%- if item.children.length -%} <i class="far fa-chevron-down"></i> {%- endif -%}
+            </a>
 
-                            {%- if item.children.length -%}
-                            <div class="nav-dropdown" aria-hidden="true">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="nav-dropdown-in">
-                                                {%- if item.name == "solutions" -%}
-                                                    <h2>Applications</h2>
-                                                {%- else -%}
-                                                    <h2>{{ item.name }}</h2>
+            {%- if item.children.length or (item.name == "Solutions" and navs.products.children) -%}
+            <div class="nav-dropdown" aria-hidden="true">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="nav-dropdown-in">
+                                <h2>{{ "Applications" if item.name == "Solutions" else item.name }}</h2>
+                                <div class="nav-dropdown-in-item-outer">
+                                    <div class="nav-dropdown-columns">
+                                        
+                                        {%- if item.name == "Solutions" -%}
+                                            
+                                            {# Loop through Solutions normally #}
+                                            {%- for child in item.children -%}
+                                                {%- if loop.index0 % 5 == 0 -%} 
+                                                <div class="nav-dropdown-column">
                                                 {%- endif -%}
-
-                                                <div class="nav-dropdown-in-item-outer">
-                                                    <div class="nav-dropdown-columns">
-                                                        {%- for child in item.children -%}
-                                                            {%- if loop.index0 % 5 == 0 -%} <!-- Start a new column every 5 items -->
-                                                            <div class="nav-dropdown-column">
-                                                            {%- endif -%}
-                                                                
-                                                                <div class="nav-dropdown-in-item">
-                                                                    <a href="/{{ child.file.path | replace('index.html', '') }}">
-                                                                        {{ child.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
-                                                                    </a>
-                                                                </div>
-
-                                                            {%- if loop.index0 % 5 == 4 or loop.last -%} <!-- Close the column after 5 items or last item -->
-                                                            </div>
-                                                            {%- endif -%}
-                                                        {%- endfor -%}
+                                                    
+                                                    <div class="nav-dropdown-in-item">
+                                                        <a href="/{{ child.file.path | replace('index.html', '') }}">
+                                                            {{ child.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
+                                                        </a>
                                                     </div>
+
+                                                {%- if loop.index0 % 5 == 4 or loop.last -%} 
+                                                </div>
+                                                {%- endif -%}
+                                            {%- endfor -%}
+
+                                            {# Add Products inside Solutions in a new column #}
+                                            {%- if navs.products.children and navs.products.children.length > 0 -%}  
+                                                
+                                                <!-- Force a new column for Products -->
+                                                <div class="nav-dropdown-column">  
+                                                    <h3>Products</h3>
                                                 </div>
 
-                                            </div>
-                                        </div>
+                                                {%- for product in navs.products.children -%} 
+                                                    {%- if loop.index0 % 5 == 0 -%} 
+                                                    <div class="nav-dropdown-column">
+                                                    {%- endif -%}
+                                                    
+                                                    <div class="nav-dropdown-in-item">
+                                                        <a href="/{{ product.file.path | replace('index.html', '') }}">
+                                                            {{ product.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
+                                                        </a>
+                                                    </div>
+
+                                                    {%- if loop.index0 % 5 == 4 or loop.last -%} 
+                                                    </div>
+                                                    {%- endif -%}
+                                                {%- endfor -%}
+
+                                            {%- endif -%}
+
+                                        {%- else -%}
+                                            {%- for child in item.children -%}
+                                                {%- if loop.index0 % 5 == 0 -%} 
+                                                <div class="nav-dropdown-column">
+                                                {%- endif -%}
+                                                    
+                                                    <div class="nav-dropdown-in-item">
+                                                        <a href="/{{ child.file.path | replace('index.html', '') }}">
+                                                            {{ child.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
+                                                        </a>
+                                                    </div>
+
+                                                {%- if loop.index0 % 5 == 4 or loop.last -%} 
+                                                </div>
+                                                {%- endif -%}
+                                            {%- endfor -%}
+                                        {%- endif -%}
+
                                     </div>
                                 </div>
+
                             </div>
-                            {%- endif -%}
-                        </li>
-                    {%- endfor -%}
-                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%- endif -%}
+        </li>
+    {%- endfor -%}
+</ul>
+
             </div>
         <div class="nav-right-part d-flex align-items-center">
             <div class="service-request-search">
