@@ -1,34 +1,95 @@
 {% extends "layout.njk" %}
 {% set additionalScript = '/js/vivus.min.js' %}
 {% block body %}
-    <section class="section">
-        <div class="grid-2 vc">
-            <div>
-                    <a data-vid="{{ 'https://www.youtube.com/watch?v=XcazObYMdro' | getYoutubeId}}"><img src="/img/image-1-how-we-work.jpg" class="img-responsive shadow img-1" /></a>
-            </div>
-            <div>
-                <h3 class="ruled">Always Engineered to Meet Your Production Goals</h3>
-                <p>Combining our innovative retractable enclosures with our advanced air filtration systems, a Duroair solution is a true end-to-end air filtration solution built to isolate, capture, and contain a wide variety of industrial processes.</p>
-                <p>Partnering with us means partnering with a solutions provider that is always responsive to the manufacturing reality of your lean production system. The result is a clean air solution that is <a href="/about/beyond-compliance">better for compliance</a>, better for overall employee health and safety, and better for your bottom line.</p>
-            </div>
-        </div>
-    </section>
-    <div class="bg-light">
-        <section class="section">
-            <h3 class="text-center ruled">Ensuring Your Requirements Come First</h3>
-            <div class="icon-block-container">
-                <div class="grid-2 center space-row" >
-                    {%- for b in blocks-%}
-                        <div class="icon-block">
-                            <object id="svg-{{loop.index}}" data-animate-svg="svg-{{loop.index}}" type="image/svg+xml" data="{{b.icon}}" alt="icon"></object>
-                            <br>
-                            {{b.copy}}
+    <!-- Cmn About Section Begin -->
+
+        <div class="cmn-about-sec cmn-gap hww-abt-sec">
+            <div class="container">
+                <div class="cmn-about-inr">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="cmn-about-right">
+                                <div class="cmn-about-right-inr">
+                                    <div class="sec-inr-head">
+                                        <h2>{{ heading }}</h2>
+                                    </div>
+                                    <div class="cmnabt-box nbox">
+                                        <p>{{ description | nl2br }}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    {%- endfor -%}
+                        <div class="col-lg-6">
+                            <div class="cmn-about-left hww-abt-img-wrp">
+                                <div class="blob1"></div>
+                                <div class="hww-abt-imgs-left">
+                                    <div class="hww-abt-img">
+                                        <img src="{{ image_section.image_1 }}" alt="How We Work Image">
+                                    </div>
+                                    <div class="hww-abt-img">
+                                        <img src="{{ image_section.image_2 }}" alt="How We Work Image">
+                                    </div>
+                                    <div class="hww-abt-img">
+                                        <img src="{{ image_section.image_3 }}" alt="How We Work Image">
+                                    </div>
+                                </div>
+                                <div class="hww-abt-imgs-right">
+                                    <div class="hww-abt-img">
+                                        <img src="{{ image_section.image_4 }}" alt="How We Work Image">
+                                    </div>
+                                    <div class="hww-abt-img">
+                                        <img src="{{ image_section.image_5 }}" alt="How We Work Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+    <!-- End Of Cmn About Section -->
+
+    <!-- Ensuring Requirements Section Begin -->
+
+    <div class="ensuring-requirements-sec cmn-gap pb-200">
+        <div class="container">
+            <div class="ensuring-requirements-inr">
+                <div class="sec-head newhedline">
+                    <h2>Ensuring Your Requirements Come First</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ensuring-require-left">
+                            <div class="blob1"></div>
+                            <div class="ensuring-require-img">
+                                <img src="{{ image_1}}" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="ensuring-require-right">
+                            <div class="ensuring-require-right-inr">
+                                {%- for b in blocks-%}
+                                <div class="ensuring-card">
+                                    <div class="ensuring-icon">
+                                        <object id="svg-{{loop.index}}" data-animate-svg="svg-{{loop.index}}" type="image/svg+xml" data="{{b.icon}}" alt="icon"></object>
+                                    </div>
+                                    <div class="ensuring-card-inr">
+                                        <h3>{{b.copy}}</h3>
+                                    </div>
+                                </div>
+                                {%- endfor -%}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+<!-- End Of Ensuring Requirements Section -->
+
 {% endblock %}
 {% block testimonial %}
 {% include "partials/testimonial.njk" %}

@@ -13,7 +13,7 @@
     - {label: Outro Heading, name: outro_head, widget: string }
     - {label: Outro Description, name: outro_desc, widget: markdown }
     - {label: "Image 2", name: "image_2", widget: "image"}
-    - name: compliance 
+    - name: compliance
       label: Compliance 
       widget: list
       fields:
