@@ -78,8 +78,8 @@
               label: Airfiltration List
               widget: list
               fields:
-                - { label: "Image", name: "image", widget: "image" }
-                - { label: "Description", name: "description", widget: "markdown" }
+                - { label: "Image", name: "image_1", widget: "image" }
+                - { label: "Description", name: "description_1", widget: "markdown" }
         - name: retracts
           label: Retracts Section 
           widget: object
