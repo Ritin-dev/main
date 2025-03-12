@@ -45,20 +45,20 @@
                 <!-- Left Section: Accordion -->
                 <div class="col-lg-6 reasone-left-wrp">
                     <div class="sec-inr-head">
-                        <h2>{{ reasons_section_title }}</h2>
+                        <h2>8 Reasons WHY Customers Choose Duroair</h2>
                     </div>
                     <div class="reasone-left">
                         <div class="reasons-accrdn">
                             {%- for item in choose_duroair -%}
                             <div class="reasons-accrdn-card {% if loop.first %}active{% endif %}" data-index="{{ loop.index }}">
                                 <div class="reasonsaccr-head">
-                                    <h3>8 Reasons WHY Customers Choose Duroair</h3>
+                                    <h3>{{ item.heading_1 }}</h3>
                                     <div class="chevron">
                                         <i class="fal fa-chevron-down"></i>
                                     </div>
                                 </div>
                                 <div class="reasonsaccr-body">
-                                    <p>{{ item.description }}</p>
+                                    <p>{{ item.description_1 |nl2br }}</p>
                                 </div>
                             </div>
                             {%- endfor -%}
