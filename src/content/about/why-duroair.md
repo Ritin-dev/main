@@ -11,12 +11,14 @@ show_in_menu: "true"
 jumbotron:
   img: /img/heros/hero-durocap.jpg
   headline: A Big Shift In Clean Air
-intro: >-
-  Duroair has designed and engineered the most flexible and efficient
-  retractable clean air enclosures in the market, the patented six-stage
-  DuroPureTM industrial air filtration system.
-
-  These portable enclosures can move throughout your facility to clean air of hexavalent chromium and VOCs to ensure your workers’ safety and help your bottom line.
+section_1:
+  head: Duroair has designed and engineered the most flexible and efficient clean
+    air systems in the market — the patented six-stage DuroPure™ industrial air
+    filtration system paired with the retractable DuroRoom™ enclosure creates a
+    lean manufacturing layout where it is needed.
+  desc: Our plug-and-play modular system is designed to isolate processes in any
+    work cell and filter hazards like hexavalent chromium, isocyanates, dust, or
+    VOCs, ensuring worker safety, saving time, and maximizing your bottom line.
 choose_duroair:
   - heading_1: Gain Flexibility
     description_1: DuroRoom enclosures retract to provide easy access to overhead
@@ -150,6 +152,12 @@ ingenuity:
       description_13: This accommodates a larger workpiece, such as the wing of an
         aircraft, an entire wind turbine, or a large engine workpiece.
       image_9: /media/uploads/1-1.png
+intro: >-
+  Duroair has designed and engineered the most flexible and efficient
+  retractable clean air enclosures in the market, the patented six-stage
+  DuroPureTM industrial air filtration system.
+
+  These portable enclosures can move throughout your facility to clean air of hexavalent chromium and VOCs to ensure your workers’ safety and help your bottom line.
 hubspot_form_id: 1580adab-f32b-4600-973d-5af32ea7332f
 cta:
   headline: Have Questions About Our Air Purification System?
