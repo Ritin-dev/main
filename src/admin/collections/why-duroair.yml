@@ -103,6 +103,13 @@
             - { label: "Heading", name: "heading_13", widget: "string" }
             - { label: "Description", name: "description_13", widget: "markdown" }
             - {label: "Image", name: "image_9", widget: "image"}
+    - name: bottom_section 
+      label: Bottom Section
+      widget: object
+      fields:
+        - {label: Heading, name: bottom_heading, widget: string}
+        - {label: Description, name: bottom_description, widget: string}
+        - {label: "Image", name: "bottom_image", widget: "image"}
     - name: compliance 
       label: Compliance 
       widget: list
