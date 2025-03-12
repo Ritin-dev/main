@@ -14,7 +14,7 @@
         - {label: "Descrtion", name: "description", widget: "markdown"}
     - name: choose_duroair 
       label: Reason For Choose Duroair
-      widget: List
+      widget: list
       fields:
         - {label: "Heading", name: "heading_1", widget: "string"}
         - {label: "Descrtion", name: "description_1", widget: "markdown"}
