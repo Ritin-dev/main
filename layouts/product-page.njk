@@ -264,7 +264,7 @@
                         <div class="funnel-container">
                             {%- for item in air_system.air_stages -%}
                                 <div class="stage stage{{ loop.index }} {% if loop.index <= 3 %}has-dot{% endif %}">
-                                    <h3>{{ itme.heading_4 }}</h3>
+                                    <h3>{{ item.heading_4 }}</h3>
                                     {%- if loop.index <= 3 -%}
                                         <p>{{ item.description_4 | nl2br }}</p>
                                         <div class="dot-img"></div>
