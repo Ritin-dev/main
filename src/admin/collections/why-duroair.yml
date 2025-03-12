@@ -6,7 +6,7 @@
     <!-- @include-static ../partials/base-fields.yml -->
     <!-- @include-static ../partials/nav-fields.yml -->
     <!-- @include-static ../partials/jumbotron.yml -->
-    - name: intro 
+    - name: main_intro 
       label: Intro
       widget: object
       fields:
