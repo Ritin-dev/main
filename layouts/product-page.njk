@@ -14,7 +14,7 @@
                 <path d="M64 256c0 106 86 192 192 192s192-86 192-192S362 64 256 64 64 150 64 256z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="32"/>
             </symbol>
         </defs>
-    </svg>
+</svg>
 
   <!-- End Of Inner Banner Section -->
 
@@ -38,162 +38,76 @@
 
 
     <!-- Reasons Section Begin -->
-
-        <div class="reasons-sec cmn-gap">
-            <div class="container">
-                <div class="reasons-inr">
-                    <div class="row">
-                        <div class="col-lg-6 reasone-left-wrp">
-                            <div class="sec-inr-head">
-                                <h2>8 Reasons WHY Customers Choose Duroair</h2>
-                            </div>
-                            <div class="reasone-left">
-                                <div class="reasons-accrdn">
-                                    <div class="reasons-accrdn-card active">
-                                        <div class="reasonsaccr-head">
-                                            <h3>Gain Flexibility</h3>
-                                            <div class="chevron">
-                                                <i class="fal fa-chevron-down"></i>
-                                            </div>
-                                        </div>
-                                        <div class="reasonsaccr-body">
-                                            <p>DuroRoom enclosures retract to provide easy access to overhead cranes. Say goodbye to costly moves and lengthy disruptions when moving oversized workpieces.</p>
-                                        </div>
+<div class="reasons-sec cmn-gap">
+    <div class="container">
+        <div class="reasons-inr">
+            <div class="row">
+                <!-- Left Section: Accordion -->
+                <div class="col-lg-6 reasone-left-wrp">
+                    <div class="sec-inr-head">
+                        <h2>{{ reasons_section_title }}</h2>
+                    </div>
+                    <div class="reasone-left">
+                        <div class="reasons-accrdn">
+                            {%- for item in choose_duroair -%}
+                            <div class="reasons-accrdn-card {% if loop.first %}active{% endif %}" data-index="{{ loop.index }}">
+                                <div class="reasonsaccr-head">
+                                    <h3>8 Reasons WHY Customers Choose Duroair</h3>
+                                    <div class="chevron">
+                                        <i class="fal fa-chevron-down"></i>
                                     </div>
-                                    <div class="reasons-accrdn-card">
-                                        <div class="reasonsaccr-head">
-                                            <h3>Save Money</h3>
-                                            <div class="chevron">
-                                                <i class="fal fa-chevron-down"></i>
-                                            </div>
-                                        </div>
-                                        <div class="reasonsaccr-body">
-                                            <p>DuroRoom enclosures retract to provide easy access to overhead cranes. Say goodbye to costly moves and lengthy disruptions when moving oversized workpieces.</p>
-                                        </div>
-                                    </div>
-                                    <div class="reasons-accrdn-card">
-                                        <div class="reasonsaccr-head">
-                                            <h3>Save Time</h3>
-                                            <div class="chevron">
-                                                <i class="fal fa-chevron-down"></i>
-                                            </div>
-                                        </div>
-                                        <div class="reasonsaccr-body">
-                                            <p>DuroRoom enclosures retract to provide easy access to overhead cranes. Say goodbye to costly moves and lengthy disruptions when moving oversized workpieces.</p>
-                                        </div>
-                                    </div>
-                                    <div class="reasons-accrdn-card">
-                                        <div class="reasonsaccr-head">
-                                            <h3>Increase Flexibility</h3>
-                                            <div class="chevron">
-                                                <i class="fal fa-chevron-down"></i>
-                                            </div>
-                                        </div>
-                                        <div class="reasonsaccr-body">
-                                            <p>DuroRoom enclosures retract to provide easy access to overhead cranes. Say goodbye to costly moves and lengthy disruptions when moving oversized workpieces.</p>
-                                        </div>
-                                    </div>
-                                    <div class="reasons-accrdn-card">
-                                        <div class="reasonsaccr-head">
-                                            <h3>Maximize Space</h3>
-                                            <div class="chevron">
-                                                <i class="fal fa-chevron-down"></i>
-                                            </div>
-                                        </div>
-                                        <div class="reasonsaccr-body">
-                                            <p>DuroRoom enclosures retract to provide easy access to overhead cranes. Say goodbye to costly moves and lengthy disruptions when moving oversized workpieces.</p>
-                                        </div>
-                                    </div>
-                                    <div class="reasons-accrdn-card">
-                                        <div class="reasonsaccr-head">
-                                            <h3>Make the Work Day Easier</h3>
-                                            <div class="chevron">
-                                                <i class="fal fa-chevron-down"></i>
-                                            </div>
-                                        </div>
-                                        <div class="reasonsaccr-body">
-                                            <p>DuroRoom enclosures retract to provide easy access to overhead cranes. Say goodbye to costly moves and lengthy disruptions when moving oversized workpieces.</p>
-                                        </div>
-                                    </div>
-                                    <div class="reasons-accrdn-card">
-                                        <div class="reasonsaccr-head">
-                                            <h3>Stay Compliant</h3>
-                                            <div class="chevron">
-                                                <i class="fal fa-chevron-down"></i>
-                                            </div>
-                                        </div>
-                                        <div class="reasonsaccr-body">
-                                            <p>DuroRoom enclosures retract to provide easy access to overhead cranes. Say goodbye to costly moves and lengthy disruptions when moving oversized workpieces.</p>
-                                        </div>
-                                    </div>
-                                    <div class="reasons-accrdn-card">
-                                        <div class="reasonsaccr-head">
-                                            <h3>Bringing clean air to the workpiece</h3>
-                                            <div class="chevron">
-                                                <i class="fal fa-chevron-down"></i>
-                                            </div>
-                                        </div>
-                                        <div class="reasonsaccr-body">
-                                            <p>DuroRoom enclosures retract to provide easy access to overhead cranes. Say goodbye to costly moves and lengthy disruptions when moving oversized workpieces.</p>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div class="reasonsaccr-body">
+                                    <p>{{ item.description }}</p>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-6 reasone-right-wrp">
-                            <div class="reasone-right">
-                                <div class="reasonert-navfor-slider-wrp">
-                                    <div class="reasonert-navfor-slider">
-                                        <div class="reasonert-navfor-slider-inr-item">
-                                            <div class="reasonert-navfor-slider-inr-item-img">
-                                                <img src="images/reason-slider-img-1.png" alt="Image">
-                                            </div>
-                                        </div>
-                                        <div class="reasonert-navfor-slider-inr-item">
-                                            <div class="reasonert-navfor-slider-inr-item-img">
-                                                <img src="images/reason-slider-img-1.png" alt="Image">
-                                            </div>
-                                        </div>
-                                        <div class="reasonert-navfor-slider-inr-item">
-                                            <div class="reasonert-navfor-slider-inr-item-img">
-                                                <img src="images/reason-slider-img-1.png" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="reason-slider-nav">
-                                    <div class="reason-slider-nav-item active">
-                                        <div class="reason-slider-nav-item-img">
-                                            <img src="images/rsnsl-nav-img1.png" alt="Image">
-                                        </div>
-                                    </div>
-                                    <div class="reason-slider-nav-item">
-                                        <div class="reason-slider-nav-item-img">
-                                            <img src="images/rsnsl-nav-img2.png" alt="Image">
-                                        </div>
-                                    </div>
-                                    <div class="reason-slider-nav-item">
-                                        <div class="reason-slider-nav-item-img">
-                                            <img src="images/rsnsl-nav-img3.png" alt="Image">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="reason-slider-nav-btn">
-                                    <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-                                </div>
-                            </div>
+                            {%- endfor -%}
                         </div>
                     </div>
                 </div>
+
+                <!-- Right Section: Image Slider -->
+                <div class="col-lg-6 reasone-right-wrp">
+                    <div class="reasone-right">
+                        <div class="reasonert-navfor-slider-wrp">
+                            <div class="reasonert-navfor-slider">
+                                {%- for item in choose_duroair -%}
+                                <div class="reasonert-navfor-slider-inr-item {% if loop.first %}active{% endif %}" data-index="{{ loop.index }}">
+                                    <div class="reasonert-navfor-slider-inr-item-img">
+                                        <img src="{{ item.image }}" alt="Image">
+                                    </div>
+                                </div>
+                                {%- endfor -%}
+                            </div>
+                        </div>
+
+                        <!-- Small Images (Navigation Thumbnails) -->
+                        <div class="reason-slider-nav">
+                            {%- for item in choose_duroair -%}
+                            <div class="reason-slider-nav-item {% if loop.first %}active{% endif %}" data-index="{{ loop.index }}">
+                                <div class="reason-slider-nav-item-img">
+                                    <img src="{{ item.image }}" alt="Thumbnail">
+                                </div>
+                            </div>
+                            {%- endfor -%}
+                        </div>
+
+                        <!-- Navigation Dots -->
+                        <div class="reason-slider-nav-btn">
+                            <ul>
+                                {%- for item in choose_duroair -%}
+                                <li data-index="{{ loop.index }}" class="{% if loop.first %}active{% endif %}"></li>
+                                {%- endfor -%}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-    <!-- End Of Reasons Section -->
+    </div>
+</div>
+<!-- End Of Reasons Section -->
 
     <!-- Transmission Section Begin -->
 
