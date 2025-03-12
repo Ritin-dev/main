@@ -83,22 +83,21 @@
 
                         <!-- Small Images (Navigation Thumbnails) -->
                         <div class="reason-slider-nav">
-                            {%- for item in choose_duroair -%}
-                            <div class="reason-slider-nav-item {% if loop.first %}active{% endif %}" data-index="{{ loop.index }}">
-                                <div class="reason-slider-nav-item-img">
-                                    <img src="{{ item.image }}" alt="Thumbnail">
+                            <div class="reason-slider-nav-wrapper">
+                                {%- for item in choose_duroair -%}
+                                <div class="reason-slider-nav-item {% if loop.first %}active{% endif %}" data-index="{{ loop.index }}">
+                                    <div class="reason-slider-nav-item-img">
+                                        <img src="{{ item.image }}" alt="Thumbnail">
+                                    </div>
                                 </div>
+                                {%- endfor -%}
                             </div>
-                            {%- endfor -%}
                         </div>
 
-                        <!-- Navigation Dots -->
+                        <!-- Navigation Arrows -->
                         <div class="reason-slider-nav-btn">
-                            <ul>
-                                {%- for item in choose_duroair -%}
-                                <li data-index="{{ loop.index }}" class="{% if loop.first %}active{% endif %}"></li>
-                                {%- endfor -%}
-                            </ul>
+                            <button id="prev-btn">‹</button>
+                            <button id="next-btn">›</button>
                         </div>
                     </div>
                 </div>
