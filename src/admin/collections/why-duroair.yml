@@ -10,8 +10,8 @@
       label: Intro
       widget: object
       fields:
-        - {label: "Heading", name: "heading", widget: "markdown"}
-        - {label: "Descrtion", name: "description", widget: "markdown"}
+        - {label: "Heading", name: "head", widget: "markdown"}
+        - {label: "Descrtion", name: "desc", widget: "markdown"}
     - name: choose_duroair 
       label: Reason For Choose Duroair
       widget: list
