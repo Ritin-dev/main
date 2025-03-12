@@ -141,7 +141,7 @@ ingenuity:
     - heading_13: 1-1-1 ratio for three separate operations.
       description_13: In the case of prep work, painting, and coating, the workpiece
         is moved the shortest possible distance for the next function.
-      image_9: /media/uploads/1-1-1-1.png
+      image_9: /media/uploads/1-1-1-2.png
     - heading_13: 2-1 ratio for two operations.
       description_13: This can eliminate or reduce backlogs, especially since some
         functions require more time than others.
