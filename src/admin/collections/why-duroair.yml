@@ -87,7 +87,7 @@
             - {label: "Heading", name: "heading", widget: "string"}
             - {label: "Descrtion", name: "description", widget: "markdown"}
             - {label: "Image", name: "image", widget: "image"}
-    - name: Ingenuity
+    - name: ingenuity
       label: Duroair's Ingenuity 
       widget: object
       fields:
