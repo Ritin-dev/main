@@ -154,6 +154,12 @@ hubspot_form_id: 1580adab-f32b-4600-973d-5af32ea7332f
 cta:
   headline: Have Questions About Our Air Purification System?
   label: Contact Us
+bottom_section:
+  bottom_heading: With Duroair, Eliminate Outsourcing of One or More Functions
+  bottom_description: The flexibility provides opportunities.More easily manage
+    multiple projects that all involve surface prep, sanding, painting and/or
+    coating.
+  bottom_image: /media/uploads/why-duroair-learn.png
 redirectUrl: /request-for-quote/success/
 compliance:
   - code: fdg
