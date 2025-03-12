@@ -87,22 +87,7 @@
             - {label: "Heading", name: "heading", widget: "string"}
             - {label: "Descrtion", name: "description", widget: "markdown"}
             - {label: "Image", name: "image", widget: "image"}
-    - name: ingenuity
-      label: Duroair's Ingenuity 
-      widget: object
-      fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Intro Description", name: "intro_desc", widget: "markdown"}
-        - {label: "Heading", name: "heading", widget: "string"}
-        - {label: "Descrtion", name: "description", widget: "markdown"}
-        - {label: "Image", name: "image", widget: "image"}
-        - name: flexible_options 
-          label: Flexible Setup Options
-          widget: list
-          fields:
-            - { label: "Heading", name: "heading", widget: "string" }
-            - { label: "Description", name: "description", widget: "markdown" }
-            - {label: "Image", name: "image", widget: "image"}
+    
     - name: compliance 
       label: Compliance 
       widget: list
