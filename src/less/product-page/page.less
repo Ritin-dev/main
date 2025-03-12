@@ -1080,3 +1080,19 @@
   //  width:auto;
   //}
 }
+
+#hero.gray::after {
+  background-image: url(/img/wave.svg);
+}
+
+#hero:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3024px;
+  height: 101px;
+  background: url(/img/wave-light.svg);
+  z-index: 3;
+  animation: wave1 25s cubic-bezier(.36,.45,.63,.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
