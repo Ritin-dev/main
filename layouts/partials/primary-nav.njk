@@ -24,19 +24,19 @@
                                 <div class="nav-dropdown-in-item-outer">
                                     <div class="nav-dropdown-columns">
                                         
-                                        {# Loop through normal children #}
+                                        {# Normal Child Loop #}
                                         {%- for child in item.children -%}
-                                            {%- if loop.index0 % 5 == 0 -%} 
-                                            <div class="nav-dropdown-column">
+                                            {%- if loop.index0 == 5 -%} 
+                                            <div class="nav-dropdown-column shift-on-desktop">
                                             {%- endif -%}
-                                                
-                                                <div class="nav-dropdown-in-item">
-                                                    <a href="/{{ child.file.path | replace('index.html', '') }}">
-                                                        {{ child.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
-                                                    </a>
-                                                </div>
+                                            
+                                            <div class="nav-dropdown-in-item">
+                                                <a href="/{{ child.file.path | replace('index.html', '') }}">
+                                                    {{ child.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
+                                                </a>
+                                            </div>
 
-                                            {%- if loop.index0 % 5 == 4 or loop.last -%} 
+                                            {%- if loop.index0 == 4 or loop.last -%} 
                                             </div>
                                             {%- endif -%}
                                         {%- endfor -%}
@@ -45,38 +45,40 @@
                                 </div>
                             </div>
                         </div>
+
                         {# Restart the loop to add Products inside Solutions #}
                         {%- if item.name == "solutions" -%}
-                                <div class="col-lg-6">
-                                    <div class="nav-dropdown-in">
-                                        <h2>Products</h2>
-                                        <div class="nav-dropdown-in-item-outer">
-                                            <div class="nav-dropdown-columns">
-                                                {%- for item in navs.primary -%}
-                                                {%- if item.name == "products" -%}
-                                                {# Loop through normal children #}
-                                                {%- for child in item.children -%}
-                                                    {%- if loop.index0 % 5 == 0 -%} 
-                                                    <div class="nav-dropdown-column">
-                                                    {%- endif -%}
-                                                        
-                                                        <div class="nav-dropdown-in-item">
-                                                            <a href="/{{ child.file.path | replace('index.html', '') }}">
-                                                                {{ child.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
-                                                            </a>
-                                                        </div>
-
-                                                    {%- if loop.index0 % 5 == 4 or loop.last -%} 
-                                                    </div>
-                                                    {%- endif -%}
-                                                {%- endfor -%}
+                            <div class="col-lg-6">
+                                <div class="nav-dropdown-in">
+                                    <h2>Products</h2>
+                                    <div class="nav-dropdown-in-item-outer">
+                                        <div class="nav-dropdown-columns">
+                                            {%- for item in navs.primary -%}
+                                            {%- if item.name == "products" -%}
+                                            {# Loop through products #}
+                                            {%- for child in item.children -%}
+                                                {%- if loop.index0 == 5 -%} 
+                                                <div class="nav-dropdown-column shift-on-desktop">
                                                 {%- endif -%}
-                                                {%- endfor -%}
-                                            </div>
+
+                                                <div class="nav-dropdown-in-item">
+                                                    <a href="/{{ child.file.path | replace('index.html', '') }}">
+                                                        {{ child.file | navLabel }} <img src="/img/nav-icon.svg" alt="Image">
+                                                    </a>
+                                                </div>
+
+                                                {%- if loop.index0 == 4 or loop.last -%} 
+                                                </div>
+                                                {%- endif -%}
+                                            {%- endfor -%}
+                                            {%- endif -%}
+                                            {%- endfor -%}
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                         {%- endif -%}
+
                     </div>
                 </div>
             </div>
@@ -84,8 +86,6 @@
         </li>
     {%- endfor -%}
 </ul>
-
-
             </div>
         <div class="nav-right-part d-flex align-items-center">
             <div class="service-request-search">
