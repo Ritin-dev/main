@@ -35,7 +35,7 @@
 }
 .link {
     font-size: 16px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     display: block;
     padding: 5px 0;
 }
@@ -286,6 +286,11 @@ a#search-trigger svg {
         overflow-x: hidden;
         z-index: 9;
         position: absolute;
+    }
+
+    ul.navbar-nav.ms-auto {
+        display: flex;
+        flex-direction: column;
     }
 
   }
