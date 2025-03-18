@@ -1,6 +1,6 @@
 ---
 layout: industries-index.njk
-title: Industrial Air Filtration Solutions
+title: Industrial Air <br> Filtration Solutions
 seo:
   page_title: Industrial Air Filtration Systems for Your Industry
   description: Duroair engineers end-to-end industrial air solutions to shield your specific industry processes from dust or fumes
