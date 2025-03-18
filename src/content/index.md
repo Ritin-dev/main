@@ -21,7 +21,7 @@ copy_block_1: >-
 
 
   <a href="/how-we-work/" class="btn btn-outline">How We Work</a>
-ban_head: Responsive to Your <br>Manufacturing Reality
+ban_head: Responsive to Your <br>Requirements
 ban_cta: /how-we-work/
 ban_desc: When you choose Duroair, you get a partner that is always responsive
   to your environmental, safety, and budgetary needs.
