@@ -24,13 +24,14 @@
             <div class="grid-2">
                 <div class="lp-content">
                     {{ contents | safe }}
-                </div>
+                </div> 
                 <div class="form-container" id="form-container">
                     <div class="form-intro">{{form_intro | md}}</div>
                     {% include "partials/hubspot-form.njk" %}
                 </div>
             </div>
         </section>
+        {%- include "partials/footer.njk" -%}
         {%- include "partials/colophon.njk" -%}
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
         {% include "partials/footer-scripts.njk" %}
