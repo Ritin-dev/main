@@ -4,6 +4,7 @@
         {% include "partials/head.njk" %}
     </head>
     <body class="page-{{ title | cssClassify }}  landing-page ">
+    {% include "partials/header.njk" %}
         {%- include "partials/gtm-noscript.njk" -%}
         <div id="hero" class="{{waveType}} lp-hero">
             <div class="container lp-logo-container">
