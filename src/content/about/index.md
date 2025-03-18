@@ -25,9 +25,9 @@ about_intro:
 
     * Improving overall health and safety in lean manufacturing facilities
 
-    * Engineering [solutions](#url) to isolate, capture, and contain a wide variety of industrial processes
+    * Engineering solutions to isolate, capture, and contain a wide variety of industrial processes
 
-    * Going [beyond EHS compliance](#url) to maximize efficiency and productivity
+    * Going beyond EHS compliance to maximize efficiency and productivity
   heading: "Our Legacy: Transforming Air Quality for Over [X] Years"
   image_1: /media/uploads/dur-201305-february-blog-thumb.jpg
   image_2: /media/uploads/dur-201305-february-blog-thumb.jpg
