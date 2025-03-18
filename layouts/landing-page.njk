@@ -21,21 +21,7 @@
             <div class="hero-overlay"></div>
         </div>
 
-
-        <section class="section lp-top">
-            <img src="{{header_img}}" alt="" class="img-responsive header-img">
-            <div class="grid-2">
-                <div class="lp-content">
-                    {{ contents | safe }}
-                </div> 
-                <div class="form-container" id="form-container">
-                    <div class="form-intro">{{form_intro | md}}</div>
-                    {% include "partials/hubspot-form.njk" %}
-                </div>
-            </div>
-        </section>
-
-        <!-- White Paper Details Section Begin -->
+<!-- White Paper Details Section Begin -->
 
         <div class="white-paper-details-sec cmn-gap">
             <div class="container">
@@ -55,7 +41,11 @@
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="white-paper-details-inr-right">
-                                {{ contents | safe }}
+                                <div class="sec-inr-head">
+                                    <h2>{{ title }}</h2>
+                                    <p>{{ jumbotron.tagline }}</p>
+                                </div>
+                                <a href="#" class="cmn-btn button">Download Now <span class="button__spotlight"></span></a>
                             </div>
                         </div>
                     </div>
@@ -64,6 +54,20 @@
         </div>
 
     <!-- End Of White Paper Details Section -->
+
+        <section class="section lp-top">
+            <img src="{{header_img}}" alt="" class="img-responsive header-img">
+            <div class="grid-2">
+                <div class="lp-content">
+                    {{ contents | safe }}
+                </div> 
+                <div class="form-container" id="form-container">
+                    <div class="form-intro">{{form_intro | md}}</div>
+                    {% include "partials/hubspot-form.njk" %}
+                </div>
+            </div>
+        </section>
+
 
         {%- include "partials/footer.njk" -%}
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
