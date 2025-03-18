@@ -9,10 +9,9 @@ jumbotron:
   ctaText: Request for quote
   ctaUrl: /request-for-quote/
   headline: Flexibility to Control Your Environment
-  tagline: The advantages of a healthy workforce go beyond keeping environmental
-    regulators off your back. We engineer<br>flexible, end-to-end clean air
-    solutions that meet EHS compliance, safeguard employees, and maximize
-    productivity.
+  tagline: Duroair designs and manufactures custom clean air solutions that ensure
+    a safe and productive work environment while addressing your specific
+    workflow challenges.
 image_1: /img/home-image-1.jpg
 copy_block_1: >-
   ### Responsive to Your <br>Manufacturing Reality
