@@ -1,6 +1,6 @@
 ---
 layout: solutions-index.njk
-title: Industrial Air Solutions
+title: Solutions
 show_in_menu: 'true'
 nav_sort: 1000
 seo:
