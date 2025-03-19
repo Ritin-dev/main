@@ -12,13 +12,15 @@ layout: industry.njk
 thumbnail: /img/thumbs/hero-aerospace.jpg
 text_1: Engineered Clean Air Solutions That Won’t Disrupt Your Lead Time
 image_1: /img/image-1-aerospace.jpg
-text_2: Modular Aerospace Filtration Systems
+text_2: Modular Industrial Air Filtration Solutions for Military and Defense
+  Manufacturing
 image_2: /img/image-2-aerospace.jpg
 text_3: Modular multi-process clean rooms
 image_3: /media/uploads/airplane.jpg
 short_description: Deploy with existing manufacturing cells without disrupting lead time.
 secondary_copy: >-
-  ### Modular Aerospace Filtration Systems
+  ### Modular Industrial Air Filtration Solutions for Military and Defense
+  Manufacturing
 
 
   Ready to deploy when and where needed, Duroair modular enclosures and industrial air filtration for aerospace and aviation can be engineered to move with your cellular workflows. 
