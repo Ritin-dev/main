@@ -32,15 +32,15 @@ secondary_copy: >-
   Aerospace and aviation clean air solutions include:
 
 
-  * **Hexavalent chromium containment** and capture during sanding, coating, and painting operations
+  * Hexavalent chromium containment and capture during sanding, coating, and painting operations
 
-  * **Negative and positive pressure anterooms** to accompany cleanrooms and enclosures for painting and coating operations
+  * Negative and positive pressure anterooms to accompany cleanrooms and enclosures for painting and coating operations
 
-  * **Modular multi-process clean rooms** with precise temperature and humidity controls that can be easily moved between locations and stored when not in use
+  * Modular multi-process clean rooms with precise temperature and humidity controls that can be easily moved between locations and stored when not in use
 
-  * **Dust collection systems** to effectively capture all particulates
+  * Dust collection systems to effectively capture all particulates
 
-  * **Oil mist containment and ambient air quality systems** to capture oil mist particles before they settle on valuable machinery and electronics
+  * Oil mist containment and ambient air quality systems to capture oil mist particles before they settle on valuable machinery and electronics
 solutions_for_industry:
   - Clean Rooms
   - Painting & Coating
