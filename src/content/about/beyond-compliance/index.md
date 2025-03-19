@@ -28,7 +28,7 @@ outro: >-
 
 
   See [solutions for your industry](/industries) to lean how Duroair can help you achieve EHS compliance and other clean air standards while improving your bottom line.
-image_1: /img/image-1-beyondcompliance.jpg
+image_1: /media/uploads/image-31-.png
 image_2: /media/uploads/dur-201305-february-blog-img.jpg
 compliance:
   - code: ISO6 temperature and humidity control
