@@ -16,3 +16,8 @@
     });
   }
 </script>
+<script>
+    document.querySelectorAll('.markdown-content').forEach(function(element) {
+        element.innerHTML = marked.parse(element.innerText);
+    });
+</script>
