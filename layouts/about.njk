@@ -14,7 +14,7 @@
                   <h2>{{ about_intro.heading }}</h2>
                 </div>
                 <div class="lagecy-content">
-                  <p>{{ about_intro.description | safe }}</p>
+                  {{ about_intro.description | md }}
                 </div>
               </div>
             </div>
