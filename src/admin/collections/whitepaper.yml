@@ -1,6 +1,5 @@
 - name: "whitepaper"
   label: "White Paper"
-  label_singular: "Industry"
   folder: "src/content/resources/whitepapers"
   create: true
   filter: {field: "layout", value: "landing-page.njk"}
