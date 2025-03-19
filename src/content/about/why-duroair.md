@@ -18,8 +18,9 @@ section_1:
     retractable DuroRoom™</strong> enclosure creates a lean manufacturing layout
     where it is needed.
   desc: Our plug-and-play modular system is designed to isolate processes in any
-    work cell and filter hazards like hexavalent chromium, isocyanates, dust, or
-    VOCs, ensuring worker safety, saving time, and maximizing your bottom line.
+    work cell and filter hazards like hexavalent <br>chromium, isocyanates,
+    dust, or VOCs, ensuring worker safety, saving time, and maximizing your
+    bottom line.
 choose_duroair:
   - heading_1: Gain Flexibility
     description_1: DuroRoom enclosures retract to provide easy access to overhead
@@ -73,11 +74,11 @@ air_system:
   description_3: >-
     **The first three stages** capture particulates, including hexavalent
     chromium and particulate isocyanates. The air filtration system places less
-    expensive filters in front of more expensive, technically-advanced filters
-    to protect them and extend filter life.
+    <br> expensive filters in front of more expensive, technically-advanced
+    filters to protect them and extend filter life.
 
 
-    The third stage filter can be changed to accommodate Merv15, HEPA, NESHAP 319 standards, depending upon needs. This provides the manufacturing flexibility to do different operations in the enclosure.
+    The third stage filter can be changed to accommodate Merv15, HEPA, NESHAP 319 standards, depending upon needs. This provides the <br> manufacturing flexibility to do different operations in the enclosure.
   air_stages:
     - heading_4: Stages 1
       description_4: captures particulates to 10 microns in size.
@@ -92,8 +93,8 @@ air_system:
     - heading_4: Stage 6
       description_4: Stage 6
   description_5: The next three-stage gas filtration process includes
-    photocatalytic oxidation (PCO) and UV light to separate and destroy VOCs.
-    Carbon adsorbs contaminants and UV light destroys VOCs.
+    photocatalytic oxidation (PCO) and UV light to separate and <br> destroy
+    VOCs. Carbon adsorbs contaminants and UV light destroys VOCs.
   efficient:
     number_1: "99"
     description_6: "percent of airborne particulates are safely captured and
