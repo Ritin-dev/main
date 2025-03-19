@@ -14,7 +14,7 @@
                   <h2>{{ about_intro.heading }}</h2>
                 </div>
                 <div class="lagecy-content">
-                  <div class="markdown-content">{{ about_intro.description }}</div>
+                  <div class="markdown-content">{{ about_intro.description | json_encode | raw }}</div>
                 </div>
               </div>
             </div>
