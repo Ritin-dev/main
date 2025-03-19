@@ -1,7 +1,7 @@
 - name: "blog"
   label: "Blog"
   label_singular: "Blog Post"
-  folder: "src/content/blog"
+  folder: "src/content/resources/blog"
   create: true
   fields:
     - {label: "Private?", name: "private", widget: "boolean", required: false, 'hint':'Set to on for "draft mode". The page will not be published on the website.'}
