@@ -14,20 +14,20 @@ jumbotron:
 about_intro:
   description: >-
     At Duroair, we believe everyone deserves a clean, productive and safe
-    working environment. For more than a decade, we've invested in research and
+    working environment. For more than a decade, we’ve invested in research and
     development to design and manufacture industrial clean air solutions that
     not only meet EHS compliance, but also have a measurable impact on the
-    manufacturing bottom line.
+    manufacturing bottom line.  
 
 
-    From North America to Asia, Europe and beyond, we're committed to:
+    From North America to Asia, Europe and beyond, we’re committed to:
 
 
     * Improving overall health and safety in lean manufacturing facilities
 
-    * Engineering solutions to isolate, capture, and contain a wide variety of industrial processes
+    * Engineering [solutions](/solutions) to isolate, capture, and contain a wide variety of industrial processes
 
-    * Going beyond EHS compliance to maximize efficiency and productivity
+    * Going [beyond EHS compliance](/about/beyond-compliance/) to maximize efficiency and productivity
   heading: "Our Legacy: Transforming Air Quality for Over [X] Years"
   image_1: /media/uploads/dur-201305-february-blog-thumb.jpg
   image_2: /media/uploads/dur-201305-february-blog-thumb.jpg
