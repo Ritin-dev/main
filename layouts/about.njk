@@ -14,7 +14,7 @@
                   <h2>{{ about_intro.heading }}</h2>
                 </div>
                 <div class="lagecy-content">
-                  {{ about_intro.description | safe }}
+                  {{ about_intro.description | md }}
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@
               <h2>{{ a_nederman_company.heading }}</h2>
           </div>
           <div class="nederman-content">
-            <p>{{ a_nederman_company.description | nl2br }}</p>
+            {{ a_nederman_company.description | md }}
           </div>
       </div>
   </div>
@@ -73,7 +73,7 @@
               <div class="event">
                   <div class="event-dtls">
                       <h2>{{ item.year }}</h2>
-                      <p>{{ item.description | nl2br }}</p>
+                      {{ item.description | md }}
                   </div>
                   <div class="dot"></div>
               </div>
@@ -108,7 +108,7 @@
                           <h3 class="h2-title">{{ item.heading }}</h3>
                       </div>
                       <div class="lagecy-content">
-                        <p>{{ item.description | nl2br }}<p/>
+                        {{ item.description | md }}
                       </div>
                   </div>
               </div>
