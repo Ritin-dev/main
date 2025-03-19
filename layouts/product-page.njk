@@ -27,7 +27,7 @@
                         <div class="whyduroair-inr">
                             <div class="whyduroair-inr-content">
                                 <h2>{{ section_1.head }}</h2>
-                                <p>{{ section_1.desc }}</p>
+                                <p>{{ section_1.desc | md }}</p>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                                     </div>
                                 </div>
                                 <div class="reasonsaccr-body">
-                                    <p>{{ item.description_1 |nl2br }}</p>
+                                    <p>{{ item.description_1 | md }}</p>
                                 </div>
                             </div>
                             {%- endfor -%}
@@ -118,7 +118,7 @@
                             <div class="transmission-left">
                                 <div class="sec-inr-head">
                                     <h2>{{ efficient.heading_2 }}</h2>
-                                    <p>{{ efficient.description_2 }}</p>
+                                    <p>{{ efficient.description_2 | md }}</p>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                         <div class="sec-inr-head text-center">
                             <h2>{{ air_system.heading_3 }}</h2>
                         </div>
-                        <p>{{ air_system.description_3 }}</p>
+                        <p>{{ air_system.description_3 | md }}</p>
                     </div>
                     <div class="stages-chart-img">
                         <p class="stages-chart-p">{{ air_system.description_5 | nl2br }}</p>
@@ -188,7 +188,7 @@
                                 <div class="stage stage{{ loop.index }} {% if loop.index <= 3 %}has-dot{% endif %}">
                                     <h3>{{ item.heading_4 }}</h3>
                                     {%- if loop.index <= 3 -%}
-                                        <p>{{ item.description_4 | nl2br }}</p>
+                                        <p>{{ item.description_4 | md }}</p>
                                         <div class="dot-img"></div>
                                     {%- endif -%}
                                 </div>
@@ -199,7 +199,7 @@
                     <div class="achivments">
                         <div class="achiv-percent">{{ air_system.efficient.number_1 }}+</div>
                         <div class="achiv-text">
-                            <p>{{ air_system.efficient.description_6 }}</p>
+                            <p>{{ air_system.efficient.description_6 | md }}</p>
                         </div>
                     </div>
                     <div class="text-card">
@@ -221,7 +221,7 @@
                         <div class="sec-inr-head text-center">
                             <h2>{{ compilance_section.heading_7 }}</h2>
                         </div>
-                        <p>{{ compilance_section.description_7 }}</p>
+                        <p>{{ compilance_section.description_7 | md }}</p>
                     </div>
                     <div class="compliance-cards-row row">
                         <div class="col-lg-4 col-md-4 col-sm-6">
@@ -265,7 +265,7 @@
                             <div class="col-lg-4">
                                 <div class="we-provide-content">
                                     <h3>{{ our_system.flexibility.heading_8 }}</h3>
-                                    <p>{{ our_system.flexibility.description_8 |nl2br }}</p>
+                                    <p>{{ our_system.flexibility.description_8 | md }}</p>
                                 </div>
                             </div>
                             <div class="col-lg-8">
@@ -281,7 +281,7 @@
                             <div class="col-lg-4">
                                 <div class="we-provide-content">
                                     <h3>{{ our_system.workflow.heading_9 }}</h3>
-                                    <p>{{ our_system.workflow.description_9 | nl2br }}</p>
+                                    <p>{{ our_system.workflow.description_9 | md }}</p>
                                 </div>
                             </div>
                             <div class="col-lg-8">
@@ -294,7 +294,7 @@
                                                     <img src="{{ item.image_6 }}" alt="Image">
                                                 </div>
                                                 <div class="workflow-item-inr-content">
-                                                    <p>{{ item.description_10 | nl2br }}
+                                                    <p>{{ item.description_10 | md }}
                                                     </p>
                                                 </div>
                                             </div>
@@ -308,7 +308,7 @@
                             <div class="col-lg-4">
                                 <div class="we-provide-content">
                                     <h3>{{ our_system.retracts.heading_11 }}</h3>
-                                    <p>{{ our_system.retracts.description_11 | nl2br }}</p>
+                                    <p>{{ our_system.retracts.description_11 | md }}</p>
                                 </div>
                             </div>
                             <div class="col-lg-8">
@@ -341,7 +341,7 @@
                             </div>
                             <div class="ingenunity-content">
                                 <h3>{{ ingenuity.heading_12 }}</h3>
-                                <p>{{ ingenuity.description_12| nl2br }}</p>
+                                <p>{{ ingenuity.description_12| md }}</p>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -354,7 +354,7 @@
                             <div class="ingenunity-operation-card">
                                 <div class="ingenuity-ot-card-content">
                                     <h4>{{ item.heading_13 }}</h4>
-                                    <p>{{ item.description_13| nl2br }}</p>
+                                    <p>{{ item.description_13| md }}</p>
                                 </div>
                             </div>
                         </div>
@@ -389,7 +389,7 @@
                         </div>
                         <div class="learn-duroair-content">
                             <h2>{{ bottom_section.bottom_heading }}</h2>
-                            <p>{{ bottom_section.bottom_description }}</p>
+                            <p>{{ bottom_section.bottom_description | md }}</p>
                         </div>
                     </div>
                 </div>
