@@ -35,7 +35,7 @@ description: >-
   processes.
 
 
-  Partnering with us means partnering with a solutions provider that is always responsive to the manufacturing reality of your lean production system. The result is a clean air solution that is [better for compliance](#url), better for overall employee health and safety, and better for your bottom line.
+  Partnering with us means partnering with a solutions provider that is always responsive to the manufacturing reality of your lean production system. The result is a clean air solution that is [better for compliance](/about/beyond-compliance), better for overall employee health and safety, and better for your bottom line.
 image_1: /media/uploads/hww-abt-img-4.png
 image_2: /media/uploads/case-study-detail-img-1.png
 cta:
