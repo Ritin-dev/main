@@ -1,6 +1,6 @@
 ---
 layout: landing-page.njk
-title: How a Retractable Clean Air System Meets Stringent Compliance Requirements
+title: Aerospace Manufacturer Reduces Backlogs With Flexible Clean Air Workspace
 seo:
   page_title: 'Whitepaper: Industrial Air Filtration Compliance'
   descriptoin: 'This white paper explains how retractable enclosures with unvented air filtration systems can meet stringent clean air compliance requirements.'
