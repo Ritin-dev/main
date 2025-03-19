@@ -13,9 +13,10 @@ jumbotron:
   headline: A Big Shift In Clean Air
 section_1:
   head: Duroair has designed and engineered the most flexible and efficient clean
-    air systems in the market — the patented six-stage DuroPure™ industrial air
-    filtration system paired with the retractable DuroRoom™ enclosure creates a
-    lean manufacturing layout where it is needed.
+    air systems in the market <strong>— the patented six-stage
+    DuroPure™</strong> industrial air filtration system paired with <strong>the
+    retractable DuroRoom™</strong> enclosure creates a lean manufacturing layout
+    where it is needed.
   desc: Our plug-and-play modular system is designed to isolate processes in any
     work cell and filter hazards like hexavalent chromium, isocyanates, dust, or
     VOCs, ensuring worker safety, saving time, and maximizing your bottom line.
