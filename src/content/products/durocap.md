@@ -113,7 +113,7 @@ product-intro:
     EPA. Just a single spark can ignite welding “smoke” and endanger your entire
     shop floor. Welding contaminants can also reduce the life of your cooling
     fans and valuable CNC machinery.
-btn_label: DOWNLOAD FACT SHEET
+btn_label: Download Fact Sheet
 technical_specifications: >-
   * Single phase 220V and three phase 208/230/460/575V available upon request.
 
