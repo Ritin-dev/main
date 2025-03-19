@@ -27,7 +27,8 @@ collections:
       <!-- @include collections/goverment-and-military.yml -->
       <!-- @include collections/how-we-work.yml -->
       <!-- @include collections/why-duroair.yml -->
-      
+      <!-- @include collections/whitepaper.yml -->
+       
   - label: "Site"
     name: "site"
     files:
