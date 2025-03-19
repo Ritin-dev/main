@@ -6,20 +6,6 @@
     <body class="page-{{ title | cssClassify }}  landing-page ">
     {% include "partials/header.njk" %}
         {%- include "partials/gtm-noscript.njk" -%}
-        <div id="hero" class="{{waveType}} lp-hero">
-            <div class="container lp-logo-container">
-                <a class="header-logo" href="/" title="Duroair Home">{% include "partials/inline-svg-logo.njk" %}</a>
-            </div>
-            <div class="container lp-header">
-                <div class="jumbo-content">
-                    {# <div class="date">{{date}}</div> #}
-                    <h1 class="jumbotron-headline">{{ jumbotron.headline if jumbotron.headline else title }}</h1>
-                    <div class="jumbo-tagline">{{ jumbotron.tagline }}</div>
-                    <a href="#form-container" class="btn btn-default" data-ga-event="Button" data-ga-action="Click">{{jumbotron.ctaText if jumbotron.ctaText else 'Download Now' }}</a>
-                </div>
-            </div>
-            <div class="hero-overlay"></div>
-        </div>
 
 <!-- White Paper Details Section Begin -->
 
@@ -42,7 +28,7 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="white-paper-details-inr-right">
                                 <div class="sec-inr-head">
-                                    <h2>{{ title }}</h2>
+                                    <h2>{{ jumbotron.headline }}</h2>
                                     <p>{{ jumbotron.tagline }}</p>
                                 </div>
                                 <a href="#" class="cmn-btn button">Download Now <span class="button__spotlight"></span></a>
