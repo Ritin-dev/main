@@ -1,35 +1,8 @@
 {% extends "layout.njk" %}
 {% block body %}
-    {% set vId = youtube_url | getYoutubeId %}
-    <section class="section narrow">
-        <div class="video-embed">
-            <iframe width="560" height="315" src="//www.youtube.com/embed/{{ vId}}?autoplay=1&rel=0&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <br>
-        <h2 class="h4">{{title}}</h2>
-        {{ contents | safe }}
-        {% if youtube_id %}
-
-        {% set data = videoData[youtube_id]  %}
-        
-
-            <script type="application/ld+json">
-                {
-                    "@context": "https://schema.org",
-                    "@type": "VideoObject",
-                    "name": "{{title}}",
-                    "description": "{{contents | safe | striptags}}",
-                    "thumbnailUrl": ["{{data.thumbnail}}"],
-                    "uploadDate": "{{data.publishedAt}}",
-                    "duration": "{{data.duration}}"
-                }
-            </script>
-
-        {% endif %}
-    </section>
-
+    
     <!-- Video Details Section Begin -->
-
+        {% set vId = youtube_url | getYoutubeId %}
         <div class="video-details-sec has-texture newtexturepos">
             <div class="texture">
                 <img src="/img/shape-4.png" alt="Texture">
@@ -48,6 +21,24 @@
                     </div>
                 </div>
             </div>
+         {% if youtube_id %}
+
+            {% set data = videoData[youtube_id]  %}
+        
+
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "VideoObject",
+                    "name": "{{title}}",
+                    "description": "{{contents | safe | striptags}}",
+                    "thumbnailUrl": ["{{data.thumbnail}}"],
+                    "uploadDate": "{{data.publishedAt}}",
+                    "duration": "{{data.duration}}"
+                }
+            </script>
+
+         {% endif %}
         </div>
 
     <!-- End Of Video Details Section -->
