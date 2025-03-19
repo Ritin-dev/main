@@ -27,4 +27,28 @@
 
         {% endif %}
     </section>
+
+    <!-- Video Details Section Begin -->
+
+        <div class="video-details-sec has-texture newtexturepos">
+            <div class="texture">
+                <img src="/img/shape-4.png" alt="Texture">
+            </div>
+            <div class="texture-2 texture">
+                <img src="/img/shape-4.png" alt="Texture">
+            </div>
+            <div class="container">
+                <div class="video-details-inr">
+                    <div class="video-details">
+                        <iframe width="560" height="315" src="//www.youtube.com/embed/{{ vId}}?autoplay=1&rel=0&modestbranding=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="sec-inr-head">
+                        <h2>{{title}}</h2>
+                        {{ contents | safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- End Of Video Details Section -->
 {% endblock %}
