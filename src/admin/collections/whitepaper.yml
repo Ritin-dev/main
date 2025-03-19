@@ -9,4 +9,4 @@
     <!-- @include-static ../partials/nav-fields.yml -->
     <!-- @include-static ../partials/jumbotron.yml -->
     - {label: "Layout", name: "layout", widget: "hidden", default: "landing-page.njk"}
-    - {label: "Thumbnail", name: "thumbnail", widget: "image", required: true}
+    - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
