@@ -77,7 +77,7 @@ key_features: >-
   * **Variable Frequency Drive**: Energy-efficient VFD with adjustable air speeds, doubles as a soft starter to eliminate the need for a motor starter.
 
   * **Fire Suppression**: Designed by Kidde Badger for protection of exhaust systems and the enclosure, while meeting NFPA 17 standards and is UL listed. Wet or dry systems are available depending upon requirements. Wet systems are for non-retracting only.
-image_2: /media/uploads/durocap-2.png
+image_2: /media/uploads/image-29.png
 compliance:
   - code: NFPA 33
     description: spray application
