@@ -10,7 +10,7 @@ jumbotron:
   ctaText: Download Now
   img: /img/DUR_20401_Whitepaper-mockup-Hero.png
 header_img: /img/lp/DUR_20401_Whitepaper-mockup.png
-thumbnail: /img/DUR_20401_Whitepaper-mockup.jpg
+thumbnail: /img/DUR_20401_Whitepaper-mockup.png
 hubspot_form_id: 1dbedf06-712e-4ebd-bf85-bf88ad997e8e
 form_intro: "### Download Now"
 short_description: "This white paper explains how retractable enclosures with unvented air filtration systems can meet stringent clean air compliance requirements."
