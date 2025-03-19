@@ -41,6 +41,18 @@
 
     <!-- End Of White Paper Details Section -->
 
+        <section class="section lp-top">
+            <div class="grid-2">
+                <div class="lp-content">
+                    {{ contents | safe }}
+                </div> 
+                <div class="form-container" id="form-container">
+                    <div class="form-intro">{{form_intro | md}}</div>
+                    {% include "partials/hubspot-form.njk" %}
+                </div>
+            </div>
+        </section>
+
 
         {%- include "partials/colophon.njk" -%}
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
