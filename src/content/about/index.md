@@ -13,22 +13,24 @@ jumbotron:
   img: /img/heros/hero-about.jpg
 about_intro:
   description: >-
-    At Duroair, we believe everyone deserves a clean, productive and safe
-    working environment. For more than a decade, we’ve invested in research and
-    development to design and manufacture industrial clean air solutions that
-    not only meet EHS compliance, but also have a measurable impact on the
-    manufacturing bottom line.  
+    At Duroair, we’ve built a legacy for transforming air quality through
+    customization. Need to do surfacing and coating without contaminating your
+    other processes in the same indoor space? Want to reduce your footprint and
+    eliminate the need to move workpieces? We’ll partner with you to learn your
+    processes so we can customize a clean-air solution that will increase your
+    efficiency while helping you provide a clean, safe, and productive working
+    environment.
 
 
-    From North America to Asia, Europe and beyond, we’re committed to:
+    From North America to Asia, Europe, and beyond, we're committed to customizing clean-air solutions to help customers like you:
 
 
-    * Improving overall health and safety in lean manufacturing facilities
+    * Improve overall health and safety in lean manufacturing facilities.
 
-    * Engineering [solutions](/solutions) to isolate, capture, and contain a wide variety of industrial processes
+    * Engineer solutions to isolate, capture, and contain a wide variety of industrial processes.
 
-    * Going [beyond EHS compliance](/about/beyond-compliance/) to maximize efficiency and productivity
-  heading: "Our Legacy: Transforming Air Quality for Over [X] Years"
+    * Go beyond EHS compliance to maximize efficiency and productivity.
+  heading: "Our Legacy: Transforming Air Quality for Over 13 Years"
   image_1: /media/uploads/dur_jan2021_blog_01-thumb.jpg
   image_2: /media/uploads/dur_jan2021_blog_01-img.jpg
 a_nederman_company:
