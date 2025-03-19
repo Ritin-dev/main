@@ -166,9 +166,9 @@ cta:
   label: Contact Us
 bottom_section:
   bottom_heading: With Duroair, Eliminate Outsourcing of One or More Functions
-  bottom_description: The flexibility provides opportunities.More easily manage
-    multiple projects that all involve surface prep, sanding, painting and/or
-    coating.
+  bottom_description: The flexibility provides opportunities. <br> More easily
+    manage multiple projects that all involve surface prep, sanding, painting
+    and/or coating.
   bottom_image: /media/uploads/why-duroair-learn.png
 redirectUrl: /request-for-quote/success/
 compliance:
