@@ -115,12 +115,17 @@ our_experties:
       threaten safety. Now there’s a patented solution with the DuroPure™
       non-vented, six-stage filtration system. 
 
+      <ul>
 
-      * **DuroPure is the world’s first, indoor air filtration system** that goes beyond OSHA compliance to capture 99+% of airborne particulates like hexavalent chromium, VOCs, and isocyanates, and recirculates clean air back into the workspace.
+      <li>**DuroPure is the world’s first, indoor air filtration system** that goes beyond OSHA compliance to capture 99+% of airborne particulates like hexavalent chromium, VOCs, and isocyanates, and recirculates clean air back into the workspace.</li>
 
-      * **This patented technology pairs with our DuroRoom containment systems** to create a clean-air envelope around each workpiece, for a contaminant-free, portable workstation. It also pairs with our patented, Taper Draft Airflow technology that goes beyond traditional cross drafts by creating indoor environments that are so clean, they exceed OSHA compliance requirements.
+      <li>**This patented technology pairs with our DuroRoom containment systems** to create a clean-air envelope around each workpiece, for a contaminant-free, portable workstation. It also pairs with our patented, Taper Draft Airflow technology that goes beyond traditional cross drafts by creating indoor environments that are so clean, they exceed OSHA compliance requirements.</li>
 
-      * **DuroRoom meets/exceeds CFM requirements,** from 13,500 CFM to 200,000 CFM and beyond, to achieve airflow over 100 FPM at the intake filter face and ensure airflow remains below code requirements of 25% of the LEL (lower explosion limit). It’s also been **tested by the Defense Centers for Public Health – Aberdeen (DCPH-A) and verified by Army Engineers and Industrial Hygienists.**
+      <li>**DuroRoom meets/exceeds CFM requirements,** from 13,500 CFM to 200,000 CFM and beyond, to achieve airflow over 100 FPM at the intake filter face and ensure airflow remains below code requirements of 25% of the LEL (lower explosion limit). It’s also been **tested by the Defense Centers for Public Health – Aberdeen (DCPH-A) and verified by Army Engineers and Industrial Hygienists.**
+
+      </li>
+
+      </ul>
     image: /media/uploads/DUR-201314-thumb.jpg
 image_1: /img/image-1-about2.jpg
 copy_block_1: >-
