@@ -29,21 +29,8 @@ intro:
 
     How do you cost-effectively isolate manufacturing processes to keep damaging elements out and clean air around each workpiece?
 copy_block_list: >-
-  
-
-  ### Bring Compliant Clean Air to On-Demand Work Spaces
-
-
-  Duroair’s retractable clean rooms create clean air environments wherever they are needed. We combine our [DuroRoom™](/products/duroroom)  retractable enclosure with our DuroClean™  engineered exhaust system into one flexible, cost-effective solution for portable clean rooms and isolation rooms.
-
-
-  Duroair modular clean rooms can be placed anywhere in a manufacturing facility without having to install supplementary ductwork — or pay for ongoing air make-up costs. Our portable, retractable enclosures with non-vented air filtration can be engineered for large or small self-contained work environments, wherever and whenever needed. 
-
-
-  Whether isolating a manufacturing process from the larger work environment (negative pressure) or protecting a process from contamination (positive pressure), our [DuroRoom™](/products/duroroom) and engineered filtration systems help guarantee worker safety from toxic dust and fumes, while reducing operating expenses and increasing productivity.
-
-
-  [Benefits](https://www.duroair.com/blog/21-ways-a-retractable-clean-air-enclosure-solves-problems) of Duroair’s custom portable clean room design includes:
+  [Benefits](https://www.duroair.com/blog/21-ways-a-retractable-clean-air-enclosure-solves-problems)
+  of Duroair’s custom portable clean room design includes:
 
 
   * Increased workflow efficiency for stop-and-start R&D processes
@@ -66,20 +53,6 @@ copy_block_1: >-
 
 
   Whether isolating a manufacturing process from the larger work environment (negative pressure) or protecting a process from contamination (positive pressure), our [DuroRoom™](/products/duroroom) and engineered filtration systems help guarantee worker safety from toxic dust and fumes, while reducing operating expenses and increasing productivity.
-
-
-  [Benefits](https://www.duroair.com/blog/21-ways-a-retractable-clean-air-enclosure-solves-problems) of Duroair’s custom portable clean room design includes:
-
-
-  * Increased workflow efficiency for stop-and-start R&D processes
-
-  * Reduced material handling by not having to transport large workpieces to a dedicated clean air space
-
-  * Eliminated need for expensive equipment and installation for air make-up
-
-  * Laminar or turbulent airflow as required
-
-  * Unsurpassed control of isolated work environments, including pressure (positive or negative), humidity, and temperature air flow patterns, and harmful dust particulates and gaseous contaminants
 copy_block_2: >-
   ### Technical Specifications
 
