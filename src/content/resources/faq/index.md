@@ -24,6 +24,7 @@ questions:
 
       Visit the [DuroPure™](/products/duropure) and [DuroCap™](/products/durocap) pages to learn more, or [contact us](/contact-us) today to discuss how Duroair’s market-leading solutions can resolve your unique challenges.
     question: What is the difference between DuroPure™ and DuroCap™?
+    category: DuroPure™
   - answer: >-
       Duroair’s exhaust systems are delivered to your site fully assembled and
       the retractable enclosures (depending upon size) are usually assembled
@@ -33,6 +34,7 @@ questions:
 
       If you have additional questions about implementing Duroair’s air filtration systems in your manufacturing environment, [contact us](/contact/) today to get the technical support you need.
     question: Once ordered, is my business responsible for assembling Duroair systems?
+    category: DuroPure™
   - answer: >-
       Duroair solutions are fully compliant with the standards of the following
       regulatory bodies: United States Environmental Protection Agency,
@@ -45,6 +47,7 @@ questions:
 
       Duroair is committed to working with your local jurisdiction to ensure safety, environmental and all required standards are effectively met. [Contact us](/contact/) today to learn more.
     question: Are Duroair systems compliant with environmental and safety requirements?
+    category: DuroCap™
   - answer: >-
       Duroair’s patent pending, non-vented air recycling filtration solutions
       enable a discreet way of working by way of eliminating the need for large
@@ -57,6 +60,7 @@ questions:
       Visit the [Defense](/industries/defense/) page or [contact us](/contact/) today for details.
     question: Security is the number one priority for my organization. Can Duroair’s
       air filtration solutions safeguard classified work?
+    category: DuroDeployable™
   - answer: >-
       Duroair’s patented [Taper Draft Airflow
       Technology](/products/taper-draft-airflow-technology) creates an air
@@ -70,6 +74,7 @@ questions:
       Click [here](/products/taper-draft-airflow-technology/) to learn more about Duroair’s patented airflow technology, or [contact us](/contact/) today to speak to a sales consultant about how [Taper Draft Airflow Technology](/products/taper-draft-airflow-technology) can enhance your coating process.
     question: Are there any benefits to using Duroair Technologies for paint and
       coating applications?
+    category: DuroDeployable™
   - answer: >-
       Duroair’s solutions are well-suited to applications within the [metal
       fabrication industry](/industries/metal-fabrication), as enclosures and
@@ -82,5 +87,6 @@ questions:
     question: My organization’s lean production system works on large parts and uses
       overhead cranes. Are Duroair’s solutions suitable for us given these
       factors?
+    category: Industrial Clean Air Systems
 ---
 ****
