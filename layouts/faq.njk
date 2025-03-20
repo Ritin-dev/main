@@ -19,7 +19,7 @@
                     {% for q in questions %}
                         {% if unique_categories.indexOf(q.category) == -1 %}
                             {% set unique_categories = unique_categories | push(q.category) %}
-                            <li data-filter="{{ q.category | slugify }}">{{ q.category }}</li>
+                            <li data-filter="{{ q.category }}">{{ q.category }}</li>
                         {% endif %}
                     {% endfor %}
                 </ul>
