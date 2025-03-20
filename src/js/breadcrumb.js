@@ -32,11 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     let span = document.querySelector("nav#breadcrumb span");
-    let anchor = document.querySelector(".breadcrumb a");
+    let anchors = document.querySelectorAll(".breadcrumb a"); // Selects all <a> elements inside .breadcrumb
+
     if (span) {
         span.textContent = span.textContent.replace(/-/g, " ");
     }
-    if (anchor) {
-        anchor.textContent = anchor.textContent.replace(/-/g, " ");
+
+    if (anchors.length > 0) { // If at least one <a> tag exists
+        anchors.forEach(anchor => {
+            anchor.textContent = anchor.textContent.replace(/-/g, " ");
+        });
     }
 });
