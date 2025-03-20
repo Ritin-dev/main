@@ -10,14 +10,26 @@ jumbotron:
 nav_sort: 3000
 show_in_menu: "true"
 layout: solution.njk
-hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
-redirectUrl: /contact-us/success/
-form_intro: Contact Us
 thumbnail: /img/thumbs/hero-dustcollection.jpg
 image_1: /img/image-1-dustcollection.jpg
 image_2: /img/image-2-dustcollection.jpg
 image_3: /img/image-3-dustcollection.png
 short_description: Comply with OSHA’s .3 microns standard without breaking the budget.
+intro:
+  intro_head: Industrial Dust Collection Systems Where and When You Need Them
+  intro_desc: >-
+    Dust poses serious risks to both worker health and your entire facility.
+    Grinding and blasting, cutting and sanding, and working with composites,
+    metal, or stone produce a wide range of potentially hazardous dust that can
+    compromise product quality and settle into every crook and crevice of your
+    valuable machinery.
+
+
+    Duroair can safeguard your employees and operations from dust exposure and help you go beyond OSHA compliance with our best-in-class industrial dust collection systems and filtration technology.
+copy_block_list: All dust collection systems can be used with the
+  [DuroRoom™](/products/duroroom)  retractable enclosure to isolate and contain
+  dust as the dust is generated – creating a safe and clean working environment
+  within a larger space.
 copy_block_1: >-
   ### Modular Dust Collection for Complete Protection
 
@@ -32,11 +44,6 @@ copy_block_1: >-
   3. Our vented solution, the [DuroCollector™](/products/durocollector), works for operations dealing with larger volumes of dust. 
 
   4. Our DuroTable™ is a custom down draft table complete with multi-stage filtration and custom table-top size.
-
-
-  \
-
-  All dust collection systems can be used with the [DuroRoom™](/products/duroroom)  retractable enclosure to isolate and contain dust as the dust is generated – creating a safe and clean working environment within a larger space.
 copy_block_2: >-
   ### Technical Specifications
 
@@ -99,9 +106,12 @@ compliance:
       micron sizes 5.0µ, 0.5µ and 0.3µ)
 related_products:
   - DuroRoom™
-  - DuroCap™
-  - DuroPure™
-  - DuroCollector™
+  - DuroTower™
+  - DuroDust™
+  - DuroTable™
+form_intro: Contact Us
+hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
+redirectUrl: /contact-us/success/
 ---
 ### **Industrial Dust Collection Systems Where and When You Need Them**
 
