@@ -23,14 +23,6 @@ intro:
     fans and valuable CNC machinery.
   intro_head: Clean Shop Air for the Entire Floor
 copy_block_list: >-
-  ### Modular Weld Smoke Extractors and Ventilation Protection
-
-
-  Duroair combines our [DuroTower™](/products/durotower), [DuroRoom™](/products/duroroom), and our line of portable smoke and fume collectors for a shop air filtration and cleaning solution that removes the burden of environmental compliance.
-
-
-  We engineer vented or non-vented enclosures with [DuroTower’s](/products/durotower) powerful air cleaning system to isolate each manual, resistance, and robotic welding workstation. Or we can custom tailor [DuroTower™](/products/durotower) to capture particulates at their source and flood your entire facility with OSHA and EPA compliant clean air.
-copy_block_1: >-
   Duroair’s weld smoke extraction and air cleaning solutions provide:
 
 
@@ -43,6 +35,14 @@ copy_block_1: >-
   * Increased productivity via non-observable airflow for a comfortable work environment
 
   * Superior facility-wide air contaminant removal to one micron
+copy_block_1: >-
+  ### Modular Weld Smoke Extractors and Ventilation Protection
+
+
+  Duroair combines our [DuroTower™](/products/durotower), [DuroRoom™](/products/duroroom), and our line of portable smoke and fume collectors for a shop air filtration and cleaning solution that removes the burden of environmental compliance.
+
+
+  We engineer vented or non-vented enclosures with [DuroTower’s](/products/durotower) powerful air cleaning system to isolate each manual, resistance, and robotic welding workstation. Or we can custom tailor [DuroTower™](/products/durotower) to capture particulates at their source and flood your entire facility with OSHA and EPA compliant clean air.
 copy_block_2: |-
   ### Technical Specifications
 
@@ -76,6 +76,7 @@ compliance:
 related_products:
   - DuroTower™
   - DuroRoom™
+  - DuroDust™
 form_intro: Contact Us
 hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
 redirectUrl: /contact-us/success/
