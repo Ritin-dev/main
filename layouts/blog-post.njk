@@ -22,15 +22,21 @@
 
 {% set grid = collection | getRelatedPosts(collections) %}
 {%- if grid and grid.length -%}
-    <section class="section">
-        <h3 class="text-center ruled">More Posts You Might Like</h3>
-        <br><br>
-        {% set grid = collection | getRelatedPosts(collections) %}
-        {% set gridCssClass = 'grid-3 related-posts' %}
-        {% set cardCssClass = 'simple'%}
-        {% set cardType = 'simple'%}
-        {% include "partials/grid.njk" %}
-    </section>
+    <div class="videos-sec cmn-gap blog-detail-pg pb-200">
+        <div class="container">
+            <div class="videos-inr">
+                <div class="sec-head">
+                    <h2>More Posts You Might Like</h2>
+                </div>
+                <br><br>
+                {% set grid = collection | getRelatedPosts(collections) %}
+                {% set gridCssClass = 'grid-3 related-posts' %}
+                {% set cardCssClass = 'simple'%}
+                {% set cardType = 'simple'%}
+                {% include "partials/grid.njk" %}
+            </div>
+        </div>
+    </div>
 {%- endif -%}
 <script type="application/ld+json">
     { "@context": "http://schema.org", 
