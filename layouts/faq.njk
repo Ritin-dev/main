@@ -15,11 +15,16 @@
             <div class="faq-tab-head">
                 <ul>
                     <li data-filter="all" class="active">All</li>
-                    {% for item in product %}
-                        <li data-filter="{{ item.title }}">{{ item.title }}</li>
+                    {% set unique_categories = [] %}
+                    {% for q in questions %}
+                        {% if q.category not in unique_categories %}
+                            {% set unique_categories = unique_categories.append(q.category) %}
+                            <li data-filter="{{ q.category  }}">{{ q.category }}</li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </div>
+
 
             <!-- FAQ Items -->
             <div class="faq-inr-wrp">
