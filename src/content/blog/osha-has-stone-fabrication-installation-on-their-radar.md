@@ -34,11 +34,11 @@ See the press release below to learn more about OSHA’s new enforcement focus o
 
 ### News Release
 
-## DEPARTMENT OF LABOR ANNOUNCES ENFORCEMENT, COMPLIANCE INITIATIVE TO PROTECT WORKERS FROM SILICA EXPOSURE IN ENGINEERED STONE FABRICATION, INSTALLATION
+## Department of Labor Announces Enforcement, Compliance Initiative to Protect Workers from Silica Exposure in Engineered Stone Fabrication, Installation
 
 OSHA supplements current efforts to address serious workplace danger
 
-**WASHINGTON** – The U.S. Department of Labor announced that its Occupational Safety and Health Administration today launched [a new initiative focused on enhancing enforcement and providing compliance assistance](https://www.osha.gov/laws-regs/standardinterpretations/2023-09-22) to protect workers in the engineered stone fabrication and installation industries.
+WASHINGTON – The U.S. Department of Labor announced that its Occupational Safety and Health Administration today launched [a new initiative focused on enhancing enforcement and providing compliance assistance](https://www.osha.gov/laws-regs/standardinterpretations/2023-09-22) to protect workers in the engineered stone fabrication and installation industries.
 
 “Many workers in the engineered stone industry are experiencing illnesses so severe that they’re unable to breathe — much less work a full shift — because of their exposure to silica dust,” explained Assistant Secretary for Occupational Safety and Health Doug Parker. “Among them is a 27-year-old worker in California who went to an emergency room with shortness of breath in 2022 and whose lung biopsy later revealed he had silicosis. Since then, he has been on an oxygen tank and unable to support his wife and three young children financially.”
 
