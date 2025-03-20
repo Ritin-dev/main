@@ -1,6 +1,7 @@
 ---
 title: DuroCollector™
 nav_title: DuroCollector
+show_in_menu: "true"
 seo:
   description: >-
     The modular and compact DuroCollector™ is a breakthrough in industrial dust
