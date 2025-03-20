@@ -16,7 +16,7 @@
                 <ul>
                     <li data-filter="all" class="active">All</li>
                     {% for item in product %}
-                        <li data-filter="{{ item.title | slugify }}">{{ item.title }}</li>
+                        <li data-filter="{{ item.title }}">{{ item.title }}</li>
                     {% endfor %}
                 </ul>
             </div>
@@ -24,7 +24,7 @@
             <!-- FAQ Items -->
             <div class="faq-inr-wrp">
                 {% for faq in questions %}
-                <div class="faq-inr-item {{ faq.category | slugify }}">
+                <div class="faq-inr-item {{ faq.category }}">
                     <div class="faq-inr-item-head">
                         <h3>{{ faq.question }}</h3>
                         <span class="faq-inr-item-head-icon"><i class="fa-solid fa-plus"></i></span>
