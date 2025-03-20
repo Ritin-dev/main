@@ -15,15 +15,15 @@
             <div class="faq-tab-head">
                 <ul>
                     <li data-filter="all" class="active">All</li>
-                    {% for product in products %}
-                        <li data-filter="{{ product.title | slugify }}">{{ product.title }}</li>
+                    {% for item in product %}
+                        <li data-filter="{{ item.title | slugify }}">{{ item.title }}</li>
                     {% endfor %}
                 </ul>
             </div>
 
             <!-- FAQ Items -->
             <div class="faq-inr-wrp">
-                {% for faq in about_intro.questions %}
+                {% for faq in questions %}
                 <div class="faq-inr-item {{ faq.category | slugify }}">
                     <div class="faq-inr-item-head">
                         <h3>{{ faq.question }}</h3>
