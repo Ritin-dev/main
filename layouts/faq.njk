@@ -1,6 +1,46 @@
 {% extends "layout.njk" %}
 {% set waveType = 'gray' %}
 {% block body %}
+
+<!-- FAQ Section Begin -->
+<div class="faq-sec cmn-gap">
+    <div class="container">
+        <div class="faq-inr">
+            <div class="sec-head noline">
+                <h2>Frequently Asked Questions</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo.</p>
+            </div>
+
+            <!-- Dynamic Category Tabs -->
+            <div class="faq-tab-head">
+                <ul>
+                    <li data-filter="all" class="active">All</li>
+                    {% for product in products %}
+                        <li data-filter="{{ product.title | slugify }}">{{ product.title }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="faq-inr-wrp">
+                {% for faq in about_intro.questions %}
+                <div class="faq-inr-item {{ faq.category | slugify }}">
+                    <div class="faq-inr-item-head">
+                        <h3>{{ faq.question }}</h3>
+                        <span class="faq-inr-item-head-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-inr-item-content">
+                        {{ faq.answer | md }}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Of FAQ Section -->
+
+
 <div class="bg-light">
     <section class="section narrow">
         <div class="faq-custom">
