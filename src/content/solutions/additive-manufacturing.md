@@ -10,21 +10,23 @@ jumbotron:
 nav_sort: 7000
 show_in_menu: "true"
 layout: solution.njk
-hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
-redirectUrl: /contact-us/success/
-form_intro: Contact Us
 thumbnail: /media/uploads/thumb-hero-additive.jpg
 image_1: /img/image-1-additivecollection.jpg
 image_2: /img/image-2-additivecollection.jpg
 image_3: /img/image-3-additive.png
 short_description: Remove your compliance burdens while safeguarding the shop floor.
-copy_block_1: >-
-  ### **Protect Your 3D Printing Operations With Air Filters For Dust**
+intro:
+  intro_head: Clean Air Solutions for Safe Additive Manufacturing
+  intro_desc: >-
+    Additive manufacturing has the potential to help manufacturers minimize
+    materials and energy usage, thereby reducing waste. Yet, for all the 3D
+    excitement, there’s been very little public focus on the potential indoor
+    air hazards of 3D printing at the industrial level, which can release
+    volatile organic compounds (VOCs) and potentially toxic dust into the air.
 
 
-  Duroair can engineer industrial air filtration systems for specific additive manufacturing processes, such as prototyping aircraft components for aerospace and aviation. Armed with this technology, manufacturers can use 3D printing to innovate, without exposing facility employees to dust and gaseous particulates that can threaten safety and productivity.
-
-
+    What if manufacturers had a proactive air filter for dust, to destroy these indoor air hazards *before* they’re released into a manufacturing facility?
+copy_block_list: >-
   Duroair’s additive manufacturing clean air solutions provide:
 
 
@@ -37,6 +39,11 @@ copy_block_1: >-
   * Mobility to move additive manufacturing processes when and where needed, without interrupting other cellular workflows
 
   * Protection for 3D printing integrity and quality, without contamination from corrosive dust and hazardous fumes
+copy_block_1: >-
+  ### **Protect Your 3D Printing Operations With Air Filters For Dust**
+
+
+  Duroair can engineer industrial air filtration systems for specific additive manufacturing processes, such as prototyping aircraft components for aerospace and aviation. Armed with this technology, manufacturers can use 3D printing to innovate, without exposing facility employees to dust and gaseous particulates that can threaten safety and productivity.
 copy_block_2: >-
   ### Technical Specifications
 
@@ -80,6 +87,11 @@ compliance:
 related_products:
   - DuroTower™
   - DuroRoom™
+  - DuroClean™
+  - DuroCap™
+form_intro: Contact Us
+hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
+redirectUrl: /contact-us/success/
 ---
 ### Clean Air Solutions for Safe Additive Manufacturing
 
