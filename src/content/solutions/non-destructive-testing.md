@@ -9,24 +9,21 @@ jumbotron:
 nav_sort: 5000
 show_in_menu: "true"
 layout: solution.njk
-hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
-redirectUrl: /contact-us/success/
-form_intro: Contact Us
 thumbnail: /img/thumbs/hero-nondestructivetesting.jpg
 image_1: /img/image-1-nondestructivetesting.jpg
 image_2: /img/image-2-nondestructivetesting.jpg
 image_3: /img/image-3-nondestructivetesting.png
 short_description: Conduct climate-controlled testing with true UV containment.
-copy_block_1: >-
-  ### **UV-Protected Modular Clean Room For Non-Destructive Testing**
-
-
-  Duroair can combine [DuroRoom™](/products/duroroom) with our [DuroCap™](/products/durocap), [DuroDust™](/products/durodust), and DuroClean™ engineered exhaust systems, if required, into one cost-effective, UV-protected enclosure for easy-access, non-destructive testing. 
-
-
-  We engineer portable, retractable enclosures and dark rooms that can be custom tailored for indoor use with your required structural materials, fabric types, and UV protection specifications. Available with climate-controlled filtration, Duroair enclosures can bring your non-destructive testing in-house for significant cost savings and quality control.
-
-
+intro:
+  intro_head: Non-Destructive MPI and UV Testing Made Simple
+  intro_desc: "Detecting metal surface flaws is no easy task, especially when
+    you’re using magnetic particle inspections (MPIs), ultraviolet light (UV),
+    or liquid penetrant testing to locate potentially dangerous particles not
+    visible to the human eye. These precise, non-destructive testing procedures
+    require a modular clean room: space that is large enough to work around
+    hard-to-maneuver workpieces, yet is completely enclosed and light
+    controlled."
+copy_block_list: >-
   Duroair’s non-destructive testing enclosures provide:
 
 
@@ -39,6 +36,14 @@ copy_block_1: >-
   * Ideal environment for even the most stringent lighting requirements
 
   * Easy access for overhead crane loading and unloading or other material handling
+copy_block_1: >-
+  ### **UV-Protected Modular Clean Room For Non-Destructive Testing**
+
+
+  Duroair can combine [DuroRoom™](/products/duroroom) with our [DuroCap™](/products/durocap), [DuroDust™](/products/durodust), and DuroClean™ engineered exhaust systems, if required, into one cost-effective, UV-protected enclosure for easy-access, non-destructive testing. 
+
+
+  We engineer portable, retractable enclosures and dark rooms that can be custom tailored for indoor use with your required structural materials, fabric types, and UV protection specifications. Available with climate-controlled filtration, Duroair enclosures can bring your non-destructive testing in-house for significant cost savings and quality control.
 copy_block_2: >-
   ### Technical Specifications
 
@@ -78,7 +83,10 @@ compliance:
       micron sizes 5.0µ, 0.5µ and 0.3µ)
 related_products:
   - DuroRoom™
-  - DuroCap™
+  - DuroClean™
+form_intro: Contact Us
+hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
+redirectUrl: /contact-us/success/
 ---
 ### Non-Destructive MPI and UV Testing Made Simple
 
