@@ -9,7 +9,7 @@ jumbotron:
 nav_sort: 2000
 show_in_menu: "true"
 layout: solution.njk
-thumbnail: /img/thumbs/hero-cleanrooms.jpg
+thumbnail: /media/uploads/image-30-.png
 image_1: /img/image-1-cleanrooms.jpg
 image_2: /img/image-2-cleanrooms.jpg
 image_3: /img/image-3-cleanrooms.png
@@ -107,9 +107,9 @@ compliance:
     description: up to Class 1000/ISO6 (ISO class clean room typically measures
       micron sizes 5.0µ, 0.5µ and 0.3µ)
 related_products:
-  - DuroRoom™
   - DuroCap™
   - DuroPure™
+  - DuroClean™
 form_intro: Contact Us
 hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
 redirectUrl: /contact-us/success/
