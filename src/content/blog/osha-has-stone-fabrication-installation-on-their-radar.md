@@ -19,8 +19,8 @@ date: 2023-09-29
 image_alignment:
   - images-left
 cta:
-  copy: Learn How Duroair Designs Flexible Solutions That Move with Your Workflow
-  label: CONTACT US TODAY
+  copy: Learn How Duroair Designs Flexible Solutions Move With Your Workflow
+  label: Contact Us Today
   url: https://www.duroair.com/contact-us
 collection:
   - Dust Collection
