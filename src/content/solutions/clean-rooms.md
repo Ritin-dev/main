@@ -9,7 +9,7 @@ jumbotron:
 nav_sort: 2000
 show_in_menu: "true"
 layout: solution.njk
-thumbnail: /img/thumbs/hero-cleanrooms.jpg
+thumbnail: /media/uploads/image-30-.png
 image_1: /img/image-1-cleanrooms.jpg
 image_2: /img/image-2-cleanrooms.jpg
 image_3: /img/image-3-cleanrooms.png
