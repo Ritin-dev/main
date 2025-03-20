@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    let span = document.querySelector("nav#breadcrumb span");
+    let span = document.querySelector("nav#breadcrumb span, a");
     if (span) {
         span.textContent = span.textContent.replace(/-/g, " ");
     }
