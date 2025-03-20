@@ -28,3 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     breadcrumbContainer.innerHTML = breadcrumbHTML;
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let span = document.querySelector("nav#breadcrumb span");
+    if (span) {
+        span.textContent = span.textContent.replace(/-/g, " ");
+    }
+});
