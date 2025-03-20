@@ -10,25 +10,22 @@ jumbotron:
 nav_sort: 4000
 show_in_menu: "true"
 layout: solution.njk
-hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
-redirectUrl: /contact-us/success/
-form_intro: Contact Us
 thumbnail: /img/thumbs/hero-metalcutting.jpg
 image_1: /img/image-1-metalcutting.jpg
 image_2: /img/image-2-metalcutting.jpg
 image_3: /img/image-3-duroroom.png
 short_description: Shield employees and machinery from oil mist and dust hazards.
-copy_block_1: >-
-  ### **Industrial Dust Collectors for Safe, Clean Metal Cutting**
-
-
-  Duroair combines our [DuroRoom™](/products/duroroom)  with [DuroTower™](/products/durotower) or [DuroDust™](/products/durodust) technologies into one clean air solution to provide a safe, productive working environment.
-
-
-  We engineer portable, retractable enclosures with recirculating air filtration that can be custom tailored for specific metal cutting processes. By bringing the benefits of clean air to each cutting workspace, Duroair can help you reduce material handling expenses and maximize your facility floor space.
-
-
-  Duroair’s industrial dust collector and filtration solutions for metal cutting provide:
+intro:
+  intro_head: Bring Safe, Clean Air to Each Metal Cutting Task
+  intro_desc: From laser and plasma cutting to grinding and sanding, working with
+    metals can produce a toxic cloud of oil mist, fine particulate dust, and
+    fumes that not only threaten your machinery and electronics, but endanger
+    your most valuable assets – your employees. There’s also the risk of fines
+    if your facility doesn’t walk the compliance talk when it comes to OSHA’s
+    permissible exposure limits (PELs).
+copy_block_list: >-
+  Duroair’s industrial dust collector and filtration solutions for metal cutting
+  provide:
 
 
   * Increased flexibility for full use of overhead cranes for moving large workpieces
@@ -40,6 +37,14 @@ copy_block_1: >-
   * Reduced construction and maintenance costs associated with facility-wide HVAC systems and on-going makeup air processes
 
   * Compliant, clean air per NFPA, OSHA, UL, and EPA requirements, via six-stage, non-vented filtration that captures 100 percent of airborne particulates and eliminates chemicals and vapors
+copy_block_1: >-
+  ### **Industrial Dust Collectors for Safe, Clean Metal Cutting**
+
+
+  Duroair combines our [DuroRoom™](/products/duroroom)  with [DuroTower™](/products/durotower) or [DuroDust™](/products/durodust) technologies into one clean air solution to provide a safe, productive working environment.
+
+
+  We engineer portable, retractable enclosures with recirculating air filtration that can be custom tailored for specific metal cutting processes. By bringing the benefits of clean air to each cutting workspace, Duroair can help you reduce material handling expenses and maximize your facility floor space.
 copy_block_2: >-
   ### Technical Specifications
 
@@ -86,6 +91,9 @@ related_products:
   - DuroRoom™
   - DuroCap™
   - DuroPure™
+form_intro: Contact Us
+hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
+redirectUrl: /contact-us/success/
 ---
 ### Bring Safe, Clean Air to Each Metal Cutting Task
 
