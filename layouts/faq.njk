@@ -17,13 +17,14 @@
                     <li data-filter="all" class="active">All</li>
                     {% set unique_categories = [] %}
                     {% for q in questions %}
-                        {% if q.category not in unique_categories %}
-                            {% set unique_categories = unique_categories.append(q.category) %}
-                            <li data-filter="{{ q.category  }}">{{ q.category }}</li>
+                        {% if unique_categories.indexOf(q.category) == -1 %}
+                            {% set unique_categories = unique_categories | push(q.category) %}
+                            <li data-filter="{{ q.category | slugify }}">{{ q.category }}</li>
                         {% endif %}
                     {% endfor %}
                 </ul>
             </div>
+
 
 
             <!-- FAQ Items -->
