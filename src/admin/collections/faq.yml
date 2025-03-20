@@ -16,7 +16,7 @@
         - label: Category
           name: category
           widget: relation
-          collection: products   # Change this to the actual collection where products are stored
+          collection: product   # Change this to the actual collection where products are stored
           search_fields: ["title"] # It will show product titles in the CMS dropdown
           value_field: "title"  # The selected value will be stored as the product title
           display_fields: ["title"] # Displays the product title
