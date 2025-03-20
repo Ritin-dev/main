@@ -10,15 +10,19 @@ jumbotron:
 nav_sort: 7000
 show_in_menu: "true"
 layout: solution.njk
-hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
-redirectUrl: /contact-us/success/
-form_intro: Contact Us
 thumbnail: /img/thumbs/hero-weldsmoke.jpg
 image_1: /img/image-1-weldsmoke.jpg
 image_2: /img/image-2-weldsmoke.jpg
 image_3: /img/image-3-weldsmoke.png
 short_description: Remove your compliance burdens while safeguarding the shop floor.
-copy_block_1: >-
+intro:
+  intro_desc: Welding toxic fumes and laser-cutting dust can threaten employee
+    safety, derail productivity, and place you directly in the crosshairs of the
+    EPA. Just a single spark can ignite welding “smoke” and endanger your entire
+    shop floor. Welding contaminants can also reduce the life of your cooling
+    fans and valuable CNC machinery.
+  intro_head: Clean Shop Air for the Entire Floor
+copy_block_list: >-
   ### Modular Weld Smoke Extractors and Ventilation Protection
 
 
@@ -26,8 +30,7 @@ copy_block_1: >-
 
 
   We engineer vented or non-vented enclosures with [DuroTower’s](/products/durotower) powerful air cleaning system to isolate each manual, resistance, and robotic welding workstation. Or we can custom tailor [DuroTower™](/products/durotower) to capture particulates at their source and flood your entire facility with OSHA and EPA compliant clean air.
-
-
+copy_block_1: >-
   Duroair’s weld smoke extraction and air cleaning solutions provide:
 
 
@@ -73,6 +76,9 @@ compliance:
 related_products:
   - DuroTower™
   - DuroRoom™
+form_intro: Contact Us
+hubspot_form_id: 8a7e8410-f0e6-4fdf-9fe9-60dfeb51b9b4
+redirectUrl: /contact-us/success/
 ---
 ### Clean Shop Air for the Entire Floor
 
